@@ -1,0 +1,40 @@
+studioVersion:
+  major: 5
+  minor: 6
+  patch: 1
+  build: 25021020
+  type: Public
+updateCheckpoint: 55
+sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
+viewConfig:
+  simulation:
+    device: No Simulation
+    cameraFov: 66.519997
+    fullFrameAspect: nan
+    resolutionScale: 1.000000
+    viewport: Maximized
+    output: Live
+    stereoOutputEye: Center
+    deviceTypeOverride: Unknown
+  cameraType: Front
+metaInfo:
+  hints:
+    []
+  tags:
+    []
+  lensName: AR Fashion Kit 1
+  lensDescriptors:
+    - GEN_AI_ICON
+  lensApplicability:
+    - Front
+    - Back
+  lensClientCompatibilities:
+    - Mobile
+    - CameraKit
+  platformBundlesEnabled: false
+  iconHash: 7dc444d0363453395f661b1678c4e740
+  videoPreviewHash: ""
+  fromTemplateName: Camera Kit
+  fromTemplateUrl: Lens Studio 5.6.1.25021020
+  activationCamera: Front
+  sourceMapEnabled: false
