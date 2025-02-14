@@ -22,18 +22,17 @@ metaInfo:
     []
   tags:
     []
-  lensName: Camera Kit Default
+  lensName: Wear_Kit_1
   lensDescriptors:
-    []
+    - GEN_AI_ICON
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
     - Mobile
-    - Web
     - CameraKit
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: 711e55f46e03f1d2a66b614f602a258e
   videoPreviewHash: ""
   fromTemplateName: Camera Kit
   fromTemplateUrl: Lens Studio 5.6.1.25021020

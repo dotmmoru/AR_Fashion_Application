@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">App_v1</string>
+
+    <!-- Додайте цей рядок -->
+    <string name="desc_image_view">Description for image view</string>
+</resources>

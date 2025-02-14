@@ -2,13 +2,13 @@
   ImportedAssetIds:
     .hidden/hat_low: !<reference> ae94e87a-e70b-487b-92e4-ace4b1a89b82
     .hidden/white: !<reference> 2a3e6467-13d3-47d6-af20-46b84d6b49b9
-    02011fbf7232855a: !<reference> 0005dcf4-b26a-471c-ad65-987375ce0f7d
-    7a0dd5cd69df73fa: !<reference> 02ddf457-0072-41a7-9275-871c928ab81f
+    5ae1065a7d355ca3: !<reference> 7198f2a8-5148-41ac-9fdd-0d4879f91fd5
+    66780cf3a4dcb2b8: !<reference> 7351a18f-b31c-49ed-a923-347ca9c97669
     Materials/hat_low: !<reference> ba6a9f26-e860-4d7c-96d3-7101ce55541a
     Materials/hat_low|hat_low|GraphPassInfo: !<reference> af4f0f2e-61ef-4ef0-bd76-7426003be0fb
     Meshes/wizard_hat_low_v01: !<reference> 5bc1e86e-e311-4acc-b32e-a3efeb5d8941
     Scene: !<reference> d0280eb0-dac5-4304-b1f9-57b2973f741f
-    e5e164ad9b52e767: !<reference> 2d256221-908a-48b2-bb8b-bd745fd11696
+    abfda21c5edb0276: !<reference> 466d1fc3-bcbb-4fa7-b286-e8a3ff5bbdcd
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> d0280eb0-dac5-4304-b1f9-57b2973f741f
   PackageType: LegacyPackage
