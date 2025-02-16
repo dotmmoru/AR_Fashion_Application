@@ -24,7 +24,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 27c9b678-9d9a-4cd7-8ed2-c7dae2b2c32e
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
 - !<Camera/00000000-0000-0065-0000-000000000065>
@@ -173,6 +173,26 @@
   DecayRange: 40.000000
   UseEstimation: false
   EstimationIntensity: !<float> 1.000000
+- !<RenderMeshVisual/07dec0b7-0646-4d5f-8486-2489da9b5614>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a8a77d3f-dd6f-4473-b57d-be601f14a397
+  Mesh: !<reference> 5d2c181a-6bd6-48f5-afc9-275b2379c48e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ScreenTransform/091d6aaf-d058-4716-b375-e4dc9627e494>
   PrefabRemaps:
     []
@@ -218,7 +238,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Version 0.1
+  Text: Version 0.11
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -282,6 +302,38 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/27c9b678-9d9a-4cd7-8ed2-c7dae2b2c32e>
+  PrefabRemaps:
+    []
+  Name: Effects
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8eb8a1e2-9e56-4924-a30c-e5f89a0053dc
+  Components:
+    []
+- !<SceneObject/48883b94-d550-4643-b9fd-fc939317b3ab>
+  PrefabRemaps:
+    - 48883b94-d550-4643-b9fd-fc939317b3ab: 1be93064-6ac8-48df-b622-366c00b81178
+    - f6ca0ffb-8059-4910-89d8-39cdac1e6463: 433f2572-79bd-423b-a274-db1d86d06b7a
+    - fc59f11e-30d1-4bb7-8223-0b4086ef4a72: 2ef65887-aa18-48aa-8a27-70363fcf4fff
+  Name: cap_v03
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f6ca0ffb-8059-4910-89d8-39cdac1e6463
+  Components:
+    []
 - !<ScreenRegionComponent/6059289f-92f6-4a72-af19-d36c45cd872e>
   PrefabRemaps:
     []
@@ -305,6 +357,22 @@
   Components:
     - !<own> f8288f67-faf5-45b6-9c3c-55a2ea9fd44e
     - !<own> 9a5234ad-9399-41b6-9e14-12d93a2bb31f
+- !<SceneObject/8eb8a1e2-9e56-4924-a30c-e5f89a0053dc>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 48883b94-d550-4643-b9fd-fc939317b3ab
+    - !<own> a38983b2-6f08-4d81-98d7-364cefd3085d
+  Components:
+    - !<own> f8bfdf55-eaf3-472d-8032-6a18eae2b94e
 - !<Canvas/9a5234ad-9399-41b6-9e14-12d93a2bb31f>
   PrefabRemaps:
     []
@@ -317,6 +385,22 @@
     bottom: -20.000000
     right: 15.000000
     top: 20.000000
+- !<SceneObject/a38983b2-6f08-4d81-98d7-364cefd3085d>
+  PrefabRemaps:
+    []
+  Name: Head Mesh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f3b12175-0908-4e37-afee-a78766c2d242
+    - !<own> 07dec0b7-0646-4d5f-8486-2489da9b5614
 - !<SceneObject/ab8183af-10da-4da8-8f21-45938c25b12b>
   PrefabRemaps:
     []
@@ -382,6 +466,41 @@
   Components:
     - !<own> b4ab198a-c882-43a5-bb92-898a12c3a318
     - !<own> 6059289f-92f6-4a72-af19-d36c45cd872e
+- !<RenderMeshVisual/f3b12175-0908-4e37-afee-a78766c2d242>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 3b55ef19-83a9-4549-a0c0-2c58a247761e
+  Mesh: !<reference> 5d2c181a-6bd6-48f5-afc9-275b2379c48e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/f6ca0ffb-8059-4910-89d8-39cdac1e6463>
+  PrefabRemaps:
+    []
+  Name: cap_v03
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000142, y: 10.888374, z: 0.297975}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fc59f11e-30d1-4bb7-8223-0b4086ef4a72
 - !<Camera/f8288f67-faf5-45b6-9c3c-55a2ea9fd44e>
   PrefabRemaps:
     []
@@ -412,3 +531,40 @@
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+- !<Head/f8bfdf55-eaf3-472d-8032-6a18eae2b94e>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  AttachmentPointType: HeadCenter
+  FaceIndex: 0
+  AttachedBarycentricVertex:
+    indices:
+      - 0
+      - 0
+      - 0
+    weights:
+      - 0.000000
+      - 0.000000
+      - 0.000000
+  TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/fc59f11e-30d1-4bb7-8223-0b4086ef4a72>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4a37f7e5-c0c8-4d07-8131-fade38a66fc8
+  Mesh: !<reference> 54eaf159-7825-4319-a0f1-a2bf69da0817
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
