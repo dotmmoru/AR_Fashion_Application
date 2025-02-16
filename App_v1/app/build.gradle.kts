@@ -46,18 +46,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // -------------------------
-    // CameraX залежності:
-    // -------------------------
-    val camerax_version = "1.3.0" // або актуальна версія на момент написання коду
+
+    val camerax_version = "1.3.0"
     implementation("androidx.camera:camera-core:$camerax_version")
     implementation("androidx.camera:camera-camera2:$camerax_version")
     implementation("androidx.camera:camera-lifecycle:$camerax_version")
-    implementation("androidx.camera:camera-view:$camerax_version")       // містить PreviewView
-    // (опціонально) для додаткових ефектів
-    implementation("androidx.camera:camera-extensions:$camerax_version")
+    implementation("androidx.camera:camera-view:$camerax_version")
 
-    // Тестування
+    implementation("androidx.camera:camera-extensions:$camerax_version")
+    implementation ("androidx.camera:camera-camera2:$camerax_version")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
