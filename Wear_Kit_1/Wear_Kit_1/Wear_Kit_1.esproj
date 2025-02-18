@@ -1,17 +1,15 @@
 studioVersion:
   major: 5
-  minor: 6
-  patch: 1
-  build: 25021020
-  type: Public
-updateCheckpoint: 55
+  minor: 3
+  patch: 0
+  build: 24111410
+updateCheckpoint: 50
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
     device: No Simulation
     cameraFov: 66.519997
     fullFrameAspect: nan
-    resolutionScale: 1.000000
     viewport: Maximized
     output: Live
     stereoOutputEye: Center
@@ -31,7 +29,6 @@ metaInfo:
   lensClientCompatibilities:
     - Mobile
     - CameraKit
-  platformBundlesEnabled: false
   iconHash: 711e55f46e03f1d2a66b614f602a258e
   videoPreviewHash: ""
   fromTemplateName: Camera Kit
