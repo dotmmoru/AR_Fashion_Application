@@ -61,6 +61,12 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     private val choreographer = Choreographer.getInstance()
     private val closeOnDestroy = mutableListOf<Closeable>()
 
+    companion object {
+        const val TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y"
+        const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
+        const val LENS_ID = "1058a4fc-4753-456b-96ad-6c57ae759441"
+    }
+
     // Contract for requesting camera permission
     private val requestCameraPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
@@ -78,11 +84,21 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Basic CameraKit Session use case to apply a first bundled lens that is available.
-        session = Session(this).apply {
-            lenses.repository.get(LensesComponent.Repository.QueryCriteria.Available(LENS_GROUP_ID_BUNDLED)) { result ->
-                result.whenHasFirst { lens ->
-                    lenses.processor.apply(lens)
+//        // Basic CameraKit Session use case to apply a first bundled lens that is available.
+//        session = Session(this).apply {
+//            lenses.repository.get(LensesComponent.Repository.QueryCriteria.Available(LENS_GROUP_ID_BUNDLED)) { result ->
+//                result.whenHasFirst { lens ->
+//                    lenses.processor.apply(lens)
+//                }
+//            }
+//        }
+
+        session = Session(context = this) .apply {
+            lenses.repository.observe(
+                LensesComponent.Repository.QueryCriteria.ById(LENS_ID, LENS_GROUP_ID)
+            ) { result ->
+                result.whenHasFirst { requestedLens ->
+                    lenses.processor.apply(requestedLens)
                 }
             }
         }
