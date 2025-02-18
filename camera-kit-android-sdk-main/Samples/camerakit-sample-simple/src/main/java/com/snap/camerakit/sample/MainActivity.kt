@@ -13,7 +13,7 @@ import com.snap.camerakit.support.app.CameraActivity
 
 private const val TAG = "MainActivity"
 private val LENS_GROUP_IDS = arrayOf(BuildConfig.LENS_GROUP_ID_TEST)
-private const val APPLY_LENS_BY_ID = "00326491-fe11-4933-b80e-c3fcaae05354"
+private const val APPLY_LENS_BY_ID = "1058a4fc-4753-456b-96ad-6c57ae759441"
 
 /**
  * A simple activity that demonstrates how to launch the CameraKit's support [CameraActivity] and to get results back.

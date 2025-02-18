@@ -38,6 +38,8 @@ import java.io.Closeable
 import java.io.File
 import java.lang.ref.WeakReference
 import java.util.concurrent.Executors
+import androidx.camera.camera2.interop.Camera2CameraInfo
+import android.hardware.camera2.CameraCharacteristics
 
 private const val TAG = "MainActivity"
 
@@ -50,7 +52,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private lateinit var rootContainer: MotionLayout
     private lateinit var liveCameraContainer: ViewGroup
-    private lateinit var previewGestureHandler: View
     private lateinit var selectedLensContainer: ViewGroup
     private lateinit var selectedLensNameView: TextView
     private lateinit var selectedLensIcon: ImageView
@@ -91,31 +92,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
         lensesListContainer = findViewById(R.id.lenses_list_container)
 
-        val tapGestureDetector = GestureDetector(
-            this,
-            object : GestureDetector.SimpleOnGestureListener() {
-                override fun onDoubleTap(event: MotionEvent): Boolean {
-                    flipCamera()
-                    return super.onDoubleTap(event)
-                }
-
-                override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
-                    rootContainer.transitionToStart()
-                    return super.onSingleTapConfirmed(e)
-                }
-            }
-        )
-
-        previewGestureHandler = findViewById<View>(R.id.preview_gesture_handler).apply {
-            setOnTouchListener { _, event ->
-                tapGestureDetector.onTouchEvent(event)
-                when (event.action) {
-                    MotionEvent.ACTION_UP -> performClick()
-                }
-                true
-            }
-        }
-
         // App can either use Camera Kit's CameraXImageProcessorSource (which is part of the :support-camerax
         // dependency) or their own input/output and later attach it to the Camera Kit session.
         imageProcessorSource = CameraXImageProcessorSource(
@@ -130,7 +106,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         // Kit Session. Also, App Id and API token can be passed dynamically through Session APIs like in this
         // case (recommended) or it can be hardcoded in AndroidManifest.xml file.
         cameraKitSession = Session(this) {
-            apiToken(BuildConfig.CAMERA_KIT_API_TOKEN)
+            apiToken("eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y")
             imageProcessorSource(imageProcessorSource)
             attachTo(findViewById(R.id.camera_kit_stub))
             safeRenderAreaProcessorSource(SafeRenderAreaProcessorSource(this@MainActivity))
@@ -139,7 +115,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 // lenses touch handling might consume all events due to the fact that it needs to perform gesture
                 // detection internally. If application needs to handle gestures on top of it then LensesComponent
                 // provides a way to dispatch all touch events unhandled by active lens back.
-                it.dispatchTouchEventsTo(previewGestureHandler)
+
             }
         }
 
@@ -150,7 +126,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         // the Camera Kit integration. Camera Kit APIs are thread safe - so it's safe to call them
         // from here.
         lensRepositorySubscription = cameraKitSession.lenses.repository.observe(
-            LensesComponent.Repository.QueryCriteria.Available(setOf(BuildConfig.LENS_GROUP_ID_TEST))
+            LensesComponent.Repository.QueryCriteria.Available(setOf("ed8aeaf7-12fc-4631-893c-de7705b119fc"))
         ) { result ->
             result.whenHasSome { lenses ->
                 runOnUiThread {
@@ -162,12 +138,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         findViewById<SnapButtonView>(R.id.capture_button).apply {
             addPreviewFeature()
-        }
-
-        findViewById<ImageButton>(R.id.camera_flip_button).apply {
-            setOnClickListener {
-                flipCamera()
-            }
         }
 
         findViewById<ImageButton>(R.id.button_cancel_effect).apply {
@@ -186,9 +156,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     private fun applyLens(lens: LensesComponent.Lens) {
-        val usingCorrectCamera =
-            isCameraFacingFront.xor(lens.facingPreference != LensesComponent.Lens.Facing.FRONT)
-        if (!usingCorrectCamera) flipCamera()
+
         cameraKitSession.lenses.processor.apply(lens) { success ->
             if (success) {
                 runOnUiThread {
@@ -225,13 +193,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                         .start()
                 }
             }
-        }
-    }
-
-    private fun flipCamera() {
-        runOnUiThread {
-            imageProcessorSource.startPreview(!isCameraFacingFront)
-            isCameraFacingFront = !isCameraFacingFront
         }
     }
 

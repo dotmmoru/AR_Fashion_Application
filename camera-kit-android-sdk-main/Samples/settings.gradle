@@ -18,13 +18,13 @@ def include(String moduleName, String relativePath) {
     project(moduleName).projectDir = new File(rootDir, relativePath)
 }
 //
-include ':camerakit-sample-full'
-include ':camerakit-sample-simple'
+//include ':camerakit-sample-full'
+//include ':camerakit-sample-simple'
 //include ':camerakit-sample-custom-video'
-//include ':camerakit-sample-custom-input'
-//include ':camerakit-sample-custom-carousel'
-include ':camerakit-sample-basic'
-include ':camerakit-sample-compose-basic'
+include ':camerakit-sample-custom-input'
+include ':camerakit-sample-custom-carousel'
+//include ':camerakit-sample-basic'
+//include ':camerakit-sample-compose-basic'
 //include(':camerakit-sample-dynamic-app-host-apk', 'camerakit-sample-dynamic/app-host-apk')
 //include(':camerakit-sample-dynamic-app-host-dfm', 'camerakit-sample-dynamic/app-host-dfm')
 //include(':camerakit-sample-dynamic-plugin-shared', 'camerakit-sample-dynamic/plugin-shared')

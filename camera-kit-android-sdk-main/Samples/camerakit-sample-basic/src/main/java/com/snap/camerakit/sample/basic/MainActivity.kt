@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private lateinit var imageProcessorSource: CameraXImageProcessorSource
 
     companion object {
-        const val LENS_GROUP_ID = "00326491-fe11-4933-b80e-c3fcaae05354"
-        const val LENS_ID = "712e2c99-5a8b-45b5-a93d-ac9b4548365b"
+        const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
+        const val LENS_ID = "1058a4fc-4753-456b-96ad-6c57ae759441"
     }
 
     // Initialize a permission request launcher
