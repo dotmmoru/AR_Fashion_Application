@@ -23,6 +23,9 @@
     Port_Input1_N029:
       typeIdx: 1
       value: 0.010000
+    Port_Input1_N032:
+      typeIdx: 1
+      value: -0.100000
     PreviewEnabled:
       typeIdx: 0
       value: 0
