@@ -7,7 +7,7 @@
   PackageType: LegacyPackage
   AssetDataMap:
     {}
-  ImporterSettings: !<EnvmapImporterSettings>
+  ImporterSettings: !<EnvmapImporterSettings/08bdf473-0ad8-4e25-9f62-1fe0f940c2d8>
     ImageQuality: Normal
     SpecularImageResolution: Medium
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
