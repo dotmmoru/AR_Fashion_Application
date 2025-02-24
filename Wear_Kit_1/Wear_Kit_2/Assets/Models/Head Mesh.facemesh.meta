@@ -1,16 +1,14 @@
-- !<AssetImportMetadata/36b5adcb-02ef-49ac-8865-0d306ef812e0>
+- !<AssetImportMetadata/f4f5c2ca-c063-4a1c-aa9b-20f1f20fb240>
   ImportedAssetIds:
-    FaceMesh: !<reference> 5d2c181a-6bd6-48f5-afc9-275b2379c48e
+    FaceMesh: !<reference> fc2549b5-da05-49a6-b06e-8a1172d9eba7
   ImporterName: FaceMeshImporter
-  PrimaryAsset: !<reference> 5d2c181a-6bd6-48f5-afc9-275b2379c48e
+  PrimaryAsset: !<reference> fc2549b5-da05-49a6-b06e-8a1172d9eba7
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
-  ExtraData:
-    {}
   AssetDataMap:
     {}
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/e2407a87-4c2c-463b-a63b-d4ecce45a626>
+  ImporterSettings: !<AssetImporterSettings/62b193ef-1dda-4cd9-b203-cb87b7319c82>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

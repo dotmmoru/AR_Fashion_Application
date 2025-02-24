@@ -1,0 +1,153 @@
+- !<AssetImportMetadata/d020703f-b6bf-4e55-82ed-62062395e3b9>
+  ImportedAssetIds:
+    .hidden/helmet: !<reference> 8e86cb58-c2c4-4842-9d6b-1d82f099a7ab
+    .hidden/white: !<reference> 44e978f4-27fa-464c-acf3-ee8ce449af55
+    2137e2f3cefc9ef8: !<reference> c206f155-c613-4fd9-b549-a39c304d5e9f
+    378fb7f6d68235c0: !<reference> 3c229991-03d6-4d90-94fa-579867c1eadf
+    4108357e22e8f089: !<reference> f041c21b-80c1-42f1-b462-632cfdd7b300
+    7a0dd5cd69df73fa: !<reference> 58648d0a-e1a0-4767-b305-dafd9b9819fc
+    91746b0abc9e30dc: !<reference> 898dbd3a-9f60-4faf-8f85-05dbd0e964a5
+    Materials/helmet: !<reference> 4be4a80d-ada6-49a3-9b89-4dff7fff48be
+    Materials/helmet|helmet|GraphPassInfo: !<reference> e0363448-48da-4dd7-a48f-d910807b753c
+    Meshes/helmet_base: !<reference> bf9ad558-067b-4ccf-9443-a0e7e382f043
+    Meshes/helmet_transparent: !<reference> 32796945-4cc3-4cd7-87a7-d528e5d5a8e7
+    Scene: !<reference> 7a2e59a8-3769-4b09-8243-cb4bd2f3cb8f
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 7a2e59a8-3769-4b09-8243-cb4bd2f3cb8f
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpacked
+  AssetDataMap:
+    Scene: !<own> ae458c52-2374-48d8-b934-41f5548f8e10
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings/dd8cc557-ee43-46b6-8994-30fe30082b0f>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitize
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings/0b7fe0a2-ccc9-4cb9-9b52-4fe95daeef80>
+    Presets:
+      None Compression: !<SingleCompressionSettings/6e4be04e-0ff5-4897-8c61-1e184f565e28>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings/ef5b6f0a-3959-4b7d-b1b4-d7a8e129fced>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionSettings/784f0957-5aa4-452d-a321-8d13c29507e9>
+          Level: Medium
+    ExtensionMappings:
+      mesh: None Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/3ebaad47-9cad-4b30-b39e-0599c8c79682>
+  PrefabRemaps:
+    []
+  Name: helmet_base
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 462393cf-2099-47dd-ac1d-03a0b7d5d740
+- !<RenderMeshVisual/462393cf-2099-47dd-ac1d-03a0b7d5d740>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4be4a80d-ada6-49a3-9b89-4dff7fff48be
+  Mesh: !<reference> bf9ad558-067b-4ccf-9443-a0e7e382f043
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefab/572147b5-7436-416e-bef8-947e9fffdf32>
+  PackagePath: ""
+  objects:
+    - !<own> 5b9c1d7b-c7b8-4a0e-adf5-cc9373d86925
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/5b9c1d7b-c7b8-4a0e-adf5-cc9373d86925>
+  PrefabRemaps:
+    []
+  Name: helmet_v02
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3ebaad47-9cad-4b30-b39e-0599c8c79682
+    - !<own> 8a8c0330-fdf0-4518-9b5d-e0ed32acd754
+  Components:
+    []
+- !<RenderMeshVisual/650da3df-79e6-40a2-9f6c-6147bf7ff17f>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4be4a80d-ada6-49a3-9b89-4dff7fff48be
+  Mesh: !<reference> 32796945-4cc3-4cd7-87a7-d528e5d5a8e7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/8a8c0330-fdf0-4518-9b5d-e0ed32acd754>
+  PrefabRemaps:
+    []
+  Name: helmet_transparent
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 650da3df-79e6-40a2-9f6c-6147bf7ff17f
+- !<ObjectPrefabAssetData/ae458c52-2374-48d8-b934-41f5548f8e10>
+  SourceRemaps:
+    - 3c229991-03d6-4d90-94fa-579867c1eadf: 3ebaad47-9cad-4b30-b39e-0599c8c79682
+    - 58648d0a-e1a0-4767-b305-dafd9b9819fc: 5b9c1d7b-c7b8-4a0e-adf5-cc9373d86925
+    - 7a2e59a8-3769-4b09-8243-cb4bd2f3cb8f: 572147b5-7436-416e-bef8-947e9fffdf32
+    - 898dbd3a-9f60-4faf-8f85-05dbd0e964a5: 650da3df-79e6-40a2-9f6c-6147bf7ff17f
+    - c206f155-c613-4fd9-b549-a39c304d5e9f: 8a8c0330-fdf0-4518-9b5d-e0ed32acd754
+    - f041c21b-80c1-42f1-b462-632cfdd7b300: 462393cf-2099-47dd-ac1d-03a0b7d5d740
+  SourceState: !<own> 572147b5-7436-416e-bef8-947e9fffdf32
