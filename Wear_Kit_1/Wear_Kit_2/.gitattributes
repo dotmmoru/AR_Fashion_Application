@@ -1,9 +1,4 @@
 # Shipped by Lens Studio
-
-# The lines below are automatically generated and updated by Lens Studio.
-# Please do not modify them manually, as changes will be overwritten each time!
-# If you want to make changes to this file, please put them either above or below this section.
-
 *.esproj text linguist-language=yaml
 
 Assets/**/* filter=lfs diff=lfs merge=lfs -text
@@ -31,7 +26,6 @@ Assets/**/*.animationMixerLayer !filter !diff !merge text linguist-language=yaml
 Assets/**/*.audioOutput !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bitmojiModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyDepthTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
-Assets/**/*.bodyInstanceSegmentationTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyMesh !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyNormalsTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.bodyTracking3D !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
@@ -47,7 +41,6 @@ Assets/**/*.depthTexture !filter !diff !merge text linguist-language=yaml merge=
 Assets/**/*.deviceCameraTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.deviceTrackingModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.dialogModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
-Assets/**/*.externalMusicModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.faceCropTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.faceImagePickerTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.faceTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
@@ -74,7 +67,6 @@ Assets/**/*.microphoneRawModule !filter !diff !merge text linguist-language=yaml
 Assets/**/*.motionControllerModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.native !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.objectTrackingTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
-Assets/**/*.personTrackingScope !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.prefab !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.processedLocationModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.proxyTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
@@ -96,7 +88,6 @@ Assets/**/*.shoppingModule !filter !diff !merge text linguist-language=yaml merg
 Assets/**/*.textInputModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.textTexture !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.textToSpeechModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
-Assets/**/*.textureTrackingScope !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.upperBodyMesh !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.upperBodyTracking3D !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.voiceMLModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
@@ -104,5 +95,4 @@ Assets/**/*.worldQueryModule !filter !diff !merge text linguist-language=yaml me
 Assets/**/*.worldSettings !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.worldUnderstandingModule !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
 Assets/**/*.worldmesh !filter !diff !merge text linguist-language=yaml merge=lens-studio-yaml-merge
-
 # Shipped by Lens Studio

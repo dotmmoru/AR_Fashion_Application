@@ -4,7 +4,7 @@
   FaceGeometryEnabled: true
   EyeGeometryEnabled: true
   EyeCornerGeometryEnabled: true
-  MouthGeometryEnabled: false
+  MouthGeometryEnabled: true
   SkullGeometryEnabled: true
   EarGeometryEnabled: false
   ExternalMesh: !<reference> 00000000-0000-0000-0000-000000000000
