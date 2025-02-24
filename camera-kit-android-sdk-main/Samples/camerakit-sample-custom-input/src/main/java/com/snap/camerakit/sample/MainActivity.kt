@@ -103,19 +103,19 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             }
         }
 
-        // Визначаємо початковий розмір вхідного потоку.
-        // (За потреби цей розмір можна змінити відповідно до роздільної здатності камери)
+// Determine the initial size of the input stream.
+// (This size can be changed to suit the camera resolution if necessary)
         val inputWidth = 1440
         val inputHeight = 2560
 
-        // Створюємо SurfaceTexture і налаштовуємо його
+        // Create a SurfaceTexture and configure it
         inputSurfaceTexture = SurfaceTexture(0).apply {
             setDefaultBufferSize(inputWidth, inputHeight)
-            // Обов'язково від'єднуємо від GL-контексту перед використанням як вхід для CameraKit
+            // Be sure to detach from the GL context before using as input for CameraKit
             detachFromGLContext()
         }
 
-        // Створюємо вхід для CameraKit із SurfaceTexture
+        // Creating an input for CameraKit with SurfaceTexture
         val input = inputFrom(
             surfaceTexture = inputSurfaceTexture,
             width = inputWidth,
@@ -127,22 +127,22 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         )
         session.processor.connectInput(input)
 
-        // Створюємо Surface, який передамо у CameraX (ця ж поверхня пов'язана з inputSurfaceTexture)
+        // We create a Surface, which we pass to CameraX (this same surface is associated with inputSurfaceTexture)
         inputSurface = Surface(inputSurfaceTexture)
 
-        // Підключаємо вихід CameraKit до TextureView для візуалізації обробленого відеопотоку
+        // Connect the CameraKit output to TextureView to visualize the processed video stream
         val previewTextureView = findViewById<TextureView>(R.id.camerakit_output_preview)
         val outputCloseable = session.processor.connectOutput(previewTextureView)
         closeOnDestroy.add(outputCloseable)
 
-        // Ініціалізуємо Executor для камери
+        // Initializing the Executor for the camera
         cameraExecutor = Executors.newSingleThreadExecutor()
 
-        // Перевірка наявності дозволу на використання камери
+        // Checking if you have permission to use the camera
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
             startCamera()
         } else {
-            // Запит дозволу
+            // Ask request
             requestCameraPermissionLauncher.launch(Manifest.permission.CAMERA)
         }
     }
@@ -150,7 +150,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
     override fun onDestroy() {
         super.onDestroy()
-        // Закриваємо всі ресурси, що були відкриті
+        // Close all resources that were open
         closeOnDestroy.forEach { it.close() }
         cameraExecutor.shutdown()
         session.close()
@@ -164,38 +164,38 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         cameraProviderFuture.addListener({
             val cameraProvider = cameraProviderFuture.get()
 
-            // Створюємо Preview use case
+            // Create Preview use case
             val preview = Preview.Builder().build()
 
-            // Використовуємо власний SurfaceProvider для передачі inputSurface
+            // use SurfaceProvider to share inputSurface
             preview.setSurfaceProvider { request ->
-                // Оновлюємо розмір буфера SurfaceTexture згідно з вимогами CameraX
+                // Update buffer size SurfaceTexture according to the requirements of CameraX
                 val resolution: Size = request.resolution
                 inputSurfaceTexture.setDefaultBufferSize(resolution.width, resolution.height)
 
-                // Передаємо існуючу поверхню в запит
+                // Passing the existing surface into the request
                 request.provideSurface(inputSurface, ContextCompat.getMainExecutor(this)) { result ->
-                    // Результат можна обробити за потреби
+                    // The result can be processed as needed.
                 }
             }
 
-            // Формуємо CameraSelector за аналогією з кодом з другого скрипта
+            // We form the CameraSelector by analogy with the code from the second script
             val cameraSelector = CameraSelector.Builder()
                 .addCameraFilter { cameraInfos ->
-                    // Спроба знайти зовнішню камеру
+                    // Trying to find an external camera
                     val externalCamera = cameraInfos.find { cameraInfo ->
                         val camera2Info = Camera2CameraInfo.from(cameraInfo)
                         val lensFacing = camera2Info.getCameraCharacteristic(CameraCharacteristics.LENS_FACING)
                         lensFacing == CameraCharacteristics.LENS_FACING_EXTERNAL
                     }
                         ?: cameraInfos.find { cameraInfo ->
-                            // Якщо зовнішньої немає – використовуємо задню камеру
+                            //If there is no external camera, use the rear camera.
                             val camera2Info = Camera2CameraInfo.from(cameraInfo)
                             val lensFacing = camera2Info.getCameraCharacteristic(CameraCharacteristics.LENS_FACING)
                             lensFacing == CameraCharacteristics.LENS_FACING_FRONT
                         }
                         ?: cameraInfos.find { cameraInfo ->
-                            // Якщо задньої немає – пробуємо передню камеру
+                            // If there is no rear camera, try the front camera.
                             val camera2Info = Camera2CameraInfo.from(cameraInfo)
                             val lensFacing = camera2Info.getCameraCharacteristic(CameraCharacteristics.LENS_FACING)
                             lensFacing == CameraCharacteristics.LENS_FACING_BACK
