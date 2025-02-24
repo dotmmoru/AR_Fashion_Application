@@ -20,16 +20,16 @@ metaInfo:
     []
   tags:
     []
-  lensName: AR Fashion Kit 1
+  lensName: AR Fashion Kit 2
   lensDescriptors:
-    - GEN_AI_ICON
+    []
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
     - Mobile
     - CameraKit
-  iconHash: 7dc444d0363453395f661b1678c4e740
+  iconHash: ""
   videoPreviewHash: ""
   fromTemplateName: Camera Kit
   fromTemplateUrl: Lens Studio 5.6.1.25021020
