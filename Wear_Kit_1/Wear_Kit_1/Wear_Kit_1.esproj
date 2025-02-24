@@ -7,9 +7,9 @@ updateCheckpoint: 50
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: iPhone 14 Pro Max
-    cameraFov: 45.709999
-    fullFrameAspect: 0.562500
+    device: iPhone X
+    cameraFov: 39.577000
+    fullFrameAspect: 0.538000
     viewport: Maximized
     output: Live
     stereoOutputEye: Center
