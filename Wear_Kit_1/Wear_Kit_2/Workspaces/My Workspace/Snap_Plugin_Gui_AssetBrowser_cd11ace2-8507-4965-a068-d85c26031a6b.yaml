@@ -1,0 +1,29 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 23
+    values:
+      - Materials
+      - Materials/Cap Shadow.mat
+      - Materials/Cap.mat
+      - Materials/Occluder.mat
+      - Models
+      - Models/Head Mesh.facemesh
+      - Models/cap_v03.fbx
+      - Models/cap_v03.fbx/.hidden
+      - Models/cap_v03.fbx/.hidden/cap
+      - Models/cap_v03.fbx/.hidden/white
+      - Models/cap_v03.fbx/Materials
+      - Models/cap_v03.fbx/Materials/cap
+      - Models/cap_v03.fbx/Meshes
+      - Models/cap_v03.fbx/Meshes/cap_v03
+      - Models/cap_v03.fbx/cap_v03
+      - Shader
+      - Shader/cap_shadow.ss_graph
+      - Shader/occluder.ss_graph
+      - Shader/pbr.ss_graph
+      - Textures
+      - Textures/cap_base_v01.jpg
+      - Textures/cap_nrm_v01.jpg
+      - Textures/cap_params_v01.jpg
+  options: 4
