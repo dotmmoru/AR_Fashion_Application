@@ -84,15 +84,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        // Basic CameraKit Session use case to apply a first bundled lens that is available.
-//        session = Session(this).apply {
-//            lenses.repository.get(LensesComponent.Repository.QueryCriteria.Available(LENS_GROUP_ID_BUNDLED)) { result ->
-//                result.whenHasFirst { lens ->
-//                    lenses.processor.apply(lens)
-//                }
-//            }
-//        }
-
         session = Session(context = this) .apply {
             lenses.repository.observe(
                 LensesComponent.Repository.QueryCriteria.ById(LENS_ID, LENS_GROUP_ID)

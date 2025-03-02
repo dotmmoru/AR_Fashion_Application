@@ -65,6 +65,12 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private var videoRecording: Closeable? = null
     private var lensRepositorySubscription: Closeable? = null
 
+    companion object {
+        const val TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y"
+        const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
+        const val LENS_ID = "b93ca434-dce5-46ae-9c26-3e55d7a745e9"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -106,7 +112,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         // Kit Session. Also, App Id and API token can be passed dynamically through Session APIs like in this
         // case (recommended) or it can be hardcoded in AndroidManifest.xml file.
         cameraKitSession = Session(this) {
-            apiToken("eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y")
+            apiToken(TOKEN)
             imageProcessorSource(imageProcessorSource)
             attachTo(findViewById(R.id.camera_kit_stub))
             safeRenderAreaProcessorSource(SafeRenderAreaProcessorSource(this@MainActivity))
@@ -126,7 +132,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         // the Camera Kit integration. Camera Kit APIs are thread safe - so it's safe to call them
         // from here.
         lensRepositorySubscription = cameraKitSession.lenses.repository.observe(
-            LensesComponent.Repository.QueryCriteria.Available(setOf("ed8aeaf7-12fc-4631-893c-de7705b119fc"))
+            LensesComponent.Repository.QueryCriteria.Available(setOf(LENS_GROUP_ID))
         ) { result ->
             result.whenHasSome { lenses ->
                 runOnUiThread {
