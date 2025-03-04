@@ -24,6 +24,7 @@ import androidx.camera.camera2.interop.Camera2CameraInfo
 import androidx.camera.camera2.interop.ExperimentalCamera2Interop
 import androidx.camera.core.AspectRatio
 import androidx.camera.core.Camera
+import androidx.camera.core.CameraFilter
 import androidx.camera.core.CameraInfo
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.CameraSelector.LensFacing
@@ -180,40 +181,30 @@ class CustomCameraXImageProcessorSource @JvmOverloads constructor(
                     ) {
                         cameraProviderFuture.get().let { cameraProvider ->
                             this.cameraProvider = cameraProvider
+                            val lensFacing = if (configuration.facingFront) {
+                                CameraSelector.LENS_FACING_FRONT
+                            } else {
+                                CameraSelector.LENS_FACING_BACK
+                            }
                             val cameraSelector = CameraSelector.Builder()
-                                .addCameraFilter { cameraInfos ->
-                                    val desiredFacing = configuration.facingFront // from the configuration passed to startPreview
-                                    val cameraManager = applicationContext.getSystemService(Context.CAMERA_SERVICE) as CameraManager
-                                    // First try to filter cameras that match the desired facing.
-                                    val filtered = cameraInfos.filter { info ->
-                                        val cameraId = Camera2CameraInfo.from(info).cameraId
-                                        val lens = cameraManager.getCameraCharacteristics(cameraId)
-                                            .get(CameraCharacteristics.LENS_FACING)
-                                        if (desiredFacing) {
-                                            lens == CameraCharacteristics.LENS_FACING_FRONT
-                                        } else {
-                                            lens == CameraCharacteristics.LENS_FACING_BACK
-                                        }
-                                    }
-                                    if (filtered.isNotEmpty()) {
-                                        filtered
-                                    } else {
-                                        // If no matching camera is found (for example, on a device with only an external camera),
-                                        // fall back to sorting by a default order.
-                                        cameraInfos.sortedBy { info ->
-                                            val cameraId = Camera2CameraInfo.from(info).cameraId
-                                            val characteristics = cameraManager.getCameraCharacteristics(cameraId)
-                                            when (characteristics.get(CameraCharacteristics.LENS_FACING)) {
-                                                CameraCharacteristics.LENS_FACING_EXTERNAL -> -1
-                                                CameraCharacteristics.LENS_FACING_FRONT -> 0
-                                                CameraCharacteristics.LENS_FACING_BACK -> 1
-                                                else -> 2
-                                            }
-                                        }
+                                .apply {
+                                    try {
+                                        // Some devices (Android TV) might have only a single (usb) camera attached
+                                        // resulting in requireLensFacing failing due to no camera with a specified
+                                        // lens facing found - the lens facing for such cameras is typically null
+                                        // and we would like to be able to open them nevertheless.
+                                        addCameraFilter(WebcamCameraFilter())
+                                    } catch (e: ClassNotFoundException) {
+                                        Log.w(
+                                            TAG,
+                                            "Failed to create LenientLensFacingCameraFilter, " +
+                                                    "falling back to requireLensFacing($lensFacing)",
+                                            e
+                                        )
+                                        requireLensFacing(lensFacing)
                                     }
                                 }
                                 .build()
-
 
                             @AspectRatio.Ratio val aspectRatio = when (configuration) {
                                 is AllowsCameraPreview.Configuration.Default -> {
@@ -575,21 +566,16 @@ class CustomCameraXImageProcessorSource @JvmOverloads constructor(
             return@SurfaceProvider
         }
 
-        // Inside createSurfaceProviderFor() in CustomCameraXImageProcessorSource.kt
         val cameraId = Camera2CameraInfo.from(cameraInfo).cameraId
-        val cameraManager = applicationContext.getSystemService(Context.CAMERA_SERVICE) as CameraManager
+        val cameraManager: CameraManager = applicationContext
+            .getSystemService(Context.CAMERA_SERVICE) as CameraManager
         val characteristics = cameraManager.getCameraCharacteristics(cameraId)
-        // Safely read the lens facing; if null, treat it as external.
-        val lensFacing = characteristics.get(CameraCharacteristics.LENS_FACING)
-            ?: CameraCharacteristics.LENS_FACING_EXTERNAL
-        // Determine if the camera is front-facing.
-        val isFacingFront = (lensFacing == CameraCharacteristics.LENS_FACING_FRONT)
         val fieldOfView = characteristics.fieldOfView(DEFAULT_FIELD_OF_VIEW)
 
         val cropRect = preview?.viewPortCropRect
         val resolution = surfaceRequest.resolution
         previewOutput = PreviewOutput(
-            isFacingFront,
+            previewRequest.configuration.facingFront,
             resolution,
             cropRect,
             cameraInfo.sensorRotationDegrees
@@ -611,14 +597,13 @@ class CustomCameraXImageProcessorSource @JvmOverloads constructor(
             previewRequest.inputOptions + ImageProcessor.Input.Option.Crop.Center(cropRect.width(), cropRect.height())
         }
 
-        // Then, pass the actual value to the Input constructor:
         tryConnect(
             ImageProcessor.Input(
                 surfaceTexture,
                 resolution.width,
                 resolution.height,
                 cameraInfo.getSensorRotationDegrees(applicationContext.displayRotation),
-                isFacingFront, // using the actual hardware value now
+                previewRequest.configuration.facingFront,
                 { applyZoomRatio(fieldOfView.width) },
                 { applyZoomRatio(fieldOfView.height) }
             ),
@@ -768,5 +753,23 @@ private class LenientLensFacingCameraFilter(@LensFacing lensFacing: Int) : LensF
         } else {
             filtered
         }
+    }
+}
+
+class WebcamCameraFilter: CameraFilter {
+    @SuppressLint("RestrictedApi")
+    override fun filter(cameraInfos: MutableList<CameraInfo>): MutableList<CameraInfo> {
+        val cameraIterator: MutableIterator<CameraInfo> = cameraInfos.iterator()
+        var camera: CameraInfo? = null
+        while (cameraIterator.hasNext()) {
+            camera = cameraIterator.next()
+            val getImplementationType: String = camera.implementationType
+        }
+        val linkedHashSet: MutableList<CameraInfo> = mutableListOf()
+
+        if (camera != null) {
+            linkedHashSet.add(camera)
+        }
+        return linkedHashSet
     }
 }

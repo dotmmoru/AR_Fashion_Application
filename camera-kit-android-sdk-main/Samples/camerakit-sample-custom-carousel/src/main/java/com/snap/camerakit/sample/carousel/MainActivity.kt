@@ -38,6 +38,7 @@ import java.io.File
 import java.lang.ref.WeakReference
 import java.util.concurrent.Executors
 import com.snap.camerakit.support.camerax.CustomCameraXImageProcessorSource
+import com.snap.camerakit.support.camerax.CameraXImageProcessorSource
 
 private const val TAG = "MainActivity"
 
