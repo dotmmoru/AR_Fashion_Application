@@ -30,7 +30,6 @@ import com.snap.camerakit.lenses.LensesComponent
 import com.snap.camerakit.lenses.whenHasSome
 import com.snap.camerakit.support.camera.AllowsSnapshotCapture
 import com.snap.camerakit.support.camera.AllowsVideoCapture
-import com.snap.camerakit.support.camerax.CameraXImageProcessorSource
 import com.snap.camerakit.support.permissions.HeadlessFragmentPermissionRequester
 import com.snap.camerakit.support.widget.SnapButtonView
 import com.snap.camerakit.supported
@@ -38,8 +37,7 @@ import java.io.Closeable
 import java.io.File
 import java.lang.ref.WeakReference
 import java.util.concurrent.Executors
-import androidx.camera.camera2.interop.Camera2CameraInfo
-import android.hardware.camera2.CameraCharacteristics
+import com.snap.camerakit.support.camerax.CustomCameraXImageProcessorSource
 
 private const val TAG = "MainActivity"
 
@@ -48,7 +46,7 @@ private const val TAG = "MainActivity"
  */
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private lateinit var cameraKitSession: Session
-    private lateinit var imageProcessorSource: CameraXImageProcessorSource
+    private lateinit var imageProcessorSource: CustomCameraXImageProcessorSource
 
     private lateinit var rootContainer: MotionLayout
     private lateinit var liveCameraContainer: ViewGroup
@@ -100,7 +98,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         // App can either use Camera Kit's CameraXImageProcessorSource (which is part of the :support-camerax
         // dependency) or their own input/output and later attach it to the Camera Kit session.
-        imageProcessorSource = CameraXImageProcessorSource(
+        imageProcessorSource = CustomCameraXImageProcessorSource(
             context = this,
             lifecycleOwner = this,
             executorService = processorExecutor,
@@ -151,6 +149,15 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 clearLenses()
             }
         }
+
+        findViewById<ImageButton>(R.id.camera_flip_button).setOnClickListener {
+            // Toggle the camera facing flag.
+            isCameraFacingFront = !isCameraFacingFront
+            // Restart preview with the new configuration.
+            imageProcessorSource.stopPreview()
+            imageProcessorSource.startPreview(isCameraFacingFront)
+        }
+
 
         findViewById<RecyclerView>(R.id.lenses_list).apply {
             lensesAdapter = LensesAdapter { selectedLens ->

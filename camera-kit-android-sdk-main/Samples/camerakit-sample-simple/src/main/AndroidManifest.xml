@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme"
         >
 
-        <meta-data android:name="com.snap.camerakit.api.token" android:value="${cameraKitApiToken}" />
+        <meta-data android:name="com.snap.camerakit.api.token" android:value="${eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y}" />
 
         <activity
             android:name=".MainActivity"

@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
     private var cameraKitSession: Session? = null
     private lateinit var imageProcessorSource: CameraXImageProcessorSource
     companion object {
-        const val LENS_GROUP_ID = "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"
-        const val LENS_ID = "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"
+        const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
+        const val LENS_ID = "b93ca434-dce5-46ae-9c26-3e55d7a745e9"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,7 +1,5 @@
 package com.snap.camerakit.sample
 
-import android.graphics.BitmapFactory
-import android.graphics.RectF
 import android.graphics.SurfaceTexture
 import android.os.Bundle
 import android.util.Size
@@ -14,11 +12,9 @@ import com.snap.camerakit.Session
 import com.snap.camerakit.connectOutput
 import com.snap.camerakit.inputFrom
 import com.snap.camerakit.invoke
-import com.snap.camerakit.lenses.LENS_GROUP_ID_BUNDLED
 import com.snap.camerakit.lenses.LensesComponent
 import com.snap.camerakit.lenses.whenHasFirst
 import java.io.Closeable
-import kotlin.math.min
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -27,11 +23,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import android.widget.Button
-import android.widget.Toast
-import java.io.File
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import androidx.camera.camera2.interop.Camera2CameraInfo
@@ -64,7 +56,9 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
     companion object {
         const val TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y"
         const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
-        const val LENS_ID = "b93ca434-dce5-46ae-9c26-3e55d7a745e9"
+        const val LENS_ID_1 = "b93ca434-dce5-46ae-9c26-3e55d7a745e9"
+        const val LENS_ID_2 = "6c8ee7b5-6dff-4d59-9ce0-ea212b4871e7"
+        const val LENS_ID_3 = "84cbe1b1-5864-4e7d-b47f-edfdb155e98d"
     }
 
     // Contract for requesting camera permission
@@ -86,7 +80,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
 
         session = Session(context = this) .apply {
             lenses.repository.observe(
-                LensesComponent.Repository.QueryCriteria.ById(LENS_ID, LENS_GROUP_ID)
+                LensesComponent.Repository.QueryCriteria.ById(LENS_ID_1, LENS_GROUP_ID)
             ) { result ->
                 result.whenHasFirst { requestedLens ->
                     lenses.processor.apply(requestedLens)
