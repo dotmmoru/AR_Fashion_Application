@@ -41,10 +41,13 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    Tweak_N13:
+    baseColor:
+      typeIdx: 5
+      value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    bodyMask:
       typeIdx: 9
       value:
-        id: 73fc0fbe-6360-4bbd-808a-033dfc9c7601
+        id: 08e8a93c-5d9e-4392-9b2e-cbf379dde4ce
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -53,7 +56,4 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    baseColor:
-      typeIdx: 5
-      value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
   Pass: !<reference> 10fbdcfb-196f-49bb-abc4-618fab682cef

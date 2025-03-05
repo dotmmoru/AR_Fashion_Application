@@ -6,6 +6,7 @@
     - !<own> 992b2c2f-d66f-445d-93b4-d708f527ae8a
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 8dbcf673-11db-48eb-967b-2bf3d031edf6
+    - !<own> bbaef46f-2b61-4eb1-813d-b3d64bc6ba57
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - |
@@ -282,7 +283,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Version 0.17
+  Text: Version 0.18
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -432,11 +433,11 @@
     - !<reference> debec42c-a88c-4325-b377-2f6038a3f069
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 06bbd3e6-67ce-4e48-80c2-aeb93c1b6ae5
-    - !<reference> f769e765-897f-4cea-b670-9a182ee96d24
+    - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 5c74d8d5-c3a7-454e-8358-a483cac2e7a7
-    - !<reference> de431390-5f78-49d2-9846-b0fadc210b39
+    - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 250d481e-3f33-44c0-ae6a-6c5a6eaa80fc
@@ -499,6 +500,21 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/424e4c87-b141-46e8-a38e-5f25d98513c6>
+  PrefabRemaps:
+    []
+  Name: HandsController
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c67c273d-939e-42d6-bd7d-0da16b7c3e79
 - !<SceneObject/435f9caf-283b-48f1-b29e-c8f9cef99e4e>
   PrefabRemaps:
     []
@@ -877,6 +893,21 @@
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/bbaef46f-2b61-4eb1-813d-b3d64bc6ba57>
+  PrefabRemaps:
+    []
+  Name: Scripts
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 424e4c87-b141-46e8-a38e-5f25d98513c6
+  Components:
+    []
 - !<SceneObject/be0c0e95-ec8e-4ad4-b784-921c41e34565>
   PrefabRemaps:
     - 06bbd3e6-67ce-4e48-80c2-aeb93c1b6ae5: 6e3b139e-4b04-4391-9c51-b2ea96e9d811
@@ -941,6 +972,28 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/c67c273d-939e-42d6-bd7d-0da16b7c3e79>
+  PrefabRemaps:
+    []
+  Name: HandsController
+  Enabled: true
+  ScriptAsset: !<reference> 58ca2bca-0eba-499f-83bf-368c9a4b781b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      bodytrack: !<reference.ObjectTracking3D> 2c7aa3cc-9576-4d9d-b71f-3ad45153a911
+      bodyBones: !<reference.SceneObject[]>
+        - !<reference> f769e765-897f-4cea-b670-9a182ee96d24
+        - !<reference> de431390-5f78-49d2-9846-b0fadc210b39
+      bodyOccluderMat: !<reference.Material> 8fe59543-380c-4826-93af-bd89358a8765
+      neckMask: !<reference.Texture> a6696a21-31d4-4813-9876-669cabccb995
+      bodyMask: !<reference.Texture> 03b57ce7-516b-4720-a20b-e5ed46f206d8
+  ScriptTypes:
+    "":
+      {}
 - !<Skin/c6b50678-2fbd-4087-a220-1b23bd91fa19>
   PrefabRemaps:
     []
