@@ -12,6 +12,5 @@
   ImporterSettings: !<AssetImporterSettings/6b094940-97e7-4738-ab97-fc4ba7faa266>
     {}
   CompressionSettings: !<SingleCompressionSettings/79de610d-fb8a-412b-adb4-0caa9dad229d>
-    CompressorName: Performance
-    CompressionSettings: !<TextureCompressionSettings/6246c683-faf2-4054-89be-74cb1ff6113c>
-      Level: Medium
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
