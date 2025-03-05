@@ -6,7 +6,7 @@
   EyeCornerGeometryEnabled: true
   MouthGeometryEnabled: true
   SkullGeometryEnabled: true
-  EarGeometryEnabled: false
+  EarGeometryEnabled: true
   ExternalMesh: !<reference> 00000000-0000-0000-0000-000000000000
   ExternalScale: 1.000000
   ExpressionMultiplier: 1.000000

@@ -1,0 +1,21 @@
+- !<AssetImportMetadata/86dda932-aa93-44ae-97fb-535ee6f58d8c>
+  ImportedAssetIds:
+    .hidden/signed_blendsss: !<reference> 1155f2ab-309e-4247-a41c-ba951f663634
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/Bald Character": !<reference> 6572a8e3-0d85-4ca0-a576-e06a1c956eb1
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/Face Crop Texture 2": !<reference> 1ad802cc-cc9a-403a-ba7c-71ecc854cd90
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/Face Crop Texture 3": !<reference> 7b3394a4-5134-4573-b16c-43e834a61d53
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/Screen Texture": !<reference> 06cac6f7-7ea8-427a-b40e-0d28be5168e1
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/base_hires_inp_bald": !<reference> fd296c77-7448-410e-99ec-683ccef5d2fa
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/signed_blendsss": !<reference> 472a7baf-f483-4d6d-a8c2-231c1c41327e
+    "Custom Components [CLICK_FOR_DESCRIPTION]/Bald Character/signed_blendsss|signed_blendsss|GraphPassInfo": !<reference> 9fec8da6-1442-4020-8d38-2a947182452b
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 6572a8e3-0d85-4ca0-a576-e06a1c956eb1
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings/7cbbdcff-12e3-49e8-8aa5-009048858f94>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
