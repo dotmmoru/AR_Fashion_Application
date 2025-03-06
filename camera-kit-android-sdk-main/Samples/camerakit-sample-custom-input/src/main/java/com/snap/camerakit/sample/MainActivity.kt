@@ -31,14 +31,8 @@ import android.hardware.camera2.CameraCharacteristics
 import androidx.annotation.OptIn
 import androidx.camera.camera2.interop.ExperimentalCamera2Interop
 
-
 private const val DEFAULT_IMAGE_INPUT_FIELD_OF_VIEW = 50F
 
-/**
- * A simple activity that demonstrates how to create a custom [com.snap.camerakit.ImageProcessor.Input] based on a
- * [SurfaceTexture] which is filled with contents from an image. In reality, CameraKit expects an input source to be a
- * proper realtime camera stream however the contrived use of an image here is provided solely as a simplified example.
- */
 class MainActivity : AppCompatActivity(), LifecycleOwner {
 
     private lateinit var session: Session
@@ -72,7 +66,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                 Log.e("CameraXApp", "User denied camera permission")
             }
         }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -132,7 +125,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         }
     }
 
-
     override fun onDestroy() {
         super.onDestroy()
         // Close all resources that were open
@@ -142,7 +134,6 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         inputSurface.release()
         inputSurfaceTexture.release()
     }
-
 
     @OptIn(ExperimentalCamera2Interop::class) private fun startCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
