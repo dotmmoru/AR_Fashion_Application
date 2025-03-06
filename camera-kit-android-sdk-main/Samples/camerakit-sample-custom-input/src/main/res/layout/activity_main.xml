@@ -1,20 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/root_layout"
-    >
+    android:id="@+id/root_layout">
 
+    <!-- Camera Preview -->
     <TextureView
         android:id="@+id/camerakit_output_preview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
+    <!-- ViewStub (for potential dynamic content) -->
     <ViewStub
         android:id="@+id/camerakit_stub"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
+    <!-- Buttons at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@+id/button_lens1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/round_button_background"
+            android:src="@drawable/ic_lens1"
+            android:scaleType="centerCrop"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp" />
+
+        <ImageButton
+            android:id="@+id/button_lens2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/round_button_background"
+            android:src="@drawable/ic_lens2"
+            android:scaleType="centerCrop"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp" />
+
+        <ImageButton
+            android:id="@+id/button_lens3"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/round_button_background"
+            android:src="@drawable/ic_lens3"
+            android:scaleType="centerCrop"
+            android:padding="12dp" />
+
+    </LinearLayout>
 </FrameLayout>

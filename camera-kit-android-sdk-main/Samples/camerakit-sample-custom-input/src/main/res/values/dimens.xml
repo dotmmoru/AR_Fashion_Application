@@ -1,0 +1,6 @@
+<resources>
+    <!-- Default button size -->
+    <dimen name="button_size">60dp</dimen>
+    <!-- Selected button size -->
+    <dimen name="button_size_selected">80dp</dimen>
+</resources>

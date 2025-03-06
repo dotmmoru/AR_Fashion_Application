@@ -21,7 +21,7 @@ def include(String moduleName, String relativePath) {
 //include ':camerakit-sample-full'
 //include ':camerakit-sample-simple'
 //include ':camerakit-sample-custom-video'
-//include ':camerakit-sample-custom-input'
+include ':camerakit-sample-custom-input'
 include ':camerakit-sample-custom-carousel'
 //include ':camerakit-sample-basic'
 //include ':camerakit-sample-compose-basic'
