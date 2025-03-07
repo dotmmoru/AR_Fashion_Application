@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private var lensRepositorySubscription: Closeable? = null
 
     companion object {
-        const val TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y"
+        const val TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-UFJPRFVDVElPTn41MTMxZTQ0MS04MmUxLTQ4YTQtOWM0MS0yOTgxMjI1M2JjNTMifQ.bIolzxcqhJTLTb1z-bFNp_fZUJW7rHdfwlZ10r11jrk"
         const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
         const val LENS_ID = "b93ca434-dce5-46ae-9c26-3e55d7a745e9"
     }
