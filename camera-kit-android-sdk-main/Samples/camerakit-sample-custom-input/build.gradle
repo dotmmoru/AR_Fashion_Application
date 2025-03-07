@@ -52,11 +52,11 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
 
     // Provides the core implementation of CameraKit
-    implementation "com.snap.camerakit:camerakit:$cameraKitVersion"
+    implementation "com.snap.camerakit:camerakit:1.39.0"
     // Provides convenience Kotlin specific extensions to the public CameraKit API.
-    implementation "com.snap.camerakit:camerakit-kotlin:$cameraKitVersion"
+    implementation "com.snap.camerakit:camerakit-kotlin:1.39.0"
     // Provides bundled lens(es) that can be applied when remote groups are not available/needed.
-    implementation "com.snap.camerakit:lenses-bundle:$cameraKitVersion"
+    implementation "com.snap.camerakit:lenses-bundle:1.39.0"
 
     def camerax_version = "1.3.0"
     implementation("androidx.camera:camera-core:$camerax_version")

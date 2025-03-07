@@ -1,15 +1,17 @@
 studioVersion:
   major: 5
-  minor: 3
-  patch: 0
-  build: 24111410
-updateCheckpoint: 50
+  minor: 6
+  patch: 2
+  build: 25021502
+  type: Public
+updateCheckpoint: 55
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: iPhone 14 Pro Max
-    cameraFov: 45.709999
-    fullFrameAspect: 0.562500
+    device: No Simulation
+    cameraFov: 66.519997
+    fullFrameAspect: nan
+    resolutionScale: 1.000000
     viewport: Maximized
     output: Live
     stereoOutputEye: Center
@@ -29,7 +31,8 @@ metaInfo:
   lensClientCompatibilities:
     - Mobile
     - CameraKit
-  iconHash: ""
+  platformBundlesEnabled: false
+  iconHash: 4b06aaf5061fbe2a1a43db49a259215a
   videoPreviewHash: ""
   fromTemplateName: Camera Kit
   fromTemplateUrl: Lens Studio 5.6.1.25021020

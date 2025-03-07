@@ -1,15 +1,17 @@
 studioVersion:
   major: 5
-  minor: 3
-  patch: 0
-  build: 24111410
-updateCheckpoint: 50
+  minor: 6
+  patch: 2
+  build: 25021502
+  type: Public
+updateCheckpoint: 55
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: iPhone 14 Pro Max
-    cameraFov: 45.709999
-    fullFrameAspect: 0.562500
+    device: No Simulation
+    cameraFov: 66.519997
+    fullFrameAspect: nan
+    resolutionScale: 1.000000
     viewport: Maximized
     output: Live
     stereoOutputEye: Center
@@ -22,14 +24,15 @@ metaInfo:
     []
   lensName: AR Fashion Kit 3
   lensDescriptors:
-    - GEN_AI_ICON
+    []
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
     - Mobile
     - CameraKit
-  iconHash: 8f9c8a8f7cc59e62d0f169eaf33ac0a9
+  platformBundlesEnabled: false
+  iconHash: 5634f36402bf6291189e35772d56a906
   videoPreviewHash: ""
   fromTemplateName: Camera Kit
   fromTemplateUrl: Lens Studio 5.6.1.25021020

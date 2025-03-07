@@ -2,13 +2,13 @@
   ImportedAssetIds:
     .hidden/cap: !<reference> dc21298b-d056-410e-85ee-df6785bc7ca3
     .hidden/white: !<reference> 9580338f-e90a-44ef-8a4e-22320451727c
-    1e909f7285bed00b: !<reference> 2ef65887-aa18-48aa-8a27-70363fcf4fff
-    7a0dd5cd69df73fa: !<reference> 1be93064-6ac8-48df-b622-366c00b81178
+    66780cf3a4dcb2b8: !<reference> d0c19ec3-d527-4f03-ab3b-99041e735847
+    8604f7234f1aad80: !<reference> 4ebc17b9-fcde-4a3b-9d2e-7eea5248cae8
     Materials/cap: !<reference> 696251b6-d1a0-426e-888d-5ebecea8457c
     Materials/cap|cap|GraphPassInfo: !<reference> 770dda13-7b39-4ebb-b7f0-f93a410a1a96
     Meshes/cap_v03: !<reference> 54eaf159-7825-4319-a0f1-a2bf69da0817
     Scene: !<reference> e15a8036-e4cb-4460-966d-7b656e3c1ada
-    ee4e9683428795bc: !<reference> 433f2572-79bd-423b-a274-db1d86d06b7a
+    fd3a5437b29efaa7: !<reference> 47895e4c-f381-442f-84e8-0dfae32ef2bd
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> e15a8036-e4cb-4460-966d-7b656e3c1ada
   PackageType: LegacyPackage

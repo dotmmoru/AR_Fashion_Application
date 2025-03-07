@@ -9,9 +9,11 @@
     JavaScriptAsset: !<own> fdd943a0-c938-4b05-ba62-01cba58606e0
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/6383c5f1-15ad-40ec-877a-2b6aeeb5d057>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+  ExtraData:
+    {}
 - !<ScriptAssetData/fdd943a0-c938-4b05-ba62-01cba58606e0>
   SvgIcon: ""
   Description: ""
@@ -19,7 +21,7 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 9f5f95f1-5d44-4e45-a69f-093cefe25699
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable

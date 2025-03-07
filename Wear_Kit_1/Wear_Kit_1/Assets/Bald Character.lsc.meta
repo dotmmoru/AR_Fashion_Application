@@ -16,6 +16,8 @@
     {}
   DependentFiles:
     []
-  ImporterSettings: !<LensCoreImporterSettings/bd297fff-24ba-45b7-8d9e-ed748e56ae65>
+  ImporterSettings: !<LensCoreImporterSettings>
     PersistentIdGenerationAlgorithm: DescriptorBased
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+  ExtraData:
+    {}

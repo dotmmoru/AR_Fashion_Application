@@ -1,26 +1,26 @@
 - !<AssetImportMetadata/d4100b98-3498-4da6-b08c-1a798b3d077a>
   ImportedAssetIds:
-    0aee20569297ed14: !<reference> 88edbbb3-a39a-4a23-94ba-34f26a4684b3
-    25a17c8f94e2f14f: !<reference> c6b83a3b-96c0-4a0d-aabe-9e6516fa15d1
-    310175791c33d0ac: !<reference> 94819df9-fea1-44ac-a3ff-66df266e6b41
-    31d95527ae235112: !<reference> 8639f353-9f02-458f-adb3-0a67445e81c6
-    41b55eafbec4bd54: !<reference> 948b74a9-2297-409c-b92c-91b5353711e4
-    44ed882a539d964f: !<reference> 94e15f96-cc74-4a4f-8f04-a45a97d1872d
-    57c953b359678cd9: !<reference> 5e3c5186-a405-4c54-aaf6-becef1c61abf
-    59357115d7d61653: !<reference> 2ef3042c-be0e-4920-ad74-1dbf16802f98
-    7a0dd5cd69df73fa: !<reference> 9c7a6448-d124-4891-8b55-206d78997425
+    06b9cefaede4c295: !<reference> 52d09fa6-97bb-43e7-832b-2418bfb1521e
+    0c912e252ea77c73: !<reference> a75f2237-b1db-4f90-b4ba-6e63d5415d09
+    3903a9da0d8a40ce: !<reference> 37aa3414-a6b2-43b5-b1d3-c63a61c379bd
+    399686ac0f9a3a55: !<reference> 40ebd3e0-1f68-42e0-ac9f-4c6426e04e47
+    4c5a6a424d0b8caa: !<reference> 8449618d-13d3-46f8-8f7e-01f558484e8a
+    51d635da7298fb87: !<reference> 8841c60d-c979-4153-9f50-45267578b34f
+    58587879eb898379: !<reference> fbec84f1-b481-41ae-b00a-f0fa18ae64aa
+    5ab70839fb997d3c: !<reference> 0b0d6cf8-5617-4d14-92a4-5b50a5814941
+    5fd9666db3287bdc: !<reference> 537a2b87-0c07-41ff-8e7f-656a6155d22c
+    66780cf3a4dcb2b8: !<reference> a9e27269-7895-4eef-817a-589791328e5d
+    787e945d2c346170: !<reference> 3b079223-a9e6-455a-9f64-20172f91b0ae
+    83b4d33d6cfb9e32: !<reference> afbf2073-988b-4aa2-a483-07d3bc19c4dc
     Meshes/Cloak_v04: !<reference> 30da0005-7c43-46ec-9b6e-257127c41a05
     Scene: !<reference> db8bd4a5-a025-40fe-b501-6cd5c77fe193
-    a5f3a6023c884402: !<reference> ed6e1dd3-7246-4a31-8802-6882f0130001
-    ada4f2998b06bc11: !<reference> 0bb529fe-3d0a-474b-8edf-9acb327d6f16
-    b24654860ed4dd6d: !<reference> 109e5150-2cf0-42de-baad-2c21635f83dc
-    b2dda67654fafada: !<reference> f0352c72-d43d-4bb5-bfec-06c9ba1d01df
-    b458bf6c2f0f7bb8: !<reference> d3baa315-90b3-4416-8347-90c6a6457686
-    c4dc6131c0d4ecc1: !<reference> a1bbb12a-c408-4c56-ab8b-e5ca990126cc
-    c7bde50bfc29173c: !<reference> 96fd34ce-5833-444a-89b3-eb651a1d584a
-    d7768830b7744787: !<reference> 1d213c22-b6ea-431e-ade4-8b921387e30a
-    da67bd992dcb7a9e: !<reference> 25614000-75cd-46e5-8779-86fe8f3d827d
-    e9918917d5891536: !<reference> 24f9a989-a779-4dbe-9e83-1b2ea6d7dca5
+    b05ac7d3ed55b183: !<reference> 5573c288-fd30-48f0-8a51-9a9f47592397
+    b26e3903126bc7c7: !<reference> 68ef91ca-ac2e-4a4f-8049-92a146064505
+    d592e2a92fcd8ef4: !<reference> a6f433b0-d95a-4ecf-8ee4-94c6bc64b447
+    df33ea54d4ba6247: !<reference> 0b6decbe-09e1-466e-8aad-3482623f4601
+    e66f25ad2366abfa: !<reference> cc93a3a6-93b5-4444-ba34-38ea80f906f8
+    f7a79a1ea9f42444: !<reference> 1d45b559-f09e-43e0-be48-d8be52c4f9f7
+    faaa8b95f0bcabc3: !<reference> d832c29b-9184-411f-902d-aebec907bd81
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> db8bd4a5-a025-40fe-b501-6cd5c77fe193
   PackageType: LegacyPackage
@@ -29,7 +29,7 @@
     Scene: !<own> 54483a9e-1d80-4e55-92fc-4b8a6662ce8a
   DependentFiles:
     []
-  ImporterSettings: !<FbxImporterSettings/9a1797dc-5907-49eb-b5a7-7e80948ea432>
+  ImporterSettings: !<FbxImporterSettings>
     UseLegacyImporter: false
     WithMaterials: true
     NamingConvention: ByCategorySanitize
@@ -45,15 +45,17 @@
     GeneratePivots: true
     TriangulateNURBS: true
     UseLegacyFbxLoader: false
-  CompressionSettings: !<ComplexCompressionSettings/bf849717-48e3-4a86-a99e-402c9cd64961>
+  CompressionSettings: !<ComplexCompressionSettings>
     Presets:
-      None Compression: !<SingleCompressionSettings/299f1a91-ab7f-4d64-8126-87a5f7342e6d>
+      None Compression: !<SingleCompressionSettings>
         CompressorName: None
         CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
     ExtensionMappings:
       mesh: None Compression
     Overrides:
       {}
+  ExtraData:
+    {}
 - !<SceneObject/0239c072-21f8-4d7e-a026-befbe41ee8ce>
   PrefabRemaps:
     []

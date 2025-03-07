@@ -1,10 +1,14 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 4
+    size: 3
     values:
       - 00000000-0000-0065-0000-000000000064
       - 8dbcf673-11db-48eb-967b-2bf3d031edf6
       - a38983b2-6f08-4d81-98d7-364cefd3085d
-      - f6ca0ffb-8059-4910-89d8-39cdac1e6463
+  options: 4
+PinnedEntities:
+  type: uuids
+  value:
+    size: 0
   options: 4

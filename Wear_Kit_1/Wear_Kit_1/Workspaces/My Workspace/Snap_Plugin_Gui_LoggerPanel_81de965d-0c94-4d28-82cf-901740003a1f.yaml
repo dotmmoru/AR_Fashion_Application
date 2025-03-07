@@ -1,3 +1,7 @@
+clearOnReset:
+  type: bool
+  value: false
+  options: 4
 filterWildcard:
   type: string
   value: ""

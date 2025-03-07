@@ -1,35 +1,35 @@
 - !<AssetImportMetadata/eebc584d-4b53-4853-b202-698fc9199973>
   ImportedAssetIds:
-    0aee20569297ed14: !<reference> a252310b-6c33-4a19-a320-71d342ec6636
-    14c48d23cfd4976d: !<reference> dd10890c-a34a-47f4-af9d-431f9c37c1eb
-    1df8583b610e9a4b: !<reference> ea2cc1eb-6ba4-4607-a96d-edd38beede5c
-    25a17c8f94e2f14f: !<reference> 156c4235-a90a-4b60-92dc-e6878985889d
-    31d95527ae235112: !<reference> 8d1a1ab3-cf79-4a99-94c9-3160b745bd28
-    44ed882a539d964f: !<reference> 7997ddd4-2980-4ee6-98b2-af5086d5b8a9
-    4b68148fd61d34ab: !<reference> d080e91d-1d54-424b-8c9f-cc2061039b30
-    51e60c29aba7def4: !<reference> 591ec410-1cd5-47cc-bbe8-fe0bf1308a94
-    57c953b359678cd9: !<reference> 6777b363-ffe9-4333-90d4-105af6cbf760
-    59357115d7d61653: !<reference> d5f63e64-3bcb-4a07-900b-edbcd5aca237
-    5ce721d60f4af553: !<reference> ebf7e272-43c2-467f-b867-beb027af357c
-    6e224a53069d928c: !<reference> e5214f6b-b2c3-41d0-8a95-93ade4c93e04
-    6f4644e067e4fa2d: !<reference> e7b718e6-1e0f-422e-9ea9-690d4595406e
-    7a0dd5cd69df73fa: !<reference> d20871ab-cf9a-4102-baf0-57348228019c
-    893013ee477860ce: !<reference> b6bedaeb-4525-42bd-9024-45bd81995265
+    06b9cefaede4c295: !<reference> f1448b6c-2f1c-41f3-ab7c-9d1a654ef4cd
+    0c912e252ea77c73: !<reference> a7552173-9be8-41d7-a707-5b2d263a4ec3
+    129fcdfbed3c7c8a: !<reference> bc261d28-e024-436f-a888-5b6c1cd351ce
+    202a45162cebca5f: !<reference> 926de812-4759-4af1-9437-41d191241176
+    3416850df694e40e: !<reference> fe5d2c7f-3c48-4465-bfbe-77b4317939ff
+    3903a9da0d8a40ce: !<reference> e10b8774-fc09-47f3-865a-dbfbe85bbbfa
+    50c5d6c73c5e7ced: !<reference> 9a01e5d8-521a-412e-8917-2e7c52ceb319
+    51d635da7298fb87: !<reference> c6e3c157-1385-4de5-af10-d19fe7a5bafb
+    5ab70839fb997d3c: !<reference> fc5e50b0-9d7f-41a4-b755-822c96049492
+    5f5171067478a3ad: !<reference> c22ff846-1179-4927-a55e-1c3113bf7c8a
+    5fd9666db3287bdc: !<reference> 915a66df-be3a-40ab-afe9-433755e4eb76
+    66780cf3a4dcb2b8: !<reference> e00e9c47-640c-400e-9ac4-cc2c66c1ce5e
+    787e945d2c346170: !<reference> f18749bd-67d1-4697-ab74-96751aac6106
+    794f6272b112735e: !<reference> 7e33a6fb-13a7-427c-941f-fa4e702ebaf9
+    83b4d33d6cfb9e32: !<reference> 4e05272a-d5b7-45d9-bca4-7da1116b620c
+    8c83e74e50cdbd0b: !<reference> 075296ed-2014-46b9-a572-116eae5b80b6
+    926354fb61330216: !<reference> 29638352-4d0d-4ae0-8718-1039774fa380
     Meshes/Pants_v2: !<reference> 057ecf09-22b3-41c0-9cf1-8f27d7bf2805
     Meshes/Sock_L_v2: !<reference> 646d1913-8cb7-4e64-9e4b-b4a4f9a89431
     Meshes/Sock_R_v2: !<reference> 393757ee-da2c-4b7c-95cc-f9e0a3e213f7
     Meshes/Top_v2: !<reference> 6dbdf946-b9cb-4658-878d-3179c7f0d4e2
     Scene: !<reference> e1a5bef8-5c1a-4e5c-a6c4-d869e66c462b
-    b24654860ed4dd6d: !<reference> da271695-c5cf-4e88-8af8-0eed1d15bca8
-    b2dda67654fafada: !<reference> 48776b81-c792-4423-a431-6f180fdc8652
-    b458bf6c2f0f7bb8: !<reference> ad5accca-1fb0-4ee5-ac35-dd4159ac1677
-    b8623e3bee495755: !<reference> 3b7b73c9-eee4-4173-9465-c05ce883c189
-    c132a3282748a9dc: !<reference> 0d6ab831-b86f-4c91-b6b3-b036232e1c99
-    c4dc6131c0d4ecc1: !<reference> e261add2-83dd-4bb5-953f-d1254de962b4
-    c7bde50bfc29173c: !<reference> 9d4c8435-0f2c-494e-b5fd-c6cc8324a966
-    e06a391adc655d43: !<reference> 18e3b691-3b40-4b11-99e3-3f0eb8e90213
-    e9918917d5891536: !<reference> c8c8187a-18e5-4fb8-8ee3-0b90433e118f
-    f67b6892b6a356f0: !<reference> 7e2b97e1-3274-441d-8db6-433f15fc979e
+    a2bcb1119d6f67dc: !<reference> 7bd54031-8ee7-4f6c-be03-22a8ea97d0d7
+    a85e6ee48265ade3: !<reference> c0e42297-d3ce-43b6-975d-a17f3aeb226b
+    c3dfbf6292f69459: !<reference> c86f44a8-0b31-4c57-889f-85c430030f90
+    c74167a133882994: !<reference> f3dd33cb-ad4c-4650-a170-19f41a5cfb5d
+    df33ea54d4ba6247: !<reference> 519327bf-8e8a-4b69-8022-931af5813b53
+    e66f25ad2366abfa: !<reference> 0f8b03f9-1210-44c5-b2a6-170d48df3b5e
+    f7a79a1ea9f42444: !<reference> 3592cfaa-34cb-41f7-b80a-5f1083e5421d
+    faaa8b95f0bcabc3: !<reference> b5180199-0b52-43eb-86c1-9eb2afd99afa
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> e1a5bef8-5c1a-4e5c-a6c4-d869e66c462b
   PackageType: LegacyPackage
@@ -38,7 +38,7 @@
     Scene: !<own> af6f6a86-3c4a-4831-8d07-db53e74d9c82
   DependentFiles:
     []
-  ImporterSettings: !<FbxImporterSettings/4395526f-0964-4289-b60f-f01d72ded776>
+  ImporterSettings: !<FbxImporterSettings>
     UseLegacyImporter: false
     WithMaterials: true
     NamingConvention: ByCategorySanitize
@@ -54,15 +54,17 @@
     GeneratePivots: true
     TriangulateNURBS: true
     UseLegacyFbxLoader: false
-  CompressionSettings: !<ComplexCompressionSettings/76eaacc0-83d1-4eb3-acac-d5fd5cc87d1a>
+  CompressionSettings: !<ComplexCompressionSettings>
     Presets:
-      None Compression: !<SingleCompressionSettings/5626f7fb-aa30-48c7-9688-69a0dbcf1d1c>
+      None Compression: !<SingleCompressionSettings>
         CompressorName: None
         CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
     ExtensionMappings:
       mesh: None Compression
     Overrides:
       {}
+  ExtraData:
+    {}
 - !<SceneObject/135b6c94-d226-41f9-900a-2c19f97bff4a>
   PrefabRemaps:
     []
