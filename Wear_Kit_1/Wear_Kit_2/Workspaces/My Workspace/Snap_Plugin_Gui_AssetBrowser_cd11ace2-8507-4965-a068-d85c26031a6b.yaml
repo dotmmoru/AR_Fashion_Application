@@ -1,23 +1,32 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 23
+    size: 32
     values:
+      - 3D Upper Body Tracking.upperBodyTracking3D
       - Materials
       - Materials/Cap Shadow.mat
       - Materials/Cap.mat
       - Materials/Occluder.mat
       - Models
       - Models/Head Mesh.facemesh
-      - Models/cap_v03.fbx
-      - Models/cap_v03.fbx/.hidden
-      - Models/cap_v03.fbx/.hidden/cap
-      - Models/cap_v03.fbx/.hidden/white
-      - Models/cap_v03.fbx/Materials
-      - Models/cap_v03.fbx/Materials/cap
-      - Models/cap_v03.fbx/Meshes
-      - Models/cap_v03.fbx/Meshes/cap_v03
-      - Models/cap_v03.fbx/cap_v03
+      - Models/Upper Body Mesh.upperBodyMesh
+      - Models/jersey_rig_v04.fbx
+      - Models/jersey_rig_v04.fbx/Meshes
+      - Models/jersey_rig_v04.fbx/Meshes/jersey_v04
+      - Models/jersey_rig_v04.fbx/jersey_rig_v04
+      - RTs
+      - Scripts/SmoothBinding.js
+      - Scripts/TweenManager
+      - Scripts/TweenManager/Tween/Tween.js
+      - Scripts/TweenManager/Tween/TweenManager.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenAlpha.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenChain.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenColor.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenScreenTransform.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenTransform.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenValue.js
+      - Scripts/TweenManager/TweenManager.prefab
       - Shader
       - Shader/cap_shadow.ss_graph
       - Shader/occluder.ss_graph
