@@ -4,66 +4,7 @@
     - !<own> 44c95460-3923-4a11-b2c4-6095f9333a5f
 - !<PassInfo/44c95460-3923-4a11-b2c4-6095f9333a5f>
   CachedProperties:
-    - Tweak_N12BorderColor:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - Tweak_N12Dims:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - Tweak_N12Transform:
-        typeIdx: 7
-        value:
-          0: {x: 1.000000, y: 0.000000, z: 0.000000}
-          1: {x: 0.000000, y: 1.000000, z: 0.000000}
-          2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    - Tweak_N12UvMinMax:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - baseTexBorderColor:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - baseTexDims:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - baseTexTransform:
-        typeIdx: 7
-        value:
-          0: {x: 1.000000, y: 0.000000, z: 0.000000}
-          1: {x: 0.000000, y: 1.000000, z: 0.000000}
-          2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    - baseTexUvMinMax:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - materialParamsTexBorderColor:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - materialParamsTexDims:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - materialParamsTexTransform:
-        typeIdx: 7
-        value:
-          0: {x: 1.000000, y: 0.000000, z: 0.000000}
-          1: {x: 0.000000, y: 1.000000, z: 0.000000}
-          2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    - materialParamsTexUvMinMax:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - normalTexBorderColor:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - normalTexDims:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - normalTexTransform:
-        typeIdx: 7
-        value:
-          0: {x: 1.000000, y: 0.000000, z: 0.000000}
-          1: {x: 0.000000, y: 1.000000, z: 0.000000}
-          2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    - normalTexUvMinMax:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    []
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -114,6 +55,21 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
+    Tweak_N12BorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N12Dims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N12Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    Tweak_N12UvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     baseColor:
       typeIdx: 5
       value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
@@ -129,6 +85,21 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: true
         type: Texture2D
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     maskChannel:
       typeIdx: 0
       value: 0
@@ -144,6 +115,21 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: true
         type: Texture2D
+    materialParamsTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    materialParamsTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    materialParamsTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    materialParamsTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     normalTex:
       typeIdx: 9
       value:
@@ -156,6 +142,21 @@
           borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: true
         type: Texture2D
+    normalTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    normalTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    normalTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    normalTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     uvScale:
       typeIdx: 1
       value: 1.000000
