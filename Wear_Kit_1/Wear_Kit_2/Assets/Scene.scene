@@ -7,6 +7,7 @@
     - !<own> 435f9caf-283b-48f1-b29e-c8f9cef99e4e
     - !<own> 992b2c2f-d66f-445d-93b4-d708f527ae8a
     - !<own> 00000000-0000-0065-0000-000000000064
+    - !<own> ea5103ee-77a2-4907-bafc-74d473f734b5
     - !<own> 90b26971-6502-44a9-ab61-d7e78fafc33f
     - !<own> 8dbcf673-11db-48eb-967b-2bf3d031edf6
     - !<own> bbaef46f-2b61-4eb1-813d-b3d64bc6ba57
@@ -557,6 +558,21 @@
     - !<own> aa20e3d8-b170-49f0-968c-aa91e0c90ec0
   Components:
     []
+- !<SceneObject/1f3ce7ab-749d-497e-8a99-37d2e0b1344d>
+  PrefabRemaps:
+    []
+  Name: SmoothBinding Ocluder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9b858082-1feb-4ad0-ae17-679d0a86478e
 - !<SceneObject/20a1e924-bbe7-4894-8414-4096708e78dc>
   PrefabRemaps:
     []
@@ -564,9 +580,9 @@
   Enabled: true
   Layers: 2
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    position: {x: 0.000000, y: -0.200000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 0.900000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -707,7 +723,6 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 368d6a64-1287-44a0-a620-107a37073100
-    - !<own> 20a1e924-bbe7-4894-8414-4096708e78dc
   Components:
     - !<own> 3d062bd6-6a11-4031-9c1f-74f8fc6d0394
 - !<SceneObject/31e95c37-d108-4042-affd-5f91541143f8>
@@ -938,8 +953,8 @@
         - !<reference> 277fe340-693a-42c3-86e5-a0a5fb25fc00
         - !<reference> 19f05fdc-301f-441e-a06d-7bdf3add8ed3
         - !<reference> be5f27ac-3ca2-4f15-9ab8-37205c592156
-      posLerp: 0.700000
-      rotLerp: 0.400000
+      posLerp: 0.400000
+      rotLerp: 0.200000
       bindTweener: !<reference.SceneObject> 32545dab-a6f6-4bc4-b9ea-9b6e91d3d873
   ScriptTypes:
     "":
@@ -1218,6 +1233,28 @@
     bottom: -20.000000
     right: 15.000000
     top: 20.000000
+- !<ScriptComponent/9b858082-1feb-4ad0-ae17-679d0a86478e>
+  PrefabRemaps:
+    []
+  Name: SmoothBinding
+  Enabled: true
+  ScriptAsset: !<reference> b93e7faa-401f-4ef6-89be-4cc7c0f3db5b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      sources: !<reference.SceneObject[]>
+        - !<reference> 2942176d-c296-4cc4-9f9b-0ce7c6bed6fa
+      targets: !<reference.SceneObject[]>
+        - !<reference> ea5103ee-77a2-4907-bafc-74d473f734b5
+      posLerp: 0.700000
+      rotLerp: 0.350000
+      bindTweener: !<reference.SceneObject> 32545dab-a6f6-4bc4-b9ea-9b6e91d3d873
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/a38983b2-6f08-4d81-98d7-364cefd3085d>
   PrefabRemaps:
     []
@@ -1376,6 +1413,7 @@
   Children:
     - !<own> 424e4c87-b141-46e8-a38e-5f25d98513c6
     - !<own> a7dc508f-60e8-4345-abb7-b3ed925da58e
+    - !<own> 1f3ce7ab-749d-497e-8a99-37d2e0b1344d
   Components:
     []
 - !<SceneObject/be5f27ac-3ca2-4f15-9ab8-37205c592156>
@@ -1632,6 +1670,21 @@
   Components:
     - !<own> c7b592f5-a586-41c8-ada7-3f90269ef7ec
     - !<own> 74da04d5-be4d-4448-870b-743472526672
+- !<SceneObject/ea5103ee-77a2-4907-bafc-74d473f734b5>
+  PrefabRemaps:
+    []
+  Name: OcluderHolder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 20a1e924-bbe7-4894-8414-4096708e78dc
+  Components:
+    []
 - !<RenderMeshVisual/f1e69301-6e4b-4798-97dd-a2a7e4ed0632>
   PrefabRemaps:
     []
