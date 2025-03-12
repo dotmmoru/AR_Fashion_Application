@@ -1,5 +1,7 @@
 // @input SceneObject[] sources
 // @input SceneObject[] targets
+// @input vec3 posOffset
+// @input vec3 rotOffset
 // @input float posLerp
 // @input float rotLerp
 // @input SceneObject bindTweener
@@ -12,6 +14,10 @@ function updateTransforms(){
     for (var i = 0; i < script.targets.length; i++){
         var sourcePos = script.sources[i].getTransform().getWorldPosition();
         var sourceRot = script.sources[i].getTransform().getWorldRotation();
+        
+        sourcePos = sourcePos.add(script.posOffset);
+        sourceRot = quat.fromEulerAngles(script.rotOffset.x, script.rotOffset.y, script.rotOffset.z).multiply(sourceRot);
+        
         
         if (bound){
             var targetPos = script.targets[i].getTransform().getWorldPosition();
@@ -38,8 +44,6 @@ onUpdate.bind(updateTransforms);
 
 var onFaceFound = script.createEvent("FaceFoundEvent");
 onFaceFound.bind(function(){
-    global.tweenManager.stopTween(script.bindTweener, "hide");
-    global.tweenManager.setStartValue(script.bindTweener, "show", script.api.intensity);
     global.tweenManager.startTween(script.bindTweener, "show");
     
     onUpdate.enabled = true;
@@ -48,8 +52,6 @@ onFaceFound.bind(function(){
 var onFaceLost = script.createEvent("FaceLostEvent");
 onFaceLost.bind(function(){
     global.tweenManager.stopTween(script.bindTweener, "show");
-    global.tweenManager.setStartValue(script.bindTweener, "hide", script.api.intensity);
-    global.tweenManager.startTween(script.bindTweener, "hide", function(){
-        onUpdate.enabled = false;
-    });
+    script.api.intensity = 0;
+    onUpdate.enabled = false;
 });

@@ -28,7 +28,9 @@
   ScriptInputsHidden:
     bindTweener: false
     posLerp: false
+    posOffset: false
     rotLerp: false
+    rotOffset: false
     sources: false
     targets: false
   ScriptTypesHidden:
@@ -41,6 +43,8 @@
       posLerp: !<float> 0.000000
       rotLerp: !<float> 0.000000
       bindTweener: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      posOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      rotOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
   ScriptTypes:
     -
       {}
