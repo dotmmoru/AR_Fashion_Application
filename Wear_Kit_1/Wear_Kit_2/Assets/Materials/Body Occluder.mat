@@ -19,9 +19,33 @@
     - Port_GSplatPointSize_N004:
         typeIdx: 1
         value: 0.000000
+    - Port_Input0_N015:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Input0_N018:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Input0_N019:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Input0_N024:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_Input1_N024:
+        typeIdx: 1
+        value: 1.000000
     - Port_Input1_N032:
         typeIdx: 1
         value: -0.350000
+    - Port_Input1_N034:
+        typeIdx: 4
+        value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    - Port_Input2_N030:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_Input2_N034:
+        typeIdx: 4
+        value: {x: 1.000000, y: 1.000000, z: 1.000000}
     - Port_LODValue_N001:
         typeIdx: 1
         value: 0.000000
@@ -37,6 +61,27 @@
     - Port_Threshold_N007:
         typeIdx: 1
         value: 0.000000
+    - Port_ValueIn_N014:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_ValueIn_N017:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_ValueIn_N022:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_ValueIn_N023:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Value_N008:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Value_N019:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Value_N021:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
     - Port_WorldNormal_N004:
         typeIdx: 4
         value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -58,6 +103,18 @@
     - Tweak_N0UvMinMax:
         typeIdx: 5
         value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - bodyMask:
+        typeIdx: 9
+        value:
+          id: a6696a21-31d4-4813-9876-669cabccb995
+          sampler:
+            filteringMode: Trilinear
+            wrapModeU: Repeat
+            wrapModeV: Repeat
+            wrapModeW: Repeat
+            borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+            mipmaps: false
+          type: Texture2D
     - bodyMaskBorderColor:
         typeIdx: 5
         value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
@@ -87,12 +144,66 @@
     []
   BlendMode: Disabled
   Properties:
+    Port_Input0_N034:
+      typeIdx: 4
+      value: {x: 0.000000, y: -1.000000, z: 0.000000}
     Port_Input1_N016:
       typeIdx: 1
       value: 0.800000
+    Port_Input1_N019:
+      typeIdx: 1
+      value: 0.240000
     Port_Input1_N029:
       typeIdx: 1
       value: 0.010000
+    Port_RangeMaxA_N014:
+      typeIdx: 1
+      value: 155.000000
+    Port_RangeMaxA_N017:
+      typeIdx: 1
+      value: 0.120000
+    Port_RangeMaxA_N022:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxA_N023:
+      typeIdx: 1
+      value: 0.750000
+    Port_RangeMaxB_N014:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxB_N017:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMaxB_N022:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxB_N023:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMinA_N014:
+      typeIdx: 1
+      value: 130.000000
+    Port_RangeMinA_N017:
+      typeIdx: 1
+      value: 0.040000
+    Port_RangeMinA_N022:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinA_N023:
+      typeIdx: 1
+      value: 0.730000
+    Port_RangeMinB_N014:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinB_N017:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMinB_N022:
+      typeIdx: 1
+      value: -1.000000
+    Port_RangeMinB_N023:
+      typeIdx: 1
+      value: 0.000000
     PreviewEnabled:
       typeIdx: 0
       value: 0
@@ -111,19 +222,10 @@
     baseColor:
       typeIdx: 5
       value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-    bodyMask:
-      typeIdx: 9
-      value:
-        id: a6696a21-31d4-4813-9876-669cabccb995
-        sampler:
-          filteringMode: Trilinear
-          wrapModeU: Repeat
-          wrapModeV: Repeat
-          wrapModeW: Repeat
-          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-          mipmaps: false
-        type: Texture2D
     extrude:
       typeIdx: 1
       value: -1.000000
+    shouldersDown:
+      typeIdx: 1
+      value: 1.500000
   Pass: !<reference> 7d1d7b7f-11d5-4e95-a841-f3a6b94c3659
