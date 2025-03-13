@@ -31,6 +31,9 @@
     - Port_Input0_N024:
         typeIdx: 5
         value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_Input0_N035:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
     - Port_Input1_N024:
         typeIdx: 1
         value: 1.000000
@@ -40,12 +43,21 @@
     - Port_Input1_N034:
         typeIdx: 4
         value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    - Port_Input1_N037:
+        typeIdx: 4
+        value: {x: 1.000000, y: 1.000000, z: 1.000000}
     - Port_Input2_N030:
         typeIdx: 4
         value: {x: 0.000000, y: 0.000000, z: 0.000000}
     - Port_Input2_N034:
         typeIdx: 4
         value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    - Port_Input2_N037:
+        typeIdx: 4
+        value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    - Port_Input3_N030:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
     - Port_LODValue_N001:
         typeIdx: 1
         value: 0.000000
@@ -147,6 +159,9 @@
     Port_Input0_N034:
       typeIdx: 4
       value: {x: 0.000000, y: -1.000000, z: 0.000000}
+    Port_Input0_N037:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 1.000000}
     Port_Input1_N016:
       typeIdx: 1
       value: 0.800000
@@ -156,6 +171,9 @@
     Port_Input1_N029:
       typeIdx: 1
       value: 0.010000
+    Port_Input1_N035:
+      typeIdx: 3
+      value: {x: 0.500000, y: 0.520000}
     Port_RangeMaxA_N014:
       typeIdx: 1
       value: 155.000000
@@ -168,6 +186,9 @@
     Port_RangeMaxA_N023:
       typeIdx: 1
       value: 0.750000
+    Port_RangeMaxA_N036:
+      typeIdx: 1
+      value: 0.100000
     Port_RangeMaxB_N014:
       typeIdx: 1
       value: 1.000000
@@ -180,6 +201,9 @@
     Port_RangeMaxB_N023:
       typeIdx: 1
       value: 1.000000
+    Port_RangeMaxB_N036:
+      typeIdx: 1
+      value: 0.000000
     Port_RangeMinA_N014:
       typeIdx: 1
       value: 130.000000
@@ -192,6 +216,9 @@
     Port_RangeMinA_N023:
       typeIdx: 1
       value: 0.730000
+    Port_RangeMinA_N036:
+      typeIdx: 1
+      value: 0.070000
     Port_RangeMinB_N014:
       typeIdx: 1
       value: 0.000000
@@ -204,6 +231,9 @@
     Port_RangeMinB_N023:
       typeIdx: 1
       value: 0.000000
+    Port_RangeMinB_N036:
+      typeIdx: 1
+      value: 1.000000
     PreviewEnabled:
       typeIdx: 0
       value: 0
@@ -222,6 +252,9 @@
     baseColor:
       typeIdx: 5
       value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    bellyPush:
+      typeIdx: 1
+      value: -5.000000
     extrude:
       typeIdx: 1
       value: -1.000000
