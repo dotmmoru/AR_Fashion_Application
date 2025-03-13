@@ -506,8 +506,8 @@
         - !<reference> 1a33306a-26ca-4145-a02e-0f948c278a25
       bodyTweener: !<reference.SceneObject> 68ea1915-9c20-4175-857c-dab69640ee02
       upperTweener: !<reference.SceneObject> 8ff933b8-c687-4c3c-86b6-84a335f0753e
-      posLerp: 0.700000
-      rotLerp: 0.500000
+      posLerp: 0.200000
+      rotLerp: 0.050000
       distThreshold: !<float> 80.000000
       logger: !<reference.Text> ec0eea99-fe85-4fe3-a754-e0fc2a894855
   ScriptTypes:

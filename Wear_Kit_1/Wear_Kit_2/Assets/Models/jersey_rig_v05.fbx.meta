@@ -1,22 +1,22 @@
 - !<AssetImportMetadata/b8bce7f2-9eb8-43a4-845c-c853c7fa6ff5>
   ImportedAssetIds:
-    0aee20569297ed14: !<reference> 5b0600d0-b3c0-4875-9926-05404f7dfeb5
-    25a17c8f94e2f14f: !<reference> 98f1a10d-0954-4dc3-9864-6c2c8adcc3e2
-    31d95527ae235112: !<reference> 9f2c6854-41e6-4fb1-bacf-cd9b4d8ae709
-    44ed882a539d964f: !<reference> 19e5b473-58c2-4d2b-8d43-a5cb11825790
-    57c953b359678cd9: !<reference> 5990adb1-3b50-4c9b-a422-79ff99c802bb
-    59357115d7d61653: !<reference> ef683efa-7b08-4fec-bfe9-9a0ee0d93dbe
-    7a0dd5cd69df73fa: !<reference> ce41a4dc-5069-4cc5-a0d1-92c47fc7e5ac
-    9d03c33c22a76b8a: !<reference> c15653d0-1800-4db7-a869-1887d8a7189b
+    06b9cefaede4c295: !<reference> 815021bf-27b9-47af-8388-484adc8629cc
+    084259c7f25e2e62: !<reference> faf6df40-edd4-4fbe-9482-c4da5d3313ae
+    0c912e252ea77c73: !<reference> 8881301a-1008-40cc-96c5-5368e6a2b231
+    2843204908fa1902: !<reference> eaf25016-de40-43b6-b5c9-eab30bfb5983
+    3903a9da0d8a40ce: !<reference> 5c643ab2-bdbf-49aa-99fa-2c349b52924c
+    51d635da7298fb87: !<reference> 7a526031-4d31-402e-b57b-07e5f8e6b8a2
+    5ab70839fb997d3c: !<reference> d50d7e8f-8dff-45c0-9d81-eb38b0a734af
+    5fd9666db3287bdc: !<reference> 1f01ea3c-8162-4cac-94b7-a6e050737540
+    66780cf3a4dcb2b8: !<reference> 6c924f1b-2c9e-465b-bac0-109cbb6dc347
+    787e945d2c346170: !<reference> 4b04699f-a0a4-4159-8676-9dd15cb3a398
+    83b4d33d6cfb9e32: !<reference> 9eac13f9-ff7d-42e7-90fd-8bdc7fc1075d
     Meshes/jersey_v05: !<reference> 518cc977-5d93-44c0-b4a9-c110ee06e007
     Scene: !<reference> d05c0d97-2b50-4f0c-b738-b9bd77884e1a
-    b24654860ed4dd6d: !<reference> ddb94eb8-a48e-4995-ad79-8c767fe4daeb
-    b2dda67654fafada: !<reference> c36a1555-bc53-4e6e-bfc0-3a2e8ceec9a4
-    b458bf6c2f0f7bb8: !<reference> 9c6e3d86-24c5-4673-afab-a1165f718a80
-    bd2b55a2603ba5f7: !<reference> 2797bcfc-3eb4-4d7d-bb06-d325802ccce1
-    c4dc6131c0d4ecc1: !<reference> 8f7d810f-898b-4194-ac5f-3ee75b416034
-    c7bde50bfc29173c: !<reference> 5f957845-c6e2-46ec-a580-f605014300fe
-    e9918917d5891536: !<reference> 4ac5e32e-b53c-49be-9ff3-c6b51d582692
+    df33ea54d4ba6247: !<reference> 8230ef83-40aa-489d-82c9-3c99caf9115a
+    e66f25ad2366abfa: !<reference> 8688fff4-8b67-4d30-b3e8-3f8e7f62df65
+    f7a79a1ea9f42444: !<reference> b4a255e6-df5a-4ce4-bcd0-856596b58c9d
+    faaa8b95f0bcabc3: !<reference> bcd097a1-cf5c-427a-be60-5d5d8dc96567
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> d05c0d97-2b50-4f0c-b738-b9bd77884e1a
   PackageType: LegacyPackage
