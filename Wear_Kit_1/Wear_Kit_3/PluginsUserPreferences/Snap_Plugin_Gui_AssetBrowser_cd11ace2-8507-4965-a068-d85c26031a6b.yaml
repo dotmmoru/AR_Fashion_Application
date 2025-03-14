@@ -1,0 +1,76 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 70
+    values:
+      - 3D Body Tracking.bodyTracking3D
+      - 3D Upper Body Tracking.upperBodyTracking3D
+      - Device Camera Texture.deviceCameraTexture
+      - Materials/Body Mesh.mat
+      - Materials/Body Occluder.mat
+      - Materials/Helmet Transparent.mat
+      - Materials/Helmet.mat
+      - Materials/Matte Shadow.mat
+      - Materials/Occluder.mat
+      - Materials/Suit Mask.mat
+      - Materials/Suit.mat
+      - Materials/Upper Occluder.mat
+      - Models/Full Body Mesh.bodyMesh
+      - Models/Head Mesh.facemesh
+      - Models/Upper Body Mesh.upperBodyMesh
+      - Models/helmet_v02.fbx
+      - Models/helmet_v02.fbx/.hidden
+      - Models/helmet_v02.fbx/.hidden/helmet
+      - Models/helmet_v02.fbx/.hidden/white
+      - Models/helmet_v02.fbx/Materials
+      - Models/helmet_v02.fbx/Materials/helmet
+      - Models/helmet_v02.fbx/Meshes
+      - Models/helmet_v02.fbx/Meshes/helmet_base
+      - Models/helmet_v02.fbx/Meshes/helmet_transparent
+      - Models/helmet_v02.fbx/helmet_v02
+      - Models/rams_suit_v06.fbx
+      - Models/rams_suit_v06.fbx/Meshes
+      - Models/rams_suit_v06.fbx/Meshes/Pants_v3
+      - Models/rams_suit_v06.fbx/Meshes/Sock_L_v3
+      - Models/rams_suit_v06.fbx/Meshes/Sock_R_v3
+      - Models/rams_suit_v06.fbx/Meshes/Top_v3
+      - Models/rams_suit_v06.fbx/rams_suit_v06
+      - RTs
+      - RTs/RT Suit Masks.renderTarget
+      - RTs/Render Target.renderTarget
+      - Scene.scene
+      - Scripts
+      - Scripts/HandsController.js
+      - Scripts/SuitController.js
+      - Scripts/TweenManager/Tween/Tween.js
+      - Scripts/TweenManager/Tween/TweenManager.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenAlpha.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenChain.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenColor.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenScreenTransform.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenTransform.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenValue.js
+      - Scripts/TweenManager/TweenManager.prefab
+      - Shaders
+      - Shaders/body occluder.ss_graph
+      - Shaders/body_mesh.ss_graph
+      - Shaders/matte_shadow.ss_graph
+      - Shaders/occluder.ss_graph
+      - Shaders/pbr.ss_graph
+      - Shaders/suit mask.ss_graph
+      - Shaders/suits.ss_graph
+      - Textures
+      - Textures/Body Segmentation.segmentationTexture
+      - Textures/Echopark.hdr
+      - Textures/Echopark.hdr/Diffuse
+      - Textures/Echopark.hdr/Specular
+      - Textures/RAMS_base_v02.jpg
+      - Textures/RAMS_nrm_v02.jpg
+      - Textures/RAMS_params_v02.jpg
+      - Textures/body_rams_mask_v01.png
+      - Textures/bodyneck_mask_v01.png
+      - Textures/helmet_base_v03.png
+      - Textures/helmet_nrm_v02.jpg
+      - Textures/helmet_params_v03.jpg
+      - Textures/upperbody_mask_v02.png
+  options: 4

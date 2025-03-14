@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    2cecb2ef-f4fc-442a-a577-065f576d2cd2: 9762c843-071b-407e-8be9-59a440740ca0/d59352cab16922f0dcc03be56c3ba081/Data/helmet_params_v03.jpg
+  Assets:
+    - !<FileTexture/2cecb2ef-f4fc-442a-a577-065f576d2cd2>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 2048
+        Height: 2048
+  SourceHash: d59352cab16922f0dcc03be56c3ba081
+  FileHash: 6a5a5cc48d66765138c1b306d8624d0b
+  NativePackageItems:
+    []

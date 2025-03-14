@@ -1,0 +1,69 @@
+- !<AssetCache>
+  AssetFiles:
+    1f964f48-8dd8-40b4-afc1-2ae6fd21cdbc: 9bdac6e3-26e2-42b9-9dc5-7d9c9887c5d6/6c12b96506ba6b55dda7758730209a44/Data/suit mask.ss_graph
+  Assets:
+    - !<ShaderGraphPass/1f964f48-8dd8-40b4-afc1-2ae6fd21cdbc>
+      PackagePath: ""
+      DefaultDefines:
+        []
+      DefaultProperties:
+        Port_Depth_N004:
+          typeIdx: 1
+          value: 1.000000
+        Port_FinalColor1_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor2_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor3_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_GSplatPointSize_N004:
+          typeIdx: 1
+          value: 0.000000
+        Port_Input1_N021:
+          typeIdx: 1
+          value: 0.050000
+        Port_RayDirection_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 1.000000, z: 0.000000}
+        Port_RayOrigin_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_WorldNormal_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 1.000000, z: 0.000000}
+        Port_WorldTangent_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 1.000000}
+      PassUiData: !<PassUiData>
+        ExtraDefines:
+          []
+        PassBindings:
+          - mLabel: Alpha Test Threshold
+            mType: Property
+            mName: alphaTestThreshold
+            mWidget: slider
+            mHint: |-
+              Property: alphaTestThreshold
+              
+              When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.001000
+            mDefaultVal: 0.500000
+            mValues:
+              []
+      ShaderPath: 9bdac6e3-26e2-42b9-9dc5-7d9c9887c5d6/6c12b96506ba6b55dda7758730209a44/Data/d27cbf2/suit mask.glsl
+      Defines:
+        []
+      Properties:
+        {}
+  SourceHash: 6c12b96506ba6b55dda7758730209a44
+  FileHash: e72647b687bd8d7d8b54a96308384952
+  NativePackageItems:
+    []

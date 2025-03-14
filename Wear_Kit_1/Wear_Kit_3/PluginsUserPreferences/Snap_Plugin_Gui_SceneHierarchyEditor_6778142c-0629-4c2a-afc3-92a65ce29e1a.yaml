@@ -1,0 +1,50 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 39
+    values:
+      - 00000000-0000-0065-0000-000000000064
+      - 02eb8eec-d3af-4d5a-ad2e-026e68f99bbb
+      - 051f8ec0-0b06-40af-b607-e9e5dbb78c83
+      - 0cb32b1a-91f4-4a9e-ad2b-7d0636bb5fd3
+      - 0e2272fb-c6c4-47ea-978b-e2d72c640b10
+      - 13eb03da-d285-4c74-afd3-34c085171e75
+      - 1a222208-ad90-489f-bb4a-873c4eeb2338
+      - 2175a5da-be9c-4009-9f03-26db17407632
+      - 24f453d7-e521-4f94-b38c-32e92d366f1f
+      - 2be5b223-6e13-4511-9403-b9ee8c60c123
+      - 33efe0fe-40d4-43b4-9333-15b741438bbf
+      - 3e968c90-7018-4d9b-bdaf-0b339af47e4c
+      - 40d62d6b-4893-4800-bf25-00a527d6cbc5
+      - 41370824-749e-492a-a3b3-c93ad5148724
+      - 459821eb-8224-49b9-bff3-b8d49545cc1b
+      - 5963dcde-7b08-4a54-ac19-87bc3b715d35
+      - 5b51a761-0403-4c72-acf5-06fb0c199e58
+      - 5d49fab4-899f-45f6-8182-4b3a7bebddd6
+      - 651737fe-3b31-4d53-be85-e41f97425aa3
+      - 6ad820a8-695c-4e49-8bb2-7188707ca882
+      - 7900d744-f3ba-43fc-861d-573a14620c4b
+      - 828761c4-fe3d-47d9-b23b-c92093988265
+      - 82a6e6c8-df67-4a3c-aaf0-19e2aeb6ff7f
+      - 871efa33-0967-4bcc-9377-865a8244558e
+      - 8a1dbea9-0367-4635-81a6-4b2aa7e6bbc6
+      - 8dbcf673-11db-48eb-967b-2bf3d031edf6
+      - 8ff933b8-c687-4c3c-86b6-84a335f0753e
+      - 9b800d69-a055-4269-b982-8b71f83e3db2
+      - 9c7e30d2-79e5-4f78-bed4-69f4d23a7285
+      - a4e1a7ac-b34e-433f-995f-eeed99f9bb44
+      - a6cc843b-cdb6-44ce-9a3d-4b61649a22a4
+      - b112b31b-e152-4120-9be0-7d9a65dc1eec
+      - b81fd5bc-c6a7-40b5-9fd9-c56e923faf8b
+      - c188d085-006e-4a2a-be0c-d63813445075
+      - c26d8660-e8b4-42ee-845a-7051d66d0fd7
+      - d5d30197-2a9a-4d54-8034-98d2ffaa2934
+      - d639ffa6-7d20-4be7-a7d7-986554f3ca37
+      - ecf17f5f-26ef-4980-a870-f0b9ff36d56b
+      - ee2c6cab-2eb9-47df-9d75-21fba55477cd
+  options: 4
+PinnedEntities:
+  type: uuids
+  value:
+    size: 0
+  options: 4
