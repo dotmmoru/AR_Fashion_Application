@@ -47,6 +47,7 @@ import com.snap.camerakit.common.Consumer
 import com.snap.camerakit.connectOutput
 import com.snap.camerakit.invoke
 import com.snap.camerakit.processBitmap
+import com.snap.camerakit.sample.carousel.CustomCameraFilter
 import com.snap.camerakit.support.camera.AllowsCameraFlash
 import com.snap.camerakit.support.camera.AllowsCameraFocus
 import com.snap.camerakit.support.camera.AllowsCameraPreview
@@ -181,39 +182,8 @@ class CustomCameraXImageProcessorSource @JvmOverloads constructor(
                         cameraProviderFuture.get().let { cameraProvider ->
                             this.cameraProvider = cameraProvider
                             val cameraSelector = CameraSelector.Builder()
-                                .addCameraFilter { cameraInfos ->
-                                    val desiredFacing = configuration.facingFront // from the configuration passed to startPreview
-                                    val cameraManager = applicationContext.getSystemService(Context.CAMERA_SERVICE) as CameraManager
-                                    // First try to filter cameras that match the desired facing.
-                                    val filtered = cameraInfos.filter { info ->
-                                        val cameraId = Camera2CameraInfo.from(info).cameraId
-                                        val lens = cameraManager.getCameraCharacteristics(cameraId)
-                                            .get(CameraCharacteristics.LENS_FACING)
-                                        if (desiredFacing) {
-                                            lens == CameraCharacteristics.LENS_FACING_FRONT
-                                        } else {
-                                            lens == CameraCharacteristics.LENS_FACING_BACK
-                                        }
-                                    }
-                                    if (filtered.isNotEmpty()) {
-                                        filtered
-                                    } else {
-                                        // If no matching camera is found (for example, on a device with only an external camera),
-                                        // fall back to sorting by a default order.
-                                        cameraInfos.sortedBy { info ->
-                                            val cameraId = Camera2CameraInfo.from(info).cameraId
-                                            val characteristics = cameraManager.getCameraCharacteristics(cameraId)
-                                            when (characteristics.get(CameraCharacteristics.LENS_FACING)) {
-                                                CameraCharacteristics.LENS_FACING_EXTERNAL -> -1
-                                                CameraCharacteristics.LENS_FACING_FRONT -> 0
-                                                CameraCharacteristics.LENS_FACING_BACK -> 1
-                                                else -> 2
-                                            }
-                                        }
-                                    }
-                                }
+                                .addCameraFilter(CustomCameraFilter())
                                 .build()
-
 
                             @AspectRatio.Ratio val aspectRatio = when (configuration) {
                                 is AllowsCameraPreview.Configuration.Default -> {
