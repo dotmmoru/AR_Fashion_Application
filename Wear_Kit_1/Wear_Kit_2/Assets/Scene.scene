@@ -40,7 +40,9 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 27c9b678-9d9a-4cd7-8ed2-c7dae2b2c32e
+    - !<own> 7a9a6579-8d63-4ae4-925e-440d312be4f8
+    - !<own> 2942176d-c296-4cc4-9f9b-0ce7c6bed6fa
+    - !<own> 8eb8a1e2-9e56-4924-a30c-e5f89a0053dc
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
 - !<Camera/00000000-0000-0065-0000-000000000065>
@@ -192,7 +194,7 @@
 - !<SceneObject/03a0441b-2776-4385-b736-47eab656b467>
   PrefabRemaps:
     []
-  Name: Spine2_Pin
+  Name: Spine2_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -281,8 +283,8 @@
       time: !<float> 0.000000
       delay: !<float> 0.000000
       callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 6653f1c1-081d-4c01-92be-e0e2b6319978
-      propName: intensity
+      propTargetScript: !<reference.ScriptComponent> 5f1fe13e-8a43-47fb-95bb-3bba243a6225
+      propName: bodyStrength
       funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       funcName: ""
       materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
@@ -349,93 +351,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<SceneObject/09628e6b-acee-4298-9721-e6f9e3beaf10>
-  PrefabRemaps:
-    []
-  Name: BindingLerp Occluder
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 99df203b-4d4b-4caf-9e94-c1fd71d18b6e
-    - !<own> 578a1872-4ea0-455f-a121-1c42ba86d127
-    - !<own> 79d92778-a107-43f2-a417-dec6e2180b0b
-- !<ScriptComponent/0cc6f0f5-0c4d-4608-a34a-182854c9d1e4>
-  PrefabRemaps:
-    []
-  Name: TweenValue
-  Enabled: true
-  ScriptAsset: !<reference> ae5c3e29-a79d-404c-a229-60c5cc08c028
-  ScriptInputsDefault:
-    loopType: true
-    startInt: true
-    endInt: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingFunction: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      tweenName: hide
-      playAutomatically: false
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 1.000000
-      endFloat: !<float> 0.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: 0.500000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 6653f1c1-081d-4c01-92be-e0e2b6319978
-      propName: intensity
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Quadratic
-      easingType: InOut
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/0df978c5-7b20-4483-aec9-5be89fca71db>
   PrefabRemaps:
     []
@@ -513,8 +428,8 @@
       time: 0.500000
       delay: !<float> 0.000000
       callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 6653f1c1-081d-4c01-92be-e0e2b6319978
-      propName: intensity
+      propTargetScript: !<reference.ScriptComponent> 5f1fe13e-8a43-47fb-95bb-3bba243a6225
+      propName: bodyStrength
       funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       funcName: ""
       materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
@@ -531,7 +446,7 @@
 - !<SceneObject/1a696eb4-7df3-444a-b8cd-c584ab16ebd0>
   PrefabRemaps:
     []
-  Name: R_Shoulder_Pin
+  Name: R_Shoulder_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -547,7 +462,7 @@
   PrefabRemaps:
     []
   Name: SmoothBinding Ocluder
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -565,7 +480,7 @@
   Enabled: true
   Layers: 2
   LocalTransform:
-    position: {x: 0.000000, y: -0.200000, z: 0.000000}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -649,20 +564,19 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<SceneObject/27c9b678-9d9a-4cd7-8ed2-c7dae2b2c32e>
+- !<SceneObject/26723487-b003-4e75-a7fe-fdbee5c0783c>
   PrefabRemaps:
     []
-  Name: Effects
+  Name: R_Arm_BodyPin
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    position: {x: -0.000117, y: 13.530517, z: -0.000156}
+    rotation: {x: -10.821219, y: -0.000041, z: -2.071450}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 2942176d-c296-4cc4-9f9b-0ce7c6bed6fa
-    - !<own> 8eb8a1e2-9e56-4924-a30c-e5f89a0053dc
+    []
   Components:
     []
 - !<SceneObject/2942176d-c296-4cc4-9f9b-0ce7c6bed6fa>
@@ -677,13 +591,45 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
+    - !<own> 20a1e924-bbe7-4894-8414-4096708e78dc
     - !<own> 368d6a64-1287-44a0-a620-107a37073100
   Components:
     - !<own> 3d062bd6-6a11-4031-9c1f-74f8fc6d0394
+- !<SceneObject/2a3e2b0f-801f-4f8f-8416-a8e3c9940880>
+  PrefabRemaps:
+    []
+  Name: L_Arm_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.000042, y: 13.530450, z: -0.000174}
+    rotation: {x: -10.799220, y: -0.000037, z: 2.232722}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/2a4c89f2-47a6-4b8b-9f4f-a99567931c64>
+  PrefabRemaps:
+    []
+  Name: UpperBodyLerp
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 79059b23-98e7-4f4e-953c-2530d5dbb018
+    - !<own> 7e5a2099-8c79-4c23-9da4-cd7f46926c8c
 - !<SceneObject/31e95c37-d108-4042-affd-5f91541143f8>
   PrefabRemaps:
     []
-  Name: Spine_Pin
+  Name: Spine_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -695,10 +641,25 @@
     - !<own> 7120329d-0a02-4900-8018-12a0f7357776
   Components:
     []
+- !<SceneObject/3215c589-02aa-43e6-bbe6-29e5d18366cf>
+  PrefabRemaps:
+    []
+  Name: Hips_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000012, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7b598a66-f40e-4afe-b3e6-9c75db1c8bb9
+  Components:
+    []
 - !<SceneObject/32545dab-a6f6-4bc4-b9ea-9b6e91d3d873>
   PrefabRemaps:
     []
-  Name: BindingLerp
+  Name: BodyLerp
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -711,15 +672,14 @@
   Components:
     - !<own> 051af03f-0d9c-4e2b-8e84-0d3348015aa9
     - !<own> 16ca0ea9-edcc-4877-b62a-e47e9dabeacb
-    - !<own> 0cc6f0f5-0c4d-4608-a34a-182854c9d1e4
 - !<SceneObject/368d6a64-1287-44a0-a620-107a37073100>
   PrefabRemaps:
     []
-  Name: Hips_Pin
+  Name: Hips_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 102.272270, z: 4.167002}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000012, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -749,7 +709,7 @@
   Name: Object Tracking 3D
   Enabled: true
   ObjectIndex: 0
-  TrackingMode: ProportionsAndPose
+  TrackingMode: Attachment
   TrackPosition: true
   TrackingAsset: !<reference> 211ec141-c83f-4645-b1e0-ab4f542c7d4e
   AttachmentLabels:
@@ -774,12 +734,12 @@
     - !<reference> de4bedcf-b53d-4a3b-8831-acd396dc97b1
     - !<reference> 1a696eb4-7df3-444a-b8cd-c584ab16ebd0
     - !<reference> aa20e3d8-b170-49f0-968c-aa91e0c90ec0
-- !<SceneObject/424e4c87-b141-46e8-a38e-5f25d98513c6>
+- !<SceneObject/3dde1e1d-0009-4127-ba30-291ae81d28c1>
   PrefabRemaps:
     []
-  Name: HandsController
+  Name: logger
   Enabled: false
-  Layers: 1
+  Layers: 1048576
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -788,7 +748,28 @@
   Children:
     []
   Components:
-    - !<own> c67c273d-939e-42d6-bd7d-0da16b7c3e79
+    - !<own> 9e4c2bbe-d333-44eb-87d4-742c1c8f0f9e
+    - !<own> be1747c1-badb-4d9b-90a5-97a15242bb82
+- !<RenderMeshVisual/41aa63a8-271e-4006-8d79-a1ccd20c6d4c>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cf5884c0-6009-489c-9467-eee1db47b64f
+  Mesh: !<reference> 3a84fbff-e35f-4d00-9f33-7dc9c7012c6f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<SceneObject/435f9caf-283b-48f1-b29e-c8f9cef99e4e>
   PrefabRemaps:
     []
@@ -906,75 +887,59 @@
     - !<own> d40c9b5d-023d-4376-a849-3e0ae1b8da2c
   Components:
     []
-- !<ScriptComponent/578a1872-4ea0-455f-a121-1c42ba86d127>
+- !<ScriptComponent/5f1fe13e-8a43-47fb-95bb-3bba243a6225>
   PrefabRemaps:
     []
-  Name: TweenValue
+  Name: SuitController
   Enabled: true
-  ScriptAsset: !<reference> ae5c3e29-a79d-404c-a229-60c5cc08c028
+  ScriptAsset: !<reference> eaf43135-6b57-4f64-8ebf-f79f9b380898
   ScriptInputsDefault:
-    loopType: true
-    startInt: true
-    endInt: true
-    startFloat: true
-    endFloat: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingFunction: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      tweenName: show
-      playAutomatically: false
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 0.000000
-      endFloat: !<float> 1.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: 0.500000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 9b858082-1feb-4ad0-ae17-679d0a86478e
-      propName: intensity
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Quadratic
-      easingType: InOut
+      headBinding: !<reference.SceneObject> 8eb8a1e2-9e56-4924-a30c-e5f89a0053dc
+      bodyTrack: !<reference.ObjectTracking3D> 6dffd8bc-2645-436b-be09-ac896df81335
+      upperTrack: !<reference.ObjectTracking3D> 3d062bd6-6a11-4031-9c1f-74f8fc6d0394
+      bodymesh: !<reference.RenderMeshVisual> 41aa63a8-271e-4006-8d79-a1ccd20c6d4c
+      uppermesh: !<reference.RenderMeshVisual> 0df978c5-7b20-4483-aec9-5be89fca71db
+      bodySources: !<reference.SceneObject[]>
+        - !<reference> 3215c589-02aa-43e6-bbe6-29e5d18366cf
+        - !<reference> 7b598a66-f40e-4afe-b3e6-9c75db1c8bb9
+        - !<reference> 96520038-925d-4c3f-bad3-68ae08c3b978
+        - !<reference> ee8751f0-a438-49f7-8665-b7412fb72988
+        - !<reference> c79c44b8-7423-47b2-9f78-e543fb2f9d7b
+        - !<reference> b2f2a478-1e96-429f-a37b-c6b60fa6e8f3
+        - !<reference> 2a3e2b0f-801f-4f8f-8416-a8e3c9940880
+        - !<reference> ef88aee7-bd4c-4a0b-b518-79df51dc0082
+        - !<reference> 26723487-b003-4e75-a7fe-fdbee5c0783c
+      upperSources: !<reference.SceneObject[]>
+        - !<reference> 368d6a64-1287-44a0-a620-107a37073100
+        - !<reference> 31e95c37-d108-4042-affd-5f91541143f8
+        - !<reference> 7120329d-0a02-4900-8018-12a0f7357776
+        - !<reference> 03a0441b-2776-4385-b736-47eab656b467
+        - !<reference> 6bbd4f7f-d8a8-421d-a578-dd1ca31175b7
+        - !<reference> cc03b08a-b25e-4c1a-8c8a-21af555acede
+        - !<reference> de4bedcf-b53d-4a3b-8831-acd396dc97b1
+        - !<reference> 1a696eb4-7df3-444a-b8cd-c584ab16ebd0
+        - !<reference> aa20e3d8-b170-49f0-968c-aa91e0c90ec0
+      targets: !<reference.SceneObject[]>
+        - !<reference> bef214bf-b44f-4801-b7ad-98902ca20148
+        - !<reference> 82b3a0ee-20f8-4ba3-8434-f797526b45b7
+        - !<reference> ef9b8afc-f90e-4a80-a6aa-35d4d0274c1c
+        - !<reference> 559aee4d-f81a-470e-9160-7cfdbcb8c465
+        - !<reference> 71ae0cba-c015-43b5-bf3a-f498548332e5
+        - !<reference> a56f1755-1f0d-45a5-bad4-3a66110a1b6b
+        - !<reference> e8b8d67a-a79b-4f5a-835e-a48c2c287180
+        - !<reference> d40c9b5d-023d-4376-a849-3e0ae1b8da2c
+        - !<reference> a546ffa3-8343-4395-b12a-b283b33d4d63
+      bodyTweener: !<reference.SceneObject> 32545dab-a6f6-4bc4-b9ea-9b6e91d3d873
+      upperTweener: !<reference.SceneObject> 2a4c89f2-47a6-4b8b-9f4f-a99567931c64
+      posLerp: 0.600000
+      rotLerp: 0.500000
+      distThreshold: !<float> 80.000000
+      logger: !<reference.Text> be1747c1-badb-4d9b-90a5-97a15242bb82
   ScriptTypes:
     "":
       {}
@@ -1032,18 +997,33 @@
         - !<reference> e8b8d67a-a79b-4f5a-835e-a48c2c287180
         - !<reference> d40c9b5d-023d-4376-a849-3e0ae1b8da2c
         - !<reference> a546ffa3-8343-4395-b12a-b283b33d4d63
-      posOffset: !<Vec3> {x: 0.000000, y: -0.400000, z: 0.000000}
+      posOffset: !<Vec3> {x: 0.000000, y: -0.300000, z: 0.000000}
       rotOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      posLerp: 0.500000
-      rotLerp: 0.200000
+      posLerp: 0.600000
+      rotLerp: 0.400000
       bindTweener: !<reference.SceneObject> 32545dab-a6f6-4bc4-b9ea-9b6e91d3d873
   ScriptTypes:
     "":
       {}
+- !<SceneObject/67f22f67-5a4d-4828-965b-d971c0941f5f>
+  PrefabRemaps:
+    []
+  Name: JerseyBinding
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5f1fe13e-8a43-47fb-95bb-3bba243a6225
 - !<SceneObject/6bbd4f7f-d8a8-421d-a578-dd1ca31175b7>
   PrefabRemaps:
     []
-  Name: Neck_Pin
+  Name: Neck_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -1055,10 +1035,65 @@
     []
   Components:
     []
+- !<ObjectTracking3D/6dffd8bc-2645-436b-be09-ac896df81335>
+  PrefabRemaps:
+    []
+  Name: Object Tracking 3D
+  Enabled: true
+  ObjectIndex: 0
+  TrackingMode: Attachment
+  TrackPosition: true
+  TrackingAsset: !<reference> 9db9acde-e5b7-4b80-a863-c34676cf637a
+  AttachmentLabels:
+    - Hips
+    - Spine
+    - Spine1
+    - Spine2
+    - Neck
+    - Head
+    - LeftShoulder
+    - LeftArm
+    - LeftForeArm
+    - LeftHand
+    - RightShoulder
+    - RightArm
+    - RightForeArm
+    - RightHand
+    - LeftUpLeg
+    - LeftLeg
+    - LeftFoot
+    - LeftToeBase
+    - RightUpLeg
+    - RightLeg
+    - RightFoot
+    - RightToeBase
+  AttachedObjects:
+    - !<reference> 3215c589-02aa-43e6-bbe6-29e5d18366cf
+    - !<reference> 7b598a66-f40e-4afe-b3e6-9c75db1c8bb9
+    - !<reference> 96520038-925d-4c3f-bad3-68ae08c3b978
+    - !<reference> ee8751f0-a438-49f7-8665-b7412fb72988
+    - !<reference> c79c44b8-7423-47b2-9f78-e543fb2f9d7b
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> b2f2a478-1e96-429f-a37b-c6b60fa6e8f3
+    - !<reference> 2a3e2b0f-801f-4f8f-8416-a8e3c9940880
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> ef88aee7-bd4c-4a0b-b518-79df51dc0082
+    - !<reference> 26723487-b003-4e75-a7fe-fdbee5c0783c
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
+    - !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/7120329d-0a02-4900-8018-12a0f7357776>
   PrefabRemaps:
     []
-  Name: Spine1_Pin
+  Name: Spine1_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -1162,7 +1197,110 @@
   Enabled: true
   ScreenRegionType: FullFrame
   ResizeWithKeyboard: false
-- !<ScriptComponent/79d92778-a107-43f2-a417-dec6e2180b0b>
+- !<ScriptComponent/79059b23-98e7-4f4e-953c-2530d5dbb018>
+  PrefabRemaps:
+    []
+  Name: TweenValue
+  Enabled: true
+  ScriptAsset: !<reference> ae5c3e29-a79d-404c-a229-60c5cc08c028
+  ScriptInputsDefault:
+    playAutomatically: true
+    loopType: true
+    startInt: true
+    endInt: true
+    startFloat: true
+    startVector2: true
+    endVector2: true
+    startVector3: true
+    endVector3: true
+    startVector4: true
+    endVector4: true
+    startRGB: true
+    endRGB: true
+    startRGBA: true
+    endRGBA: true
+    delay: true
+    funcTargetScript: true
+    funcName: true
+    materialMeshVisual: true
+    material: true
+    materialScriptName: true
+    vfxComponent: true
+    vfxAsset: true
+    vfxScriptName: true
+    easingType: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenName: init
+      playAutomatically: true
+      loopType: 0
+      dataType: 1
+      startInt: 0
+      endInt: 1
+      startFloat: !<float> 0.000000
+      endFloat: !<float> 0.000000
+      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
+      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
+      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      time: !<float> 0.000000
+      delay: !<float> 0.000000
+      callbackType: 1
+      propTargetScript: !<reference.ScriptComponent> 5f1fe13e-8a43-47fb-95bb-3bba243a6225
+      propName: upperStrength
+      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      funcName: ""
+      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
+      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      materialScriptName: baseColor
+      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
+      vfxScriptName: baseColor
+      easingFunction: Linear
+      easingType: Out
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/7a9a6579-8d63-4ae4-925e-440d312be4f8>
+  PrefabRemaps:
+    []
+  Name: 3D Body Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3215c589-02aa-43e6-bbe6-29e5d18366cf
+    - !<own> 815bc87f-2a4b-4d89-a07c-6cceebeeeef4
+  Components:
+    - !<own> 6dffd8bc-2645-436b-be09-ac896df81335
+- !<SceneObject/7b598a66-f40e-4afe-b3e6-9c75db1c8bb9>
+  PrefabRemaps:
+    []
+  Name: Spine_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 9.691208, z: -1.250127}
+    rotation: {x: -7.350510, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 96520038-925d-4c3f-bad3-68ae08c3b978
+  Components:
+    []
+- !<ScriptComponent/7e5a2099-8c79-4c23-9da4-cd7f46926c8c>
   PrefabRemaps:
     []
   Name: TweenValue
@@ -1172,6 +1310,8 @@
     loopType: true
     startInt: true
     endInt: true
+    startFloat: true
+    endFloat: true
     startVector2: true
     endVector2: true
     startVector3: true
@@ -1196,14 +1336,14 @@
     {}
   ScriptInputs:
     "":
-      tweenName: hide
+      tweenName: show
       playAutomatically: false
       loopType: 0
       dataType: 1
       startInt: 0
       endInt: 1
-      startFloat: !<float> 1.000000
-      endFloat: !<float> 0.000000
+      startFloat: !<float> 0.000000
+      endFloat: !<float> 1.000000
       startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
       endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
       startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1217,8 +1357,8 @@
       time: 0.500000
       delay: !<float> 0.000000
       callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 9b858082-1feb-4ad0-ae17-679d0a86478e
-      propName: intensity
+      propTargetScript: !<reference.ScriptComponent> 5f1fe13e-8a43-47fb-95bb-3bba243a6225
+      propName: upperStrength
       funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       funcName: ""
       materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
@@ -1232,6 +1372,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/815bc87f-2a4b-4d89-a07c-6cceebeeeef4>
+  PrefabRemaps:
+    []
+  Name: Body Mesh
+  Enabled: true
+  Layers: 2
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 41aa63a8-271e-4006-8d79-a1ccd20c6d4c
 - !<SceneObject/82b3a0ee-20f8-4ba3-8434-f797526b45b7>
   PrefabRemaps:
     []
@@ -1260,7 +1415,7 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 32545dab-a6f6-4bc4-b9ea-9b6e91d3d873
-    - !<own> 09628e6b-acee-4298-9721-e6f9e3beaf10
+    - !<own> 2a4c89f2-47a6-4b8b-9f4f-a99567931c64
   Components:
     []
 - !<SceneObject/8dbcf673-11db-48eb-967b-2bf3d031edf6>
@@ -1357,6 +1512,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/96520038-925d-4c3f-bad3-68ae08c3b978>
+  PrefabRemaps:
+    []
+  Name: Spine1_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 11.400247, z: 0.000054}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ee8751f0-a438-49f7-8665-b7412fb72988
+  Components:
+    []
 - !<SceneObject/98e33682-836f-4b51-81eb-2337be943bc9>
   PrefabRemaps:
     []
@@ -1385,6 +1555,7 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> e99bb80e-b67f-40e4-927e-e2aaedacc0ee
+    - !<own> e789034d-fdd1-46bf-a2ef-c562bfcf76b2
   Components:
     - !<own> 4a55e6a7-438c-48a5-bb7c-84171b3767c4
     - !<own> d085c734-c6c4-4962-8f78-236ada6906b7
@@ -1403,78 +1574,6 @@
     []
   Components:
     - !<own> a100d992-91c4-4137-8d3a-85eee95737bc
-- !<ScriptComponent/99df203b-4d4b-4caf-9e94-c1fd71d18b6e>
-  PrefabRemaps:
-    []
-  Name: TweenValue
-  Enabled: true
-  ScriptAsset: !<reference> ae5c3e29-a79d-404c-a229-60c5cc08c028
-  ScriptInputsDefault:
-    playAutomatically: true
-    loopType: true
-    startInt: true
-    endInt: true
-    startFloat: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingType: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      tweenName: init
-      playAutomatically: true
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 0.000000
-      endFloat: !<float> 0.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: !<float> 0.000000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 9b858082-1feb-4ad0-ae17-679d0a86478e
-      propName: intensity
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Linear
-      easingType: Out
-  ScriptTypes:
-    "":
-      {}
 - !<Canvas/9a5234ad-9399-41b6-9e14-12d93a2bb31f>
   PrefabRemaps:
     []
@@ -1512,6 +1611,39 @@
   ScriptTypes:
     "":
       {}
+- !<ScreenTransform/9e4c2bbe-d333-44eb-87d4-742c1c8f0f9e>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -0.782658
+    right: 1.000000
+    top: -0.384257
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
 - !<RenderMeshVisual/a100d992-91c4-4137-8d3a-85eee95737bc>
   PrefabRemaps:
     []
@@ -1582,7 +1714,7 @@
   PrefabRemaps:
     []
   Name: SmoothBinding
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1596,7 +1728,7 @@
 - !<SceneObject/aa20e3d8-b170-49f0-968c-aa91e0c90ec0>
   PrefabRemaps:
     []
-  Name: R_Arm_Pin
+  Name: R_Arm_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -1624,6 +1756,21 @@
   Components:
     - !<own> 091d6aaf-d058-4716-b375-e4dc9627e494
     - !<own> 244b2f5b-5f9d-4cde-8347-c88b7ae121fb
+- !<SceneObject/b2f2a478-1e96-429f-a37b-c6b60fa6e8f3>
+  PrefabRemaps:
+    []
+  Name: L_Shoulder_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 6.493551, y: 12.896297, z: -0.230981}
+    rotation: {x: -74.733940, y: 87.979187, z: -179.762344}
+    scale: {x: 0.999999, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2a3e2b0f-801f-4f8f-8416-a8e3c9940880
+  Components:
+    []
 - !<ScreenTransform/b4ab198a-c882-43a5-bb92-898a12c3a318>
   PrefabRemaps:
     []
@@ -1699,11 +1846,87 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 424e4c87-b141-46e8-a38e-5f25d98513c6
     - !<own> a7dc508f-60e8-4345-abb7-b3ed925da58e
     - !<own> 1f3ce7ab-749d-497e-8a99-37d2e0b1344d
+    - !<own> 67f22f67-5a4d-4828-965b-d971c0941f5f
   Components:
     []
+- !<Text/be1747c1-badb-4d9b-90a5-97a15242bb82>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: ""
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 0.231373, y: 1.000000, z: 0.145098, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: true
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<SceneObject/bef214bf-b44f-4801-b7ad-98902ca20148>
   PrefabRemaps:
     []
@@ -1754,28 +1977,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<ScriptComponent/c67c273d-939e-42d6-bd7d-0da16b7c3e79>
+- !<SceneObject/c79c44b8-7423-47b2-9f78-e543fb2f9d7b>
   PrefabRemaps:
     []
-  Name: HandsController
+  Name: Neck_BodyPin
   Enabled: true
-  ScriptAsset: !<reference> 58ca2bca-0eba-499f-83bf-368c9a4b781b
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      bodytrack: !<reference.ObjectTracking3D> 3d062bd6-6a11-4031-9c1f-74f8fc6d0394
-      bodyBones: !<reference.SceneObject[]>
-        - !<reference> f769e765-897f-4cea-b670-9a182ee96d24
-        - !<reference> de431390-5f78-49d2-9846-b0fadc210b39
-      bodyOccluderMat: !<reference.Material> 8fe59543-380c-4826-93af-bd89358a8765
-      neckMask: !<reference.Texture> a6696a21-31d4-4813-9876-669cabccb995
-      bodyMask: !<reference.Texture> 03b57ce7-516b-4720-a20b-e5ed46f206d8
-  ScriptTypes:
-    "":
-      {}
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 14.657314, z: 0.000041}
+    rotation: {x: 7.350999, y: 0.000000, z: -0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
 - !<ScreenTransform/c7b592f5-a586-41c8-ada7-3f90269ef7ec>
   PrefabRemaps:
     []
@@ -1822,13 +2038,14 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> ab8183af-10da-4da8-8f21-45938c25b12b
+    - !<own> 3dde1e1d-0009-4127-ba30-291ae81d28c1
   Components:
     - !<own> b4ab198a-c882-43a5-bb92-898a12c3a318
     - !<own> 6059289f-92f6-4a72-af19-d36c45cd872e
 - !<SceneObject/cc03b08a-b25e-4c1a-8c8a-21af555acede>
   PrefabRemaps:
     []
-  Name: L_Shoulder_Pin
+  Name: L_Shoulder_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -1889,12 +2106,27 @@
 - !<SceneObject/de4bedcf-b53d-4a3b-8831-acd396dc97b1>
   PrefabRemaps:
     []
-  Name: L_Arm_Pin
+  Name: L_Arm_UpperPin
   Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: -0.000042, y: 13.530450, z: -0.000174}
     rotation: {x: -10.799220, y: -0.000037, z: 2.232722}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/e789034d-fdd1-46bf-a2ef-c562bfcf76b2>
+  PrefabRemaps:
+    []
+  Name: Effects
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -1944,7 +2176,39 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 20a1e924-bbe7-4894-8414-4096708e78dc
+    []
+  Components:
+    []
+- !<SceneObject/ee8751f0-a438-49f7-8665-b7412fb72988>
+  PrefabRemaps:
+    []
+  Name: Spine2_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 13.028785, z: 0.000050}
+    rotation: {x: 0.000011, y: 0.000000, z: -0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c79c44b8-7423-47b2-9f78-e543fb2f9d7b
+    - !<own> b2f2a478-1e96-429f-a37b-c6b60fa6e8f3
+    - !<own> ef88aee7-bd4c-4a0b-b518-79df51dc0082
+  Components:
+    []
+- !<SceneObject/ef88aee7-bd4c-4a0b-b518-79df51dc0082>
+  PrefabRemaps:
+    []
+  Name: R_Shoulder_BodyPin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -6.493481, y: 12.895182, z: -0.223409}
+    rotation: {x: -74.721245, y: -88.045456, z: 179.758499}
+    scale: {x: 0.999999, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 26723487-b003-4e75-a7fe-fdbee5c0783c
   Components:
     []
 - !<SceneObject/ef9b8afc-f90e-4a80-a6aa-35d4d0274c1c>

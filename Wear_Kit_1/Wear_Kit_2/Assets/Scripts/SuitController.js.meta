@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/953b42d4-c4aa-4fdb-bd6e-b82abab3acdf>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> eaf43135-6b57-4f64-8ebf-f79f9b380898
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> eaf43135-6b57-4f64-8ebf-f79f9b380898
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> a6cd70f7-9179-4096-86db-e6338dfa30fe
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/a6cd70f7-9179-4096-86db-e6338dfa30fe>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 0120d0c1-66ed-40dc-be9a-e64726f821f3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    bodySources: false
+    bodyTrack: false
+    bodyTweener: false
+    bodymesh: false
+    distThreshold: false
+    headBinding: false
+    logger: false
+    posLerp: false
+    rotLerp: false
+    targets: false
+    upperSources: false
+    upperTrack: false
+    upperTweener: false
+    uppermesh: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - legTrack: !<reference.ObjectTracking> 00000000-0000-0000-0000-000000000000
+      headBinding: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bodyTrack: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      upperTrack: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      bodymesh: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      uppermesh: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      legsMeshes: !<reference.SceneObject[]>
+        []
+      bodySources: !<reference.SceneObject[]>
+        []
+      upperSources: !<reference.SceneObject[]>
+        []
+      targets: !<reference.SceneObject[]>
+        []
+      bodyTweener: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      upperTweener: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      posLerp: !<float> 0.000000
+      rotLerp: !<float> 0.000000
+      distThreshold: !<float> 0.000000
+      logger: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

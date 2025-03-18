@@ -1,10 +1,12 @@
-- !<AssetImportMetadata/e52b74e1-7936-47fe-a6f4-c66db604a21e>
+- !<AssetImportMetadata/a95c7282-67b7-44f4-8efe-fa1dc2884697>
   ImportedAssetIds:
-    Material: !<reference> cf5884c0-6009-489c-9467-eee1db47b64f
-  ImporterName: MaterialImporter
-  PrimaryAsset: !<reference> cf5884c0-6009-489c-9467-eee1db47b64f
+    BodyMesh: !<reference> 3a84fbff-e35f-4d00-9f33-7dc9c7012c6f
+  ImporterName: BodyMeshImporter
+  PrimaryAsset: !<reference> 3a84fbff-e35f-4d00-9f33-7dc9c7012c6f
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
   AssetDataMap:
     {}
   DependentFiles:
@@ -12,5 +14,3 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
-    {}

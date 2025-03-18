@@ -16,7 +16,7 @@ frameRate:
   options: 4
 frontCameraMultimedia:
   type: string
-  value: PreviewResources.bundle/Video/Idle/Idle Person 3.mp4
+  value: PreviewResources.bundle/Video/Object Tracking/Zoom Out.mp4
   options: 4
 fullscreenSpectaclesSimulation:
   type: bool
@@ -36,7 +36,7 @@ mirrorHorizontally:
   options: 4
 previewSource:
   type: string
-  value: PreviewResources.bundle/Video/Idle/Idle Person 3.mp4
+  value: PreviewResources.bundle/Video/Object Tracking/Zoom Out.mp4
   options: 4
 previewType:
   type: string
@@ -56,7 +56,7 @@ resolutionScale:
   options: 4
 simulatedDevice:
   type: string
-  value: iPhone 14 Pro Max
+  value: iPhone 14 Pro
   options: 4
 stereoEye:
   type: string

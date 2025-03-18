@@ -1,9 +1,13 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 32
+    size: 38
     values:
+      - 3D Body Tracking.bodyTracking3D
       - 3D Upper Body Tracking.upperBodyTracking3D
+      - Full Body Mesh.bodyMesh
+      - Materials
+      - Materials/Body Occluder.mat
       - Materials/Cap Shadow.mat
       - Materials/Cap.mat
       - Materials/Occluder.mat
@@ -17,6 +21,7 @@ CollapsedEntities:
       - RTs
       - Scripts
       - Scripts/SmoothBinding.js
+      - Scripts/SuitController.js
       - Scripts/TweenManager
       - Scripts/TweenManager/Tween/Tween.js
       - Scripts/TweenManager/Tween/TweenManager.js
@@ -28,6 +33,7 @@ CollapsedEntities:
       - Scripts/TweenManager/Tween/TweenTypes/TweenValue.js
       - Scripts/TweenManager/TweenManager.prefab
       - Shader
+      - Shader/body occluder.ss_graph
       - Shader/cap_shadow.ss_graph
       - Shader/occluder.ss_graph
       - Shader/pbr.ss_graph
