@@ -1,0 +1,66 @@
+- !<AssetImportMetadata/c4073761-c785-4680-b6ae-c371d9b3d55f>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> f2d6e8f4-abde-4432-abe3-96bf2d1e1b95
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> f2d6e8f4-abde-4432-abe3-96bf2d1e1b95
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> b2da6964-41a8-4935-ac9b-34b96c864012
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/b2da6964-41a8-4935-ac9b-34b96c864012>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: f7022be3-b095-4d45-bda9-37c4c8a5c484
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    bodyMask: false
+    bodyOccluderMat: false
+    bodySources: false
+    bodyTargets: false
+    bodyTweener: false
+    distThreshold: false
+    handSources: false
+    handTargets: false
+    handTweener: false
+    headBinding: false
+    neckMask: false
+    posLerp: false
+    rotLerp: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - bodySources: !<reference.SceneObject[]>
+        []
+      targets: !<reference.SceneObject[]>
+        []
+      bodyTweener: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      posLerp: !<float> 0.000000
+      rotLerp: !<float> 0.000000
+      distThreshold: !<float> 0.000000
+      headBinding: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bodyTargets: !<reference.SceneObject[]>
+        []
+      handSources: !<reference.SceneObject[]>
+        []
+      handTargets: !<reference.SceneObject[]>
+        []
+      handTweener: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      bodyOccluderMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      neckMask: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      bodyMask: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
