@@ -40,7 +40,6 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f826f39b-53af-42ac-ac54-9c239cd61fd2
-    - !<own> 653b3635-4a0e-4385-ba27-d3a45be2336b
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
 - !<Camera/00000000-0000-0065-0000-000000000065>
@@ -673,7 +672,7 @@
   Name: Object Tracking 3D
   Enabled: true
   ObjectIndex: 0
-  TrackingMode: Attachment
+  TrackingMode: ProportionsAndPose
   TrackPosition: true
   TrackingAsset: !<reference> 84431ca6-de7d-4b77-8194-727ff4f5b882
   AttachmentLabels:
@@ -806,8 +805,8 @@
       bodyOccluderMat: !<reference.Material> e5eb9a94-3ebe-4b92-87de-d7930b6802ae
       neckMask: !<reference.Texture> 9b93f7a9-9986-4fb5-ba05-221478e6332f
       bodyMask: !<reference.Texture> a5826dbf-fd03-42d3-9535-e6e2b1bc0b2f
-      posLerp: 0.500000
-      rotLerp: 0.500000
+      posLerp: 0.400000
+      rotLerp: 0.400000
       distThreshold: !<float> 60.000000
   ScriptTypes:
     "":
@@ -944,7 +943,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 653b3635-4a0e-4385-ba27-d3a45be2336b
   Components:
     - !<own> 8b3d29dc-e985-4a57-82f1-c70503f781e5
 - !<SceneObject/53a916f2-8685-4df8-8805-2058d3af8f5a>

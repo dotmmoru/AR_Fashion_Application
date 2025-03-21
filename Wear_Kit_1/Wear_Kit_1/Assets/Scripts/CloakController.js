@@ -18,6 +18,13 @@
 var isFullBody = false;
 var isFace = false;
 
+var canSwitch = true;
+
+var delayedSwitchEnable = script.createEvent("DelayedCallbackEvent");
+delayedSwitchEnable.bind(function(){
+    canSwitch = true;
+});
+
 script.api.bodyStrength = 0;
 script.api.handStrength = 0;
 
@@ -43,21 +50,27 @@ function updateTransforms(){
     
     var dist = camPos.distance(script.headBinding.getTransform().getWorldPosition());
     
-    if (!isFullBody && (dist > script.distThreshold)){
+    if (!isFullBody && (dist > script.distThreshold) && canSwitch){
         global.tweenManager.startTween(script.handTweener, "show");
         isFullBody = true;
         
         script.bodyOccluderMat.mainPass.bodyMask = script.bodyMask;
             
         print("FULL BODY");
+        
+        canSwitch = false;
+        delayedSwitchEnable.reset(0.5);
     }
     else {
-        if (isFullBody && (dist <= script.distThreshold)){
+        if (isFullBody && (dist <= script.distThreshold) && canSwitch){
             global.tweenManager.stopTween(script.handTweener, "show");
             isFullBody = false;
             script.api.handStrength = 0;
         
             initHands();
+            
+            canSwitch = false;
+            delayedSwitchEnable.reset(0.5);
         }
     }
     
@@ -85,13 +98,13 @@ function updateTransforms(){
         var targetRot = script.bodyTargets[i].getTransform().getWorldRotation();
             
         var pos = vec3.lerp(targetPos, sourcePos, 1 - script.api.bodyStrength * (1 - script.posLerp));
-        var rot = quat.slerp(targetRot, sourceRot, 1 - script.api.bodyStrength * (1 - script.rotLerp));
+        var rot = quat.lerp(targetRot, sourceRot, 1 - script.api.bodyStrength * (1 - script.rotLerp));
             
         script.bodyTargets[i].getTransform().setWorldPosition(pos);
         script.bodyTargets[i].getTransform().setWorldRotation(rot);
     }            
     
-    //print(script.api.handStrength);
+    //print(1 - script.api.handStrength * (1 - script.rotLerp));
 }
 
 var onUpdate = script.createEvent("UpdateEvent");
