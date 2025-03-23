@@ -98,7 +98,7 @@ function updateTransforms(){
         var targetRot = script.bodyTargets[i].getTransform().getWorldRotation();
             
         var pos = vec3.lerp(targetPos, sourcePos, 1 - script.api.bodyStrength * (1 - script.posLerp));
-        var rot = quat.lerp(targetRot, sourceRot, 1 - script.api.bodyStrength * (1 - script.rotLerp));
+        var rot = quat.slerp(targetRot, sourceRot, 1 - script.api.bodyStrength * (1 - script.rotLerp));
             
         script.bodyTargets[i].getTransform().setWorldPosition(pos);
         script.bodyTargets[i].getTransform().setWorldRotation(rot);

@@ -1,9 +1,12 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 12
+    size: 16
     values:
+      - Materials
+      - Models
       - Models/wizard_hat_v01 1.fbx
+      - Scripts
       - Scripts/CloakController.js
       - Scripts/TweenManager/Tween/Tween.js
       - Scripts/TweenManager/Tween/TweenManager.js
@@ -15,4 +18,5 @@ CollapsedEntities:
       - Scripts/TweenManager/Tween/TweenTypes/TweenValue.js
       - Scripts/TweenManager/TweenManager.prefab
       - Shaders/body occluder.ss_graph
+      - Textures
   options: 4
