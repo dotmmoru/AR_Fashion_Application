@@ -1,0 +1,43 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 37
+    values:
+      - 3D Body Tracking.bodyTracking3D
+      - 3D Upper Body Tracking.upperBodyTracking3D
+      - Materials
+      - Materials/Body Occluder.mat
+      - Materials/Cap Shadow.mat
+      - Materials/Cap.mat
+      - Materials/Occluder.mat
+      - Models
+      - Models/Full Body Mesh.bodyMesh
+      - Models/Head Mesh.facemesh
+      - Models/Upper Body Mesh.upperBodyMesh
+      - Models/jersey_rig_v08.fbx
+      - Models/jersey_rig_v08.fbx/Meshes
+      - Models/jersey_rig_v08.fbx/Meshes/jersey_v08
+      - Models/jersey_rig_v08.fbx/jersey_rig_v08
+      - RTs
+      - Scripts/SmoothBinding.js
+      - Scripts/SuitController.js
+      - Scripts/TweenManager
+      - Scripts/TweenManager/Tween/Tween.js
+      - Scripts/TweenManager/Tween/TweenManager.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenAlpha.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenChain.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenColor.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenScreenTransform.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenTransform.js
+      - Scripts/TweenManager/Tween/TweenTypes/TweenValue.js
+      - Scripts/TweenManager/TweenManager.prefab
+      - Shader
+      - Shader/body occluder.ss_graph
+      - Shader/cap_shadow.ss_graph
+      - Shader/occluder.ss_graph
+      - Shader/pbr.ss_graph
+      - Textures
+      - Textures/cap_base_v01.jpg
+      - Textures/cap_nrm_v01.jpg
+      - Textures/cap_params_v01.jpg
+  options: 4

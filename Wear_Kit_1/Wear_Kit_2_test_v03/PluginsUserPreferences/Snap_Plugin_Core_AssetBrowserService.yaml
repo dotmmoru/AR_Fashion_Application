@@ -1,0 +1,18 @@
+ExternalSources:
+  type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
+  value:
+    - 04a08344-aa83-47e1-ad73-901d715f46e8: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/cap_shadow.ss_graph"
+    - 23cbc851-f0eb-47d2-bd54-e10f21040fbf: "D:/Projects/WhoAR/AR_Fashion_App/textures/cap/sbs/out/cap_base_v01.jpg"
+    - 5d22f774-ab41-4914-9fc2-93e423f290d3: "D:/Downloads/jersey_base_v01.jpg"
+    - 5dd6dd35-5f23-40b6-b89b-d2229f402305: "D:/Projects/WhoAR/AR_Fashion_App/textures/jersey/sbs/out/jersey_nrm_v01.jpg"
+    - 6de47ace-543a-463a-b1e6-6d1cb2a2bf33: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/body occluder.ss_graph"
+    - 8a259b3f-2ba4-44a7-b2a1-5c7b51e10580: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/suits.ss_graph"
+    - 953b42d4-c4aa-4fdb-bd6e-b82abab3acdf: "D:/Projects/WhoAR/AR_Fashion_App/lenses/out/Wear_Kit_3/Assets/Scripts/SuitController.js"
+    - 9da76149-c483-4cbf-b719-d79182bfe0c0: "D:/Projects/WhoAR/AR_Fashion_App/textures/cap/sbs/out/cap_params_v01.jpg"
+    - a65727de-c6d4-4bab-93c9-6e71ec90362a: "D:/Projects/WhoAR/AR_Fashion_App/textures/jersey/bodymask/bodyneck_mask_v01.png"
+    - ab3e4ae9-8637-45c7-8a2f-2ca7aa1b2e57: "D:/Projects/WhoAR/AR_Fashion_App/textures/jersey/sbs/out/jersey_params_v01.jpg"
+    - ad73e325-eb21-43cc-8ac8-234246b47bbb: "D:/Downloads/bodymask_v01.png"
+    - c8e68392-2f1a-4c55-8c1f-b5147a3ae293: "D:/Projects/WhoAR/AR_Fashion_App/textures/cap/sbs/out/cap_nrm_v01.jpg"
+    - d5d78650-1054-4cc3-b1d0-9f373243073a: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Scripts/HandsController.js"
+    - e94052b0-6a80-43d4-8948-3ddf2665c122: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/suit mask.ss_graph"
+  options: 4

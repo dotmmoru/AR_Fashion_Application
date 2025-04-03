@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/d5d78650-1054-4cc3-b1d0-9f373243073a>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 58ca2bca-0eba-499f-83bf-368c9a4b781b
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 58ca2bca-0eba-499f-83bf-368c9a4b781b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> fdd943a0-c938-4b05-ba62-01cba58606e0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+  ExtraData:
+    {}
+- !<ScriptAssetData/fdd943a0-c938-4b05-ba62-01cba58606e0>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 9f5f95f1-5d44-4e45-a69f-093cefe25699
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    bodyBones: false
+    bodyMask: false
+    bodyOccluderMat: false
+    bodytrack: false
+    neckMask: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - bodytrack: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      bodyBones: !<reference.SceneObject[]>
+        []
+      bodyOccluderMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      neckMask: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      bodyMask: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000

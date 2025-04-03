@@ -1,0 +1,69 @@
+- !<AssetImportMetadata/308aeb93-2781-42d0-b39e-d8ec3d14c2a2>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> aaa2cad4-b785-45c8-bef2-e21dfa4946d9
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> aaa2cad4-b785-45c8-bef2-e21dfa4946d9
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 1884e3cf-0509-46d7-92db-2f6bdd685f17
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/1884e3cf-0509-46d7-92db-2f6bdd685f17>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 620db6cd-00dc-4b16-a0f2-771fa901181b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    additive: false
+    delay: false
+    easingFunction: false
+    easingType: false
+    end: false
+    from: false
+    isLocal: false
+    loopType: false
+    movementType: false
+    offset: false
+    playAutomatically: false
+    sceneObjectReference: false
+    start: false
+    time: false
+    to: false
+    tweenName: false
+    type: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - sceneObjectReference: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tweenName: ""
+      playAutomatically: true
+      loopType: 0
+      type: 0
+      movementType: 0
+      start: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      end: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      from: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      to: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      offset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      additive: false
+      time: !<float> 1.000000
+      delay: !<float> 0.000000
+      isLocal: true
+      easingFunction: Quadratic
+      easingType: Out
+  ScriptTypes:
+    -
+      {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000

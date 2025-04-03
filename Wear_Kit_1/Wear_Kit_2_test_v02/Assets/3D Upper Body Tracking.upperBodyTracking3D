@@ -1,0 +1,23 @@
+- !<UpperBodyTracking3DAsset/211ec141-c83f-4645-b1e0-ab4f542c7d4e>
+  PackagePath: ""
+  AttachmentPoints:
+    - name: Hips
+      parentPoint: ""
+    - name: Spine
+      parentPoint: Hips
+    - name: Spine1
+      parentPoint: Spine
+    - name: Spine2
+      parentPoint: Spine1
+    - name: Neck
+      parentPoint: Spine2
+    - name: Head
+      parentPoint: Neck
+    - name: LeftShoulder
+      parentPoint: Spine2
+    - name: LeftArm
+      parentPoint: LeftShoulder
+    - name: RightShoulder
+      parentPoint: Spine2
+    - name: RightArm
+      parentPoint: RightShoulder

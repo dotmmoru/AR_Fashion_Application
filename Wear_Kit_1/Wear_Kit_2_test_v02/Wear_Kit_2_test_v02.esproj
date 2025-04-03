@@ -1,0 +1,42 @@
+studioVersion:
+  major: 5
+  minor: 7
+  patch: 2
+  build: 25030805
+  type: Public
+coreVersion: 301
+clientVersion: 13.300000
+updateCheckpoint: 55
+sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
+viewConfig:
+  simulation:
+    device: iPhone 14 Pro
+    cameraFov: 45.709999
+    fullFrameAspect: 0.562500
+    resolutionScale: 1.000000
+    viewport: Maximized
+    output: Live
+    stereoOutputEye: Center
+    deviceTypeOverride: Unknown
+  cameraType: Front
+metaInfo:
+  hints:
+    []
+  tags:
+    []
+  lensName: AR Fashion Kit 2
+  lensDescriptors:
+    []
+  lensApplicability:
+    - Front
+    - Back
+  lensClientCompatibilities:
+    - Mobile
+    - CameraKit
+  platformBundlesEnabled: false
+  iconHash: 4b06aaf5061fbe2a1a43db49a259215a
+  videoPreviewHash: ""
+  fromTemplateName: Camera Kit
+  fromTemplateUrl: Lens Studio 5.6.1.25021020
+  activationCamera: Front
+  sourceMapEnabled: false
