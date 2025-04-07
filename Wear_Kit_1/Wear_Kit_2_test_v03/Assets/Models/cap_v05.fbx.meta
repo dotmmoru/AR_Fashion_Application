@@ -1,10 +1,10 @@
 - !<AssetImportMetadata/a0cfb926-33fd-4451-8d18-36215643dbf6>
   ImportedAssetIds:
-    06ef8a7a7a80e17d: !<reference> b94640b2-f53a-431b-8ec9-92df746aca18
-    7a0dd5cd69df73fa: !<reference> a3c4ba62-96c3-4c6d-b6ab-b7adf9123222
+    0846ca4be66199c5: !<reference> aa06252b-a671-4ee7-ba9a-40a209fc313d
+    66780cf3a4dcb2b8: !<reference> d16fd6ab-27ba-4c34-9d35-29277addc75b
     Meshes/cap_v05: !<reference> bd5c2162-ba3d-4e86-b07f-e284a8462b3b
     Scene: !<reference> 5e82564e-17be-4542-8536-f67ec678469c
-    b583973ba7a944a8: !<reference> 593fc7ef-ce7e-4860-9cb0-f0d9b02ef63b
+    cefee2631304b3f9: !<reference> 891fdeab-0074-4b37-96bf-ee2b9e9184eb
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> 5e82564e-17be-4542-8536-f67ec678469c
   PackageType: LegacyPackage
