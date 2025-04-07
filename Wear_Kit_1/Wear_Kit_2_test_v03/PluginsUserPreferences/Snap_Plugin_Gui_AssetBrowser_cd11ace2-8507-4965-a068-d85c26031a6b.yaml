@@ -1,21 +1,20 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 35
+    size: 34
     values:
       - 3D Body Tracking.bodyTracking3D
       - Materials/Body Occluder.mat
       - Materials/Cap Shadow.mat
       - Materials/Cap.mat
       - Materials/Occluder.mat
-      - Models
       - Models/Full Body Mesh Jersey.bodyMesh
       - Models/Full Body Mesh.bodyMesh
       - Models/Head Mesh.facemesh
       - Models/Upper Body Mesh.upperBodyMesh
-      - Models/jersey_rig_v08.fbx
-      - Models/jersey_rig_v08.fbx/Meshes/jersey_v08
-      - Models/jersey_rig_v08.fbx/jersey_rig_v08
+      - Models/jersey_rig_v09.fbx
+      - Models/jersey_rig_v09.fbx/Meshes/jersey_v08
+      - Models/jersey_rig_v09.fbx/jersey_rig_v09
       - RTs
       - Scripts/SmoothBinding.js
       - Scripts/SuitController.js

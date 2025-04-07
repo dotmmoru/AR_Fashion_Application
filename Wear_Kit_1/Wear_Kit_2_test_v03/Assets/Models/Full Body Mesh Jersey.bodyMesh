@@ -5,11 +5,11 @@
   LeftHandGeometryEnabled: true
   RightHandGeometryEnabled: true
   HeadGeometryEnabled: false
-  ExternalMesh: !<reference> e18c9224-a43c-4988-9e02-1e71d8042846
+  ExternalMesh: !<reference> d3fe7046-255b-4d85-8899-16c5b6d7ceca
   ExternalMeshPose: TPose
   ExternalMeshMatchingMode: Proximity
-  ExternalMeshMaxDistance: 0.500000
-  ExternalMeshMaxCount: 4
+  ExternalMeshMaxDistance: 20.000000
+  ExternalMeshMaxCount: 18
   ExternalMeshTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
