@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         const val TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM5NzA2OTc2LCJzdWIiOiI3MzZkMzM5Yi03NGIyLTRkMjgtYWQ3NS0zYWExMDc2YzI1YzJ-U1RBR0lOR342YTdmOTA2Zi0zYWJjLTRmMWItYjFkYi02OWM0Y2I2ZWIxMDMifQ.YWxF9attURAA0psdgFdeLLAtaqdJPNQM41rpSb2e51Y"
         const val LENS_GROUP_ID = "ed8aeaf7-12fc-4631-893c-de7705b119fc"
         const val LENS_ID_1 = "b93ca434-dce5-46ae-9c26-3e55d7a745e9"
-        const val LENS_ID_2 = "c2cd19d9-1592-4297-9322-c1dcae6094da"
+        const val LENS_ID_2 = "b710f29d-1d44-4894-b179-59b09b14757f"
         const val LENS_ID_3 = "84cbe1b1-5864-4e7d-b47f-edfdb155e98d"
     }
 
@@ -94,8 +94,8 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
             applyLens(lensIds[currentLensIndex])
         }
 
-        val inputWidth = 1440
-        val inputHeight = 2560
+        val inputWidth = 1400
+        val inputHeight = 2000
 
         inputSurfaceTexture = SurfaceTexture(0).apply {
             setDefaultBufferSize(inputWidth, inputHeight)
