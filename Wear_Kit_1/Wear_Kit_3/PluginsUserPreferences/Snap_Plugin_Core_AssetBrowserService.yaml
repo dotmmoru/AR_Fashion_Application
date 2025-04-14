@@ -1,20 +1,19 @@
 ExternalSources:
   type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
   value:
-    - 0064b2b3-2b48-4460-a42d-fec0e06c8f2f: "D:/Projects/WhoAR/AR_Fashion_App/textures/upperbody/upperbody_mask_v02.png"
     - 24bb1ec7-2d7c-45c6-8115-caddb0b57657: "D:/Projects/WhoAR/AR_Fashion_App/textures/ram_suit/RAMS_params_v02.jpg"
+    - 2c57eb59-afb9-4bfe-8026-1df88d529955: "D:/Projects/WhoAR/AR_Fashion_App/lenses/Wear_Kit_2_test_v03/Assets/Shader/body occluder.ss_graph"
     - 2cf4a030-181d-4495-be84-92af3f59af8b: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/suits.ss_graph"
     - 4914190d-0274-402d-a51e-0e4d0604ee05: "D:/Projects/WhoAR/AR_Fashion_App/textures/helmet/sbs/out/helmet_base_v03.png"
-    - 4f236296-d885-407d-8abd-3ac1f311b24f: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_2/Assets/Scripts/HandsController.js"
     - 4fe492d8-c686-4b4a-bf72-53a21356d1a7: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Materials/Body Occluder.mat"
     - 56d75eb2-3843-4305-a2dc-7bc77608d5ca: "D:/Projects/WhoAR/AR_Fashion_App/textures/ram_suit/RAMS_nrm_v02.jpg"
     - 6f9ec69a-624f-457d-897c-cba3f74d17b0: "D:/Projects/WhoAR/AR_Fashion_App/textures/ram_suit/bodymask/bodyneck_mask_v01.png"
     - 7136d441-9a12-4a0c-a134-3040ab71e392: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Materials/Cloak Mask.mat"
-    - 7ab55480-76b6-4ec8-8f07-35c59139e939: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/body occluder.ss_graph"
     - 9762c843-071b-407e-8be9-59a440740ca0: "D:/Projects/WhoAR/AR_Fashion_App/textures/helmet/sbs/out/helmet_params_v03.jpg"
     - 9bdac6e3-26e2-42b9-9dc5-7d9c9887c5d6: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Shaders/suit mask.ss_graph"
     - a07a79ce-5d60-4cb8-a4ca-b5a44dd1dc95: "D:/Projects/WhoAR/Dutch_Clothes/textures/bodyOccluder/body_rams_mask_v01.png"
     - aee70436-8005-4854-b2df-a4deaab79ab2: "D:/Downloads/RAMS_base_v02.jpg"
     - c306ee05-4a3f-4058-a97e-6ed4a268e7b8: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_1/Assets/Materials/Cloak.mat"
     - ce06b7a1-f59b-4147-969f-2ec531bd81d4: "D:/Projects/WhoAR/AR_Fashion_App/textures/helmet/sbs/out/helmet_nrm_v02.jpg"
+    - f11890f1-24c3-46b4-9b11-c7b683731765: "D:/Projects/WhoAR/AR_Fashion_App/models/rams_suit/out/rams_suit_v08.fbx"
   options: 4

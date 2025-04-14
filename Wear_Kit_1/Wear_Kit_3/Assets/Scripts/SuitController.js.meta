@@ -26,22 +26,10 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    bodySources: false
-    bodyTrack: false
-    bodyTweener: false
-    bodymesh: false
     distThreshold: false
     headBinding: false
-    legTrack: false
-    legsMeshes: false
     logger: false
-    posLerp: false
-    rotLerp: false
-    targets: false
-    upperSources: false
-    upperTrack: false
-    upperTweener: false
-    uppermesh: false
+    occluderMat: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
@@ -65,6 +53,7 @@
       logger: !<reference.Text> 00000000-0000-0000-0000-000000000000
       headBinding: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       distThreshold: !<float> 0.000000
+      occluderMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

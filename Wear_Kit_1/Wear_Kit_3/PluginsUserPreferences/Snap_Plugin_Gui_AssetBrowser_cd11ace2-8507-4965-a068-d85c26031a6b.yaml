@@ -1,10 +1,9 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 70
+    size: 62
     values:
       - 3D Body Tracking.bodyTracking3D
-      - 3D Upper Body Tracking.upperBodyTracking3D
       - Device Camera Texture.deviceCameraTexture
       - Materials/Body Mesh.mat
       - Materials/Body Occluder.mat
@@ -14,10 +13,9 @@ CollapsedEntities:
       - Materials/Occluder.mat
       - Materials/Suit Mask.mat
       - Materials/Suit.mat
-      - Materials/Upper Occluder.mat
+      - Models/Full Body Mesh Suit.bodyMesh
       - Models/Full Body Mesh.bodyMesh
       - Models/Head Mesh.facemesh
-      - Models/Upper Body Mesh.upperBodyMesh
       - Models/helmet_v02.fbx
       - Models/helmet_v02.fbx/.hidden
       - Models/helmet_v02.fbx/.hidden/helmet
@@ -28,19 +26,14 @@ CollapsedEntities:
       - Models/helmet_v02.fbx/Meshes/helmet_base
       - Models/helmet_v02.fbx/Meshes/helmet_transparent
       - Models/helmet_v02.fbx/helmet_v02
-      - Models/rams_suit_v06.fbx
-      - Models/rams_suit_v06.fbx/Meshes
-      - Models/rams_suit_v06.fbx/Meshes/Pants_v3
-      - Models/rams_suit_v06.fbx/Meshes/Sock_L_v3
-      - Models/rams_suit_v06.fbx/Meshes/Sock_R_v3
-      - Models/rams_suit_v06.fbx/Meshes/Top_v3
-      - Models/rams_suit_v06.fbx/rams_suit_v06
+      - Models/rams_suit_v08.fbx
+      - Models/rams_suit_v08.fbx/Meshes/rams_suit_v08
+      - Models/rams_suit_v08.fbx/rams_suit_v08
       - RTs
       - RTs/RT Suit Masks.renderTarget
       - RTs/Render Target.renderTarget
       - Scene.scene
       - Scripts
-      - Scripts/HandsController.js
       - Scripts/SuitController.js
       - Scripts/TweenManager/Tween/Tween.js
       - Scripts/TweenManager/Tween/TweenManager.js
@@ -72,5 +65,4 @@ CollapsedEntities:
       - Textures/helmet_base_v03.png
       - Textures/helmet_nrm_v02.jpg
       - Textures/helmet_params_v03.jpg
-      - Textures/upperbody_mask_v02.png
   options: 4
