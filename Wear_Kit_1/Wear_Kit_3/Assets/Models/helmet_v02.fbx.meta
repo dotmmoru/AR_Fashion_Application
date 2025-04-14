@@ -2,16 +2,16 @@
   ImportedAssetIds:
     .hidden/helmet: !<reference> 8e86cb58-c2c4-4842-9d6b-1d82f099a7ab
     .hidden/white: !<reference> 44e978f4-27fa-464c-acf3-ee8ce449af55
-    2137e2f3cefc9ef8: !<reference> d075acbf-71e8-43c5-877c-38920f553ee9
-    378fb7f6d68235c0: !<reference> 9eb4d3df-ea6a-4153-aac1-76306c3e6554
-    4108357e22e8f089: !<reference> 08f1b5ad-25b1-44e9-8d1a-477186990173
-    7a0dd5cd69df73fa: !<reference> 134e12b4-3735-4585-86ee-32923b8dcb17
-    91746b0abc9e30dc: !<reference> 2da57d02-9530-41b8-a369-1418f2713957
+    562ec12f8bd43df4: !<reference> 24ddb821-117d-4f1c-8211-b9445b84d7d4
+    66780cf3a4dcb2b8: !<reference> f1dcba50-1436-4df4-a401-cfac2d8a2441
+    715504bf3bc8f836: !<reference> 949fdee7-8de4-4120-8767-93c3773fca3b
     Materials/helmet: !<reference> 4be4a80d-ada6-49a3-9b89-4dff7fff48be
     Materials/helmet|helmet|GraphPassInfo: !<reference> e0363448-48da-4dd7-a48f-d910807b753c
     Meshes/helmet_base: !<reference> bf9ad558-067b-4ccf-9443-a0e7e382f043
     Meshes/helmet_transparent: !<reference> 32796945-4cc3-4cd7-87a7-d528e5d5a8e7
     Scene: !<reference> 7a2e59a8-3769-4b09-8243-cb4bd2f3cb8f
+    aa4a6870314d45b6: !<reference> 51c10296-27d6-4fe0-9252-da4e41958c05
+    d407f2d74d438679: !<reference> 171b0a90-0da2-4c49-937d-e05829aa240f
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> 7a2e59a8-3769-4b09-8243-cb4bd2f3cb8f
   PackageType: LegacyPackage
