@@ -185,7 +185,7 @@
         type: Texture2D
     extrude:
       typeIdx: 1
-      value: -1.000000
+      value: -0.500000
     shouldersDown:
       typeIdx: 1
       value: 1.000000

@@ -28,17 +28,9 @@
   ScriptInputsHidden:
     bodyMask: false
     bodyOccluderMat: false
-    bodySources: false
-    bodyTargets: false
-    bodyTweener: false
     distThreshold: false
-    handSources: false
-    handTargets: false
-    handTweener: false
     headBinding: false
     neckMask: false
-    posLerp: false
-    rotLerp: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:

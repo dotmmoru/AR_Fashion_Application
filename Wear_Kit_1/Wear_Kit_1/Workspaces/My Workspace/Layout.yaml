@@ -34,7 +34,7 @@ dock:
               - persistentName: Com.Snap.LensBasedEditors
                 Uuid: 0c653d3d-aeb4-4903-a19c-7a7b7a4f49ab
             type: section
-            current: 0
+            current: 1
         sizes:
           - 932
           - 363

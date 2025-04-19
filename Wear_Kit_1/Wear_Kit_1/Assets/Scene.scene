@@ -2,12 +2,10 @@
   PackagePath: ""
   objects:
     - !<own> c30107c4-3fbe-44f2-b8af-9ebac7f74f5f
-    - !<own> ea7e057a-be53-404a-9d6b-43fcbbf7640d
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 52f85aaf-1204-4f9f-8310-b6cae1025125
     - !<own> c487e277-3758-40ff-aee2-7b575dc6c857
     - !<own> 00000000-0000-0065-0000-000000000064
-    - !<own> 2b128b59-a650-47d5-a1aa-6b370b2b5768
     - !<own> 8dbcf673-11db-48eb-967b-2bf3d031edf6
     - !<own> 7d183f45-f0be-4239-9992-eb642573fded
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
@@ -188,153 +186,6 @@
   DecayRange: 40.000000
   UseEstimation: false
   EstimationIntensity: !<float> 1.000000
-- !<SceneObject/0032eafd-ad5e-47dc-b019-1a09c8fd8845>
-  PrefabRemaps:
-    []
-  Name: Spine1 BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 11.400247, z: 0.000054}
-    rotation: {x: -0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 26cccd5b-bfff-4210-8c47-abbfe1397415
-  Components:
-    []
-- !<SceneObject/064f6e78-b27c-49d1-99e4-38da8e117696>
-  PrefabRemaps:
-    []
-  Name: Cloak_v04
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> fdbbc9ed-2380-49b6-b6cc-d53dadca3d54
-- !<ScriptComponent/0707decd-b38c-4087-b17c-cc98704cdfc2>
-  PrefabRemaps:
-    []
-  Name: TweenValue
-  Enabled: true
-  ScriptAsset: !<reference> c01fd021-5e01-462c-b61a-716b4670c17f
-  ScriptInputsDefault:
-    playAutomatically: true
-    loopType: true
-    startInt: true
-    endInt: true
-    startFloat: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingType: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      tweenName: init
-      playAutomatically: true
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 0.000000
-      endFloat: !<float> 0.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: !<float> 0.000000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 3a8003be-cadc-44e8-8b3c-2f433116458e
-      propName: bodyStrength
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Linear
-      easingType: Out
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/07723675-66a0-4cb8-8c16-c2f8e68a43f2>
-  PrefabRemaps:
-    []
-  Name: L_ForeArm BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000059, y: 24.844973, z: 0.000177}
-    rotation: {x: -5.186042, y: 0.000067, z: 2.701650}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 412a3399-3dbc-41bf-8003-334e96108dcd
-  Components:
-    []
-- !<SceneObject/079e81e8-2b73-454f-a53d-f8e27b70d9ba>
-  PrefabRemaps:
-    []
-  Name: R_Shoulder BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -6.493481, y: 12.895182, z: -0.223409}
-    rotation: {x: -74.721298, y: -88.045357, z: 179.758545}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 5bef0dcf-25d4-4d9f-9daf-d86c4a3d228a
-  Components:
-    []
-- !<SceneObject/082f4b1c-3910-4e29-9ca0-ebc40225a855>
-  PrefabRemaps:
-    []
-  Name: L_Shoulder
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 6.493551, y: 12.896297, z: -0.230981}
-    rotation: {x: -74.733833, y: 87.979286, z: -179.762283}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 88e9eb6a-c2c9-4e3d-bdff-66aeb965904a
-  Components:
-    []
 - !<SceneObject/085430f4-7ebd-4a49-aa06-9720e0bcb637>
   PrefabRemaps:
     []
@@ -350,6 +201,21 @@
     []
   Components:
     - !<own> 3a8003be-cadc-44e8-8b3c-2f433116458e
+- !<SceneObject/08bf1d4a-cc23-422f-8f0d-9deb691e1de7>
+  PrefabRemaps:
+    []
+  Name: Body Mesh Cloak
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 0.985000, y: 0.990000, z: 0.940000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 61f4df5b-f6ef-41e2-8f77-c7d827b847d6
 - !<ScreenTransform/091d6aaf-d058-4716-b375-e4dc9627e494>
   PrefabRemaps:
     []
@@ -383,36 +249,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<SceneObject/0db3ea21-d1be-40a0-977f-147e92cb46d7>
-  PrefabRemaps:
-    []
-  Name: R_ForeArm BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000074, y: 24.844479, z: -0.000042}
-    rotation: {x: -5.145562, y: 0.000000, z: -2.995760}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 23bd3583-a2b5-45dc-a744-4583270299b2
-  Components:
-    []
-- !<SceneObject/18e5e2cc-952e-4ce1-885d-5a7474f577f9>
-  PrefabRemaps:
-    []
-  Name: Spine1
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 11.400247, z: 0.000054}
-    rotation: {x: -0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 9e45b269-968d-4235-9993-25053d38c009
-  Components:
-    []
 - !<ScreenTransform/191eb188-914c-4518-ac0b-2d62c11015d6>
   PrefabRemaps:
     []
@@ -462,36 +298,6 @@
   Components:
     - !<own> bab76c82-e17c-4953-93e7-1dbb802e87c4
     - !<own> f58db0ac-637e-413e-be43-390bf2e10e28
-- !<SceneObject/22a04270-3c78-4b32-bf34-8348def92567>
-  PrefabRemaps:
-    []
-  Name: R_Arm
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -0.000116, y: 13.530517, z: -0.000161}
-    rotation: {x: -10.821193, y: -0.000043, z: -2.071452}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 2d368d70-e0d6-425d-8bd0-dac5ecfe6d21
-  Components:
-    []
-- !<SceneObject/23bd3583-a2b5-45dc-a744-4583270299b2>
-  PrefabRemaps:
-    []
-  Name: R_Hand BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.068730, y: 21.311592, z: -0.021040}
-    rotation: {x: 3.896637, y: -2.678788, z: 5.661329}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
 - !<Text/244b2f5b-5f9d-4cde-8347-c88b7ae121fb>
   PrefabRemaps:
     []
@@ -504,7 +310,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Version 0.16
+  Text: Version 0.17
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -568,23 +374,26 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<SceneObject/26cccd5b-bfff-4210-8c47-abbfe1397415>
+- !<RenderMeshVisual/24e5c1d5-4fd2-4ec4-9a93-37f1187150b1>
   PrefabRemaps:
     []
-  Name: Spine2 BodyPin
+  Name: Render Mesh Visual
   Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 13.028785, z: 0.000050}
-    rotation: {x: 0.000011, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> c355eac4-a379-43cb-adda-9d2b74119acf
-    - !<own> 4d52b9d0-18fb-433f-955a-a1421b908924
-    - !<own> 079e81e8-2b73-454f-a53d-f8e27b70d9ba
-  Components:
-    []
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ecfbb1a2-901f-498f-b14f-3935ea7d8f7d
+  Mesh: !<reference> d9b7f390-edbe-4026-a2fd-ba9528a48322
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: true
+  BlendShapes:
+    ExternalMesh: 1.000000
 - !<ScriptComponent/2893f3c9-7ad5-45db-8e66-2ef04279acd0>
   PrefabRemaps:
     []
@@ -601,71 +410,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/2b128b59-a650-47d5-a1aa-6b370b2b5768>
-  PrefabRemaps:
-    - 064f6e78-b27c-49d1-99e4-38da8e117696: 0bb529fe-3d0a-474b-8edf-9acb327d6f16
-    - 082f4b1c-3910-4e29-9ca0-ebc40225a855: 88edbbb3-a39a-4a23-94ba-34f26a4684b3
-    - 18e5e2cc-952e-4ce1-885d-5a7474f577f9: 94e15f96-cc74-4a4f-8f04-a45a97d1872d
-    - 22a04270-3c78-4b32-bf34-8348def92567: 8639f353-9f02-458f-adb3-0a67445e81c6
-    - 2b128b59-a650-47d5-a1aa-6b370b2b5768: 9c7a6448-d124-4891-8b55-206d78997425
-    - 2c169618-5ff8-4714-b584-06c9505b8830: 1d213c22-b6ea-431e-ade4-8b921387e30a
-    - 2d368d70-e0d6-425d-8bd0-dac5ecfe6d21: 948b74a9-2297-409c-b92c-91b5353711e4
-    - 337cfacc-0a3d-44c9-b9d8-da44e89e985b: f0352c72-d43d-4bb5-bfec-06c9ba1d01df
-    - 3c3c0c9a-ec02-47da-a53d-50d22677eacb: 109e5150-2cf0-42de-baad-2c21635f83dc
-    - 41833293-765e-4c65-a7c2-ce1d0a0aea21: 5e3c5186-a405-4c54-aaf6-becef1c61abf
-    - 4e1cf849-f4e5-4d56-b936-a7806553f2e5: 96fd34ce-5833-444a-89b3-eb651a1d584a
-    - 53b815c5-da15-4678-b3dd-77d1fc599ecb: 24f9a989-a779-4dbe-9e83-1b2ea6d7dca5
-    - 70da3326-3167-4e6c-afa8-388e92861519: d3baa315-90b3-4416-8347-90c6a6457686
-    - 88e9eb6a-c2c9-4e3d-bdff-66aeb965904a: 2ef3042c-be0e-4920-ad74-1dbf16802f98
-    - 9e45b269-968d-4235-9993-25053d38c009: c6b83a3b-96c0-4a0d-aabe-9e6516fa15d1
-    - c5300723-ce98-4c65-9872-e723750d67d5: 94819df9-fea1-44ac-a3ff-66df266e6b41
-    - e5154aa4-8e9b-4a6f-85a0-d20ee8b4077a: 25614000-75cd-46e5-8779-86fe8f3d827d
-    - fb81ba94-8af7-4645-a226-972fa167a724: a1bbb12a-c408-4c56-ab8b-e5ca990126cc
-    - fdbbc9ed-2380-49b6-b6cc-d53dadca3d54: ed6e1dd3-7246-4a31-8802-6882f0130001
-  Name: cloak_v04
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 40.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 337cfacc-0a3d-44c9-b9d8-da44e89e985b
-    - !<own> 064f6e78-b27c-49d1-99e4-38da8e117696
-    - !<own> 63df6fc3-ea90-4402-bde4-eed830d55b7b
-  Components:
-    - !<own> fb81ba94-8af7-4645-a226-972fa167a724
-- !<SceneObject/2c169618-5ff8-4714-b584-06c9505b8830>
-  PrefabRemaps:
-    []
-  Name: L_Hand
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -0.065355, y: 21.281776, z: -0.022097}
-    rotation: {x: 4.182561, y: 2.669336, z: -5.253084}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
-- !<SceneObject/2d368d70-e0d6-425d-8bd0-dac5ecfe6d21>
-  PrefabRemaps:
-    []
-  Name: R_ForeArm
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000074, y: 24.844479, z: -0.000042}
-    rotation: {x: -5.145562, y: 0.000000, z: -2.995760}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> c5300723-ce98-4c65-9872-e723750d67d5
-  Components:
-    []
 - !<ObjectTracking3D/328d9937-18e1-4ae1-8032-d95264635790>
   PrefabRemaps:
     []
@@ -721,38 +465,6 @@
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 00000000-0000-0000-0000-000000000000
     - !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/337cfacc-0a3d-44c9-b9d8-da44e89e985b>
-  PrefabRemaps:
-    []
-  Name: Hips
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 102.272270, z: 4.167002}
-    rotation: {x: 0.000012, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 4e1cf849-f4e5-4d56-b936-a7806553f2e5
-    - !<own> 53b815c5-da15-4678-b3dd-77d1fc599ecb
-    - !<own> 3c3c0c9a-ec02-47da-a53d-50d22677eacb
-  Components:
-    []
-- !<SceneObject/35f33032-0a8f-4b1a-aa69-0ba722817169>
-  PrefabRemaps:
-    []
-  Name: L_UpLeg BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 8.397741, y: -5.370796, z: -0.439441}
-    rotation: {x: -2.459430, y: 0.090333, z: -177.853271}
-    scale: {x: 1.000001, y: 1.000000, z: 1.000002}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
 - !<ScriptComponent/3a8003be-cadc-44e8-8b3c-2f433116458e>
   PrefabRemaps:
     []
@@ -766,96 +478,13 @@
   ScriptInputs:
     "":
       headBinding: !<reference.SceneObject> f826f39b-53af-42ac-ac54-9c239cd61fd2
-      bodySources: !<reference.SceneObject[]>
-        - !<reference> 53a916f2-8685-4df8-8805-2058d3af8f5a
-        - !<reference> fa35b5f4-0932-4e61-92c6-aa7c7a776899
-        - !<reference> 0032eafd-ad5e-47dc-b019-1a09c8fd8845
-        - !<reference> 26cccd5b-bfff-4210-8c47-abbfe1397415
-        - !<reference> c355eac4-a379-43cb-adda-9d2b74119acf
-        - !<reference> 4d52b9d0-18fb-433f-955a-a1421b908924
-        - !<reference> 079e81e8-2b73-454f-a53d-f8e27b70d9ba
-        - !<reference> 35f33032-0a8f-4b1a-aa69-0ba722817169
-        - !<reference> ec0deb04-fcf7-4f56-a10a-4f77e0a81a39
-      bodyTargets: !<reference.SceneObject[]>
-        - !<reference> 337cfacc-0a3d-44c9-b9d8-da44e89e985b
-        - !<reference> 4e1cf849-f4e5-4d56-b936-a7806553f2e5
-        - !<reference> 18e5e2cc-952e-4ce1-885d-5a7474f577f9
-        - !<reference> 9e45b269-968d-4235-9993-25053d38c009
-        - !<reference> 70da3326-3167-4e6c-afa8-388e92861519
-        - !<reference> 082f4b1c-3910-4e29-9ca0-ebc40225a855
-        - !<reference> 41833293-765e-4c65-a7c2-ce1d0a0aea21
-        - !<reference> 53b815c5-da15-4678-b3dd-77d1fc599ecb
-        - !<reference> 3c3c0c9a-ec02-47da-a53d-50d22677eacb
-      bodyTweener: !<reference.SceneObject> e6cb6f4f-1df5-4aaa-9332-eecc71a373b2
-      handSources: !<reference.SceneObject[]>
-        - !<reference> b848e15b-a312-49d4-a28f-99d86a11f273
-        - !<reference> 07723675-66a0-4cb8-8c16-c2f8e68a43f2
-        - !<reference> 412a3399-3dbc-41bf-8003-334e96108dcd
-        - !<reference> 5bef0dcf-25d4-4d9f-9daf-d86c4a3d228a
-        - !<reference> 0db3ea21-d1be-40a0-977f-147e92cb46d7
-        - !<reference> 23bd3583-a2b5-45dc-a744-4583270299b2
-      handTargets: !<reference.SceneObject[]>
-        - !<reference> 88e9eb6a-c2c9-4e3d-bdff-66aeb965904a
-        - !<reference> e5154aa4-8e9b-4a6f-85a0-d20ee8b4077a
-        - !<reference> 2c169618-5ff8-4714-b584-06c9505b8830
-        - !<reference> 22a04270-3c78-4b32-bf34-8348def92567
-        - !<reference> 2d368d70-e0d6-425d-8bd0-dac5ecfe6d21
-        - !<reference> c5300723-ce98-4c65-9872-e723750d67d5
-      handTweener: !<reference.SceneObject> a28e2db2-6055-4aa0-8254-2d5054684cea
       bodyOccluderMat: !<reference.Material> e5eb9a94-3ebe-4b92-87de-d7930b6802ae
       neckMask: !<reference.Texture> 9b93f7a9-9986-4fb5-ba05-221478e6332f
       bodyMask: !<reference.Texture> a5826dbf-fd03-42d3-9535-e6e2b1bc0b2f
-      posLerp: 0.400000
-      rotLerp: 0.400000
       distThreshold: !<float> 60.000000
   ScriptTypes:
     "":
       {}
-- !<SceneObject/3c3c0c9a-ec02-47da-a53d-50d22677eacb>
-  PrefabRemaps:
-    []
-  Name: R_UpLeg
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -8.397770, y: -5.370911, z: -0.429410}
-    rotation: {x: -2.406154, y: -0.088148, z: 177.852707}
-    scale: {x: 1.000001, y: 1.000000, z: 1.000001}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
-- !<SceneObject/412a3399-3dbc-41bf-8003-334e96108dcd>
-  PrefabRemaps:
-    []
-  Name: L_Hand BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -0.065355, y: 21.281776, z: -0.022097}
-    rotation: {x: 4.182561, y: 2.669336, z: -5.253084}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
-- !<SceneObject/41833293-765e-4c65-a7c2-ce1d0a0aea21>
-  PrefabRemaps:
-    []
-  Name: R_Shoulder
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -6.493481, y: 12.895182, z: -0.223409}
-    rotation: {x: -74.721298, y: -88.045357, z: 179.758545}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 22a04270-3c78-4b32-bf34-8348def92567
-  Components:
-    []
 - !<Camera/472f468f-bb07-48ad-bc7d-8e533ff70944>
   PrefabRemaps:
     []
@@ -886,36 +515,6 @@
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/4d52b9d0-18fb-433f-955a-a1421b908924>
-  PrefabRemaps:
-    []
-  Name: L_Shoulder BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 6.493551, y: 12.896297, z: -0.230981}
-    rotation: {x: -74.733833, y: 87.979286, z: -179.762283}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> b848e15b-a312-49d4-a28f-99d86a11f273
-  Components:
-    []
-- !<SceneObject/4e1cf849-f4e5-4d56-b936-a7806553f2e5>
-  PrefabRemaps:
-    []
-  Name: Spine
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 9.691208, z: -1.250127}
-    rotation: {x: -7.350510, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 18e5e2cc-952e-4ce1-885d-5a7474f577f9
-  Components:
-    []
 - !<SceneObject/4e453b5d-96e8-4741-8065-a3d00b3c4410>
   PrefabRemaps:
     []
@@ -946,125 +545,21 @@
     - !<own> 653b3635-4a0e-4385-ba27-d3a45be2336b
   Components:
     - !<own> 8b3d29dc-e985-4a57-82f1-c70503f781e5
-- !<SceneObject/53a916f2-8685-4df8-8805-2058d3af8f5a>
+- !<SceneObject/5b2ddf35-e926-4c6e-af6c-dd5653d52d7a>
   PrefabRemaps:
     []
-  Name: Hips BodyPin
+  Name: Body Mesh Cloak Mask
   Enabled: true
-  Layers: 1
+  Layers: 2
   LocalTransform:
-    position: {x: 0.000000, y: 102.272270, z: 4.167002}
-    rotation: {x: 0.000012, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> fa35b5f4-0932-4e61-92c6-aa7c7a776899
-    - !<own> 35f33032-0a8f-4b1a-aa69-0ba722817169
-    - !<own> ec0deb04-fcf7-4f56-a10a-4f77e0a81a39
-  Components:
-    []
-- !<SceneObject/53b815c5-da15-4678-b3dd-77d1fc599ecb>
-  PrefabRemaps:
-    []
-  Name: L_UpLeg
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 8.397741, y: -5.370796, z: -0.439441}
-    rotation: {x: -2.459430, y: 0.090333, z: -177.853271}
-    scale: {x: 1.000001, y: 1.000000, z: 1.000002}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 0.985000, y: 0.990000, z: 0.940000}
     hasSegmentScaleCompensation: false
   Children:
     []
   Components:
-    []
-- !<ScriptComponent/570b5440-1159-4517-8683-4f06941990ae>
-  PrefabRemaps:
-    []
-  Name: TweenValue
-  Enabled: true
-  ScriptAsset: !<reference> c01fd021-5e01-462c-b61a-716b4670c17f
-  ScriptInputsDefault:
-    playAutomatically: true
-    loopType: true
-    startInt: true
-    endInt: true
-    startFloat: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingType: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      tweenName: init
-      playAutomatically: true
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 0.000000
-      endFloat: !<float> 0.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: !<float> 0.000000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 3a8003be-cadc-44e8-8b3c-2f433116458e
-      propName: handStrength
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Linear
-      easingType: Out
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/5bef0dcf-25d4-4d9f-9daf-d86c4a3d228a>
-  PrefabRemaps:
-    []
-  Name: R_Arm BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -0.000116, y: 13.530517, z: -0.000161}
-    rotation: {x: -10.821193, y: -0.000043, z: -2.071452}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 0db3ea21-d1be-40a0-977f-147e92cb46d7
-  Components:
-    []
+    - !<own> 24e5c1d5-4fd2-4ec4-9a93-37f1187150b1
 - !<ScriptComponent/602f2454-c813-4589-a7ec-3ce7590697cb>
   PrefabRemaps:
     []
@@ -1139,21 +634,26 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<SceneObject/63df6fc3-ea90-4402-bde4-eed830d55b7b>
+- !<RenderMeshVisual/61f4df5b-f6ef-41e2-8f77-c7d827b847d6>
   PrefabRemaps:
     []
-  Name: Cloak_v04 mask
+  Name: Render Mesh Visual
   Enabled: true
-  Layers: 2
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> c2004a77-8cfb-4f39-bf66-8088a6621805
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6cc8f573-30fb-4cd9-82be-a584dc5e8d46
+  Mesh: !<reference> d9b7f390-edbe-4026-a2fd-ba9528a48322
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: true
+  BlendShapes:
+    ExternalMesh: 1.000000
 - !<SceneObject/653b3635-4a0e-4385-ba27-d3a45be2336b>
   PrefabRemaps:
     []
@@ -1166,8 +666,9 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 53a916f2-8685-4df8-8805-2058d3af8f5a
     - !<own> 707e0440-8024-4063-8db9-85f447081cad
+    - !<own> 08bf1d4a-cc23-422f-8f0d-9deb691e1de7
+    - !<own> 5b2ddf35-e926-4c6e-af6c-dd5653d52d7a
   Components:
     - !<own> 328d9937-18e1-4ae1-8032-d95264635790
 - !<Head/665051c9-2e40-461d-8bf0-97b2395b168f>
@@ -1219,21 +720,6 @@
     []
   Components:
     - !<own> a0a926d8-b9d2-427c-b7ce-45d795368d63
-- !<SceneObject/70da3326-3167-4e6c-afa8-388e92861519>
-  PrefabRemaps:
-    []
-  Name: Neck
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 14.657314, z: 0.000041}
-    rotation: {x: 7.350999, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
 - !<SceneObject/7d183f45-f0be-4239-9992-eb642573fded>
   PrefabRemaps:
     []
@@ -1265,93 +751,6 @@
   Components:
     - !<own> 61f246a7-2fc6-4072-b522-ec6f4598b5cb
     - !<own> 602f2454-c813-4589-a7ec-3ce7590697cb
-- !<ScriptComponent/81a87f13-47f1-4100-9831-3af585a86c79>
-  PrefabRemaps:
-    []
-  Name: TweenValue
-  Enabled: true
-  ScriptAsset: !<reference> c01fd021-5e01-462c-b61a-716b4670c17f
-  ScriptInputsDefault:
-    loopType: true
-    startInt: true
-    endInt: true
-    startFloat: true
-    endFloat: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingFunction: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      tweenName: show
-      playAutomatically: false
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 0.000000
-      endFloat: !<float> 1.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: 0.500000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 3a8003be-cadc-44e8-8b3c-2f433116458e
-      propName: bodyStrength
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Quadratic
-      easingType: InOut
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/88e9eb6a-c2c9-4e3d-bdff-66aeb965904a>
-  PrefabRemaps:
-    []
-  Name: L_Arm
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -0.000042, y: 13.530450, z: -0.000179}
-    rotation: {x: -10.799183, y: -0.000035, z: 2.232724}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> e5154aa4-8e9b-4a6f-85a0-d20ee8b4077a
-  Components:
-    []
 - !<Camera/8b3d29dc-e985-4a57-82f1-c70503f781e5>
   PrefabRemaps:
     []
@@ -1410,23 +809,6 @@
     bottom: -20.000000
     right: 15.000000
     top: 20.000000
-- !<SceneObject/9e45b269-968d-4235-9993-25053d38c009>
-  PrefabRemaps:
-    []
-  Name: Spine2
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 13.028785, z: 0.000050}
-    rotation: {x: 0.000011, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 70da3326-3167-4e6c-afa8-388e92861519
-    - !<own> 082f4b1c-3910-4e29-9ca0-ebc40225a855
-    - !<own> 41833293-765e-4c65-a7c2-ce1d0a0aea21
-  Components:
-    []
 - !<RenderMeshVisual/a0a926d8-b9d2-427c-b7ce-45d795368d63>
   PrefabRemaps:
     []
@@ -1447,22 +829,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<SceneObject/a28e2db2-6055-4aa0-8254-2d5054684cea>
-  PrefabRemaps:
-    []
-  Name: HandBind
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 570b5440-1159-4517-8683-4f06941990ae
-    - !<own> f043aec4-2c82-456c-ae04-4ea82d93f872
 - !<SceneObject/ab8183af-10da-4da8-8f21-45938c25b12b>
   PrefabRemaps:
     []
@@ -1512,21 +878,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<SceneObject/b848e15b-a312-49d4-a28f-99d86a11f273>
-  PrefabRemaps:
-    []
-  Name: L_Arm BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -0.000042, y: 13.530450, z: -0.000179}
-    rotation: {x: -10.799183, y: -0.000035, z: 2.232724}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 07723675-66a0-4cb8-8c16-c2f8e68a43f2
-  Components:
-    []
 - !<RenderMeshVisual/bab76c82-e17c-4953-93e7-1dbb802e87c4>
   PrefabRemaps:
     []
@@ -1559,26 +910,6 @@
     bottom: -20.000000
     right: 15.000000
     top: 20.000000
-- !<RenderMeshVisual/c2004a77-8cfb-4f39-bf66-8088a6621805>
-  PrefabRemaps:
-    []
-  Name: component_0
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> ecfbb1a2-901f-498f-b14f-3935ea7d8f7d
-  Mesh: !<reference> 30da0005-7c43-46ec-9b6e-257127c41a05
-  Skin: !<reference> fb81ba94-8af7-4645-a226-972fa167a724
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<SceneObject/c30107c4-3fbe-44f2-b8af-9ebac7f74f5f>
   PrefabRemaps:
     - 092880a5-aacf-4b71-9d6a-89ec7d2b5868: 34013876-a832-4bbd-925b-55d7178feffd
@@ -1649,21 +980,6 @@
   Components:
     - !<own> d881bd7c-0c47-41bb-8016-743fc6d0ef98
     - !<own> 2893f3c9-7ad5-45db-8e66-2ef04279acd0
-- !<SceneObject/c355eac4-a379-43cb-adda-9d2b74119acf>
-  PrefabRemaps:
-    []
-  Name: Neck BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 14.657314, z: 0.000041}
-    rotation: {x: 7.350999, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
 - !<SceneObject/c487e277-3758-40ff-aee2-7b575dc6c857>
   PrefabRemaps:
     []
@@ -1680,21 +996,6 @@
   Components:
     - !<own> 472f468f-bb07-48ad-bc7d-8e533ff70944
     - !<own> bff4a3dd-b2cd-4cf9-a3d2-019409e58870
-- !<SceneObject/c5300723-ce98-4c65-9872-e723750d67d5>
-  PrefabRemaps:
-    []
-  Name: R_Hand
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.068730, y: 21.311592, z: -0.021040}
-    rotation: {x: 3.896637, y: -2.678788, z: 5.661329}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
 - !<SceneObject/c7bf5be5-52d7-4c4c-877e-f269fe796c61>
   PrefabRemaps:
     []
@@ -1747,140 +1048,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<SceneObject/e5154aa4-8e9b-4a6f-85a0-d20ee8b4077a>
-  PrefabRemaps:
-    []
-  Name: L_ForeArm
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000059, y: 24.844973, z: 0.000177}
-    rotation: {x: -5.186042, y: 0.000067, z: 2.701650}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 2c169618-5ff8-4714-b584-06c9505b8830
-  Components:
-    []
-- !<SceneObject/e6cb6f4f-1df5-4aaa-9332-eecc71a373b2>
-  PrefabRemaps:
-    []
-  Name: BodyBind
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 0707decd-b38c-4087-b17c-cc98704cdfc2
-    - !<own> 81a87f13-47f1-4100-9831-3af585a86c79
-- !<SceneObject/ea7e057a-be53-404a-9d6b-43fcbbf7640d>
-  PrefabRemaps:
-    []
-  Name: Tweeners
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> e6cb6f4f-1df5-4aaa-9332-eecc71a373b2
-    - !<own> a28e2db2-6055-4aa0-8254-2d5054684cea
-  Components:
-    []
-- !<SceneObject/ec0deb04-fcf7-4f56-a10a-4f77e0a81a39>
-  PrefabRemaps:
-    []
-  Name: R_UpLeg BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -8.397770, y: -5.370911, z: -0.429410}
-    rotation: {x: -2.406154, y: -0.088148, z: 177.852707}
-    scale: {x: 1.000001, y: 1.000000, z: 1.000001}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    []
-- !<ScriptComponent/f043aec4-2c82-456c-ae04-4ea82d93f872>
-  PrefabRemaps:
-    []
-  Name: TweenValue
-  Enabled: true
-  ScriptAsset: !<reference> c01fd021-5e01-462c-b61a-716b4670c17f
-  ScriptInputsDefault:
-    loopType: true
-    startInt: true
-    endInt: true
-    startFloat: true
-    endFloat: true
-    startVector2: true
-    endVector2: true
-    startVector3: true
-    endVector3: true
-    startVector4: true
-    endVector4: true
-    startRGB: true
-    endRGB: true
-    startRGBA: true
-    endRGBA: true
-    delay: true
-    funcTargetScript: true
-    funcName: true
-    materialMeshVisual: true
-    material: true
-    materialScriptName: true
-    vfxComponent: true
-    vfxAsset: true
-    vfxScriptName: true
-    easingFunction: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      tweenName: show
-      playAutomatically: false
-      loopType: 0
-      dataType: 1
-      startInt: 0
-      endInt: 1
-      startFloat: !<float> 0.000000
-      endFloat: !<float> 1.000000
-      startVector2: !<Vec2> {x: 0.000000, y: 0.000000}
-      endVector2: !<Vec2> {x: 1.000000, y: 1.000000}
-      startVector3: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endVector3: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startVector4: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endVector4: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      startRGB: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      endRGB: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
-      startRGBA: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      endRGBA: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-      time: 0.500000
-      delay: !<float> 0.000000
-      callbackType: 1
-      propTargetScript: !<reference.ScriptComponent> 3a8003be-cadc-44e8-8b3c-2f433116458e
-      propName: handStrength
-      funcTargetScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      funcName: ""
-      materialMeshVisual: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
-      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
-      materialScriptName: baseColor
-      vfxComponent: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      vfxAsset: !<reference.VFXAsset> 00000000-0000-0000-0000-000000000000
-      vfxScriptName: baseColor
-      easingFunction: Quadratic
-      easingType: InOut
-  ScriptTypes:
-    "":
-      {}
 - !<ScreenRegionComponent/f198d3ae-d312-4192-9104-9e32a0d64cc8>
   PrefabRemaps:
     []
@@ -1954,61 +1121,3 @@
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/fa35b5f4-0932-4e61-92c6-aa7c7a776899>
-  PrefabRemaps:
-    []
-  Name: Spine BodyPin
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 9.691208, z: -1.250127}
-    rotation: {x: -7.350510, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 0032eafd-ad5e-47dc-b019-1a09c8fd8845
-  Components:
-    []
-- !<Skin/fb81ba94-8af7-4645-a226-972fa167a724>
-  PrefabRemaps:
-    []
-  Name: component_2
-  Enabled: true
-  skinBones:
-    Cloak_v04: !<reference> 064f6e78-b27c-49d1-99e4-38da8e117696
-    Hips: !<reference> 337cfacc-0a3d-44c9-b9d8-da44e89e985b
-    L_Arm: !<reference> 88e9eb6a-c2c9-4e3d-bdff-66aeb965904a
-    L_ForeArm: !<reference> e5154aa4-8e9b-4a6f-85a0-d20ee8b4077a
-    L_Hand: !<reference> 2c169618-5ff8-4714-b584-06c9505b8830
-    L_Shoulder: !<reference> 082f4b1c-3910-4e29-9ca0-ebc40225a855
-    L_UpLeg: !<reference> 53b815c5-da15-4678-b3dd-77d1fc599ecb
-    Neck: !<reference> 70da3326-3167-4e6c-afa8-388e92861519
-    R_Arm: !<reference> 22a04270-3c78-4b32-bf34-8348def92567
-    R_ForeArm: !<reference> 2d368d70-e0d6-425d-8bd0-dac5ecfe6d21
-    R_Hand: !<reference> c5300723-ce98-4c65-9872-e723750d67d5
-    R_Shoulder: !<reference> 41833293-765e-4c65-a7c2-ce1d0a0aea21
-    R_UpLeg: !<reference> 3c3c0c9a-ec02-47da-a53d-50d22677eacb
-    Spine: !<reference> 4e1cf849-f4e5-4d56-b936-a7806553f2e5
-    Spine1: !<reference> 18e5e2cc-952e-4ce1-885d-5a7474f577f9
-    Spine2: !<reference> 9e45b269-968d-4235-9993-25053d38c009
-    cloak_v04: !<reference> 2b128b59-a650-47d5-a1aa-6b370b2b5768
-- !<RenderMeshVisual/fdbbc9ed-2380-49b6-b6cc-d53dadca3d54>
-  PrefabRemaps:
-    []
-  Name: component_0
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 6cc8f573-30fb-4cd9-82be-a584dc5e8d46
-  Mesh: !<reference> 30da0005-7c43-46ec-9b6e-257127c41a05
-  Skin: !<reference> fb81ba94-8af7-4645-a226-972fa167a724
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
