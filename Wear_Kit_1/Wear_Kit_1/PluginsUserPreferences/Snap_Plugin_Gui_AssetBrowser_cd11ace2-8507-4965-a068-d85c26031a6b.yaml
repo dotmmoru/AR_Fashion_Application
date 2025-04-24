@@ -4,10 +4,10 @@ CollapsedEntities:
     size: 19
     values:
       - Models/Full Body Mesh Cloak.bodyMesh
-      - Models/cloak_v05.fbx
-      - Models/cloak_v05.fbx/Meshes
-      - Models/cloak_v05.fbx/Meshes/Cloak_v05
-      - Models/cloak_v05.fbx/cloak_v05
+      - Models/cloak_v07.fbx
+      - Models/cloak_v07.fbx/Meshes
+      - Models/cloak_v07.fbx/Meshes/Cloak_v07
+      - Models/cloak_v07.fbx/cloak_v07
       - Models/wizard_hat_v01 1.fbx
       - Scripts
       - Scripts/CloakController.js

@@ -5,7 +5,7 @@
   LeftHandGeometryEnabled: true
   RightHandGeometryEnabled: true
   HeadGeometryEnabled: true
-  ExternalMesh: !<reference> 3e23e887-efd5-46a0-853d-e12ef556db83
+  ExternalMesh: !<reference> c5559dd4-eae7-4895-9689-2c4a319f3d71
   ExternalMeshPose: TPose
   ExternalMeshMatchingMode: Proximity
   ExternalMeshMaxDistance: 20.000000

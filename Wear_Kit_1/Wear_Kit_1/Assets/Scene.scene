@@ -310,7 +310,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Version 0.17
+  Text: Version 0.18
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -481,7 +481,7 @@
       bodyOccluderMat: !<reference.Material> e5eb9a94-3ebe-4b92-87de-d7930b6802ae
       neckMask: !<reference.Texture> 9b93f7a9-9986-4fb5-ba05-221478e6332f
       bodyMask: !<reference.Texture> a5826dbf-fd03-42d3-9535-e6e2b1bc0b2f
-      distThreshold: !<float> 60.000000
+      distThreshold: !<float> 50.000000
   ScriptTypes:
     "":
       {}

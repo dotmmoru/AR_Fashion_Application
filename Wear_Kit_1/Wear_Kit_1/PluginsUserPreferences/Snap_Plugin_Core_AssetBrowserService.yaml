@@ -8,10 +8,10 @@ ExternalSources:
     - 355fd66a-2b28-4379-b7e3-0f3ad62d8dfc: "D:/Projects/WhoAR/AR_Fashion_App/lenses/source/Wear_Kit_2/Assets/Shader/body occluder.ss_graph"
     - 3f68f7ea-cae8-42d3-8038-da73a65cae38: "D:/Projects/WhoAR/AR_Fashion_App/textures/cloak/Cloak_params_v01.jpg"
     - 4cca7afa-0b45-411b-81e6-14d39d9b3b6e: "D:/Projects/WhoAR/AR_Fashion_App/textures/cloak/Cloak_base_v01.jpg"
-    - 7317e342-e969-43e1-99c1-1e2b5fdc6953: "D:/Projects/WhoAR/AR_Fashion_App/models/cloak/out/cloak_v05.fbx"
     - 738a7a9a-052f-4a00-b952-f920899350d6: "D:/Projects/WhoAR/AR_Fashion_App/textures/cloak/Cloak_nrm_v01.jpg"
     - 97919923-62bf-4e53-a038-4308288270d7: "D:/Projects/WhoAR/AR_Fashion_App/models/wizard_hat/out/tex/hat_base_v01.png"
     - a6497ecf-9772-4834-8671-a18db103de48: "D:/Projects/WhoAR/AR_Fashion_App/models/wizard_hat/out/tex/hat_materialParams_v01.png"
     - ce907c08-16a0-4233-a5f9-321377bc4725: "D:/Projects/WhoAR/AR_Fashion_App/models/wizard_hat/out/tex/hat_normal_v01.png"
+    - de89d27e-e664-400f-b249-16f026ae2834: "D:/Projects/WhoAR/AR_Fashion_App/models/cloak/out/cloak_v07.fbx"
     - fcb95a96-be16-4cfc-973f-b97e509b04f8: "D:/Projects/WhoAR/Dutch_Clothes/lenses/source/houseboat_museum_v01/Assets/Shaders/cap_shadow.ss_graph"
   options: 4
